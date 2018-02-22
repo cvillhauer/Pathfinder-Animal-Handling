@@ -1,0 +1,14 @@
+{
+  "name": "pathfinder-animal-handling",
+  "version": "1.0.0",
+  "description": "Initialized with https://www.typescriptlang.org/docs/handbook/knockout.html",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/knockout": "^3.4.51"
+  }
+}
