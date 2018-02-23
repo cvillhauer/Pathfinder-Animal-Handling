@@ -3,18 +3,25 @@
     <head>
         <meta charset="UTF-8" />
         <title>Hello Knockout!</title>
-        <script type='text/javascript' src='externals/knockout-3.4.2.js'></script>
     </head>
     <body>
+        <h1 data-bind="text: druid().name"></h1>
+        <h2>Level <span data-bind="text: druid().level"></span></h2>
+        <h3>Wild Shape <span data-bind="text: druid().wildShapeTimesPerDay"></span> times per day for up to <span data-bind="text: druid().wildShapeDuration"></span> hours each time</h3>
+        <h4>Beast Shape <span data-bind="text: druid().beastShape"></span></h4>
+        <h4>Elemental Body <span data-bind="text: druid().elementalBody"></span></h4>
+        <h4>Plant Shape <span data-bind="text: druid().plantShape"></span></h4>
+        <h4>Wild Shape Sizes:</h4>
+        <ul data-bind="foreach: druid().wildShapeSizes">
+            <li data-bind="text: $data"></li>
+        </ul>
+        
         <p>
-            Hello <strong data-bind="text: druid">todo</strong>!
+            Your pet's name is <strong data-bind="text: pet().name">error</strong>!
         </p>
 
-        <p>
-            Your pet's name is <strong data-bind="text: pet().name">todo</strong>!
-        </p>
-
-        <p>Druid Name: <input data-bind="value: druid, valueUpdate: 'afterkeydown'" /></p>
+        <p>Druid Name: <input data-bind="value: druid().name, valueUpdate: 'afterkeydown'" /></p>
+        <button data-bind="click: incrementDruidLevel">Increment Level</button>
 
         <script src="./externals/require.js"></script>
         <script src="./built/require-config.js"></script>

@@ -1,9 +1,13 @@
+import * as ko from "knockout";
+
 export class Animal
 {
-    name: string;
+    name: KnockoutObservable<string>;
+    size: string;
 
     constructor(name: string)
     {
-        this.name = name;
+        this.name = ko.observable(name);
+        this.size = "Medium";
     }
 }
