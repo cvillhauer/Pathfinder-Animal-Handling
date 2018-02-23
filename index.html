@@ -3,22 +3,23 @@
     <head>
         <meta charset="UTF-8" />
         <title>Hello Knockout!</title>
+        <script type='text/javascript' src='externals/knockout-3.4.2.js'></script>
     </head>
     <body>
         <p>
-            Hello from
-            <strong data-bind="text: language">todo</strong>
-            and
-            <strong data-bind="text: framework">todo</strong>!
+            Hello <strong data-bind="text: druid">todo</strong>!
         </p>
 
-        <p>Language: <input data-bind="value: language" /></p>
-        <p>Framework: <input data-bind="value: framework" /></p>
+        <p>
+            Your pet's name is <strong data-bind="text: pet().name">todo</strong>!
+        </p>
+
+        <p>Druid Name: <input data-bind="value: druid, valueUpdate: 'afterkeydown'" /></p>
 
         <script src="./externals/require.js"></script>
         <script src="./built/require-config.js"></script>
         <script>
-            require(["built/hello"]);
+            require(["built/viewmodel"]);
         </script>
     </body>
 </html>
