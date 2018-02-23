@@ -1,21 +1,18 @@
 import * as ko from "knockout";
 
-import {Druid} from "model/druid";
-import {Animal} from "model/animal";
+import { Druid } from "model/druid";
+import { Animal } from "model/animal";
 
-class AnimalsViewModel
-{
+class AnimalsViewModel {
     druid: KnockoutObservable<Druid>
     pet: KnockoutObservable<Animal>
 
-    constructor(druid: Druid)
-    {
+    constructor(druid: Druid) {
         this.druid = ko.observable(druid);
         this.pet = ko.observable(new Animal("Squeaky"));
     }
 
-    incrementDruidLevel()
-    {
+    incrementDruidLevel() {
         this.druid().increaseLevel(1);
     }
 

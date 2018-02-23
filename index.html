@@ -1,26 +1,46 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8" />
-        <title>Hello Knockout!</title>
-    </head>
-    <body>
+
+<head>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <meta charset="UTF-8" />
+    <title>Pathfinder - Animal Handling</title>
+</head>
+
+<body>
+    <div class="container">
         <h1 data-bind="text: druid().name"></h1>
-        <h2>Level <span data-bind="text: druid().level"></span></h2>
-        <h3>Wild Shape <span data-bind="text: druid().wildShapeTimesPerDay"></span> times per day for up to <span data-bind="text: druid().wildShapeDuration"></span> hours each time</h3>
-        <h4>Beast Shape <span data-bind="text: druid().beastShape"></span></h4>
-        <h4>Elemental Body <span data-bind="text: druid().elementalBody"></span></h4>
-        <h4>Plant Shape <span data-bind="text: druid().plantShape"></span></h4>
+        <h2>Level
+            <span data-bind="text: druid().level"></span>
+        </h2>
+        <h3>Wild Shape
+            <span data-bind="text: druid().wildShapeTimesPerDay"></span> times per day for up to
+            <span data-bind="text: druid().wildShapeDuration"></span> hours each time</h3>
+        <h4>Beast Shape
+            <span data-bind="text: druid().beastShape"></span>
+        </h4>
+        <h4>Elemental Body
+            <span data-bind="text: druid().elementalBody"></span>
+        </h4>
+        <h4>Plant Shape
+            <span data-bind="text: druid().plantShape"></span>
+        </h4>
         <h4>Wild Shape Sizes:</h4>
         <ul data-bind="foreach: druid().wildShapeSizes">
             <li data-bind="text: $data"></li>
         </ul>
-        
+
         <p>
-            Your pet's name is <strong data-bind="text: pet().name">error</strong>!
+            Your pet's name is
+            <strong data-bind="text: pet().name">error</strong>!
         </p>
 
-        <p>Druid Name: <input data-bind="value: druid().name, valueUpdate: 'afterkeydown'" /></p>
+        <p>Druid Name:
+            <input data-bind="value: druid().name, valueUpdate: 'afterkeydown'" />
+        </p>
         <button data-bind="click: incrementDruidLevel">Increment Level</button>
 
         <script src="./externals/require.js"></script>
@@ -28,5 +48,7 @@
         <script>
             require(["built/viewmodel"]);
         </script>
-    </body>
+    </div>
+</body>
+
 </html>
