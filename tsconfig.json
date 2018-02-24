@@ -10,6 +10,7 @@
         "./src/require-config.ts",
         "./src/viewmodel.ts",
         "./src/model/druid.ts",
-        "./src/model/animal.ts"
+        "./src/model/animal.ts",
+        "./src/model/direrat.ts"
     ]
 }

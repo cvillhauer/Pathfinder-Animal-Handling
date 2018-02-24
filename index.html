@@ -12,43 +12,57 @@
 
 <body>
     <div class="container">
-        <h1 data-bind="text: druid().name"></h1>
-        <h2>Level
-            <span data-bind="text: druid().level"></span>
-        </h2>
-        <h3>Wild Shape
-            <span data-bind="text: druid().wildShapeTimesPerDay"></span> times per day for up to
-            <span data-bind="text: druid().wildShapeDuration"></span> hours each time</h3>
-        <h4>Beast Shape
-            <span data-bind="text: druid().beastShape"></span>
-        </h4>
-        <h4>Elemental Body
-            <span data-bind="text: druid().elementalBody"></span>
-        </h4>
-        <h4>Plant Shape
-            <span data-bind="text: druid().plantShape"></span>
-        </h4>
-        <h4>Wild Shape Sizes:</h4>
-        <ul data-bind="foreach: druid().wildShapeSizes">
-            <li data-bind="text: $data"></li>
-        </ul>
+        <div class="data-entry">
+            <p>Druid Name:
+                <input class="form-control" type="text" data-bind="value: druid().name, valueUpdate: 'afterkeydown'" />
+            </p>
+            <button type="button" class="btn btn-default" data-bind="click: incrementDruidLevel">Increment Level</button>
+            <p>Animal Name:
+                <input class="form-control" type="text" data-bind="value: addedAnimalName, valueUpdate: 'afterkeydown'" />
+            </p>
+            <input class="form-control" type="number" data-bind="value: addedAnimalRounds, valueUpdate: 'afterkeydown'" />
+            <button type="button" class="btn btn-default" data-bind="click: createAnimal">Add Animal</button>
+        </div>
+        <hr />
 
-        <p>
-            Your pet's name is
-            <strong data-bind="text: pet().name">error</strong>!
-        </p>
+        <div class="druid">
+            <h1 data-bind="text: druid().name"></h1>
+            <h2>Level
+                <span data-bind="text: druid().level"></span>
+            </h2>
+            <h3>Wild Shape
+                <span data-bind="text: druid().wildShapeTimesPerDay"></span> times per day for up to
+                <span data-bind="text: druid().wildShapeDuration"></span> hours each time</h3>
+            <h4>Beast Shape
+                <span data-bind="text: druid().beastShape"></span>
+            </h4>
+            <h4>Elemental Body
+                <span data-bind="text: druid().elementalBody"></span>
+            </h4>
+            <h4>Plant Shape
+                <span data-bind="text: druid().plantShape"></span>
+            </h4>
+            <h4>Wild Shape Sizes:</h4>
+            <ul data-bind="foreach: druid().wildShapeSizes">
+                <li data-bind="text: $data"></li>
+            </ul>
+        </div>
+        <hr />
 
-        <p>Druid Name:
-            <input data-bind="value: druid().name, valueUpdate: 'afterkeydown'" />
-        </p>
-        <button data-bind="click: incrementDruidLevel">Increment Level</button>
+        <div class="animal" data-bind="foreach: pets()">
+            <p>Your pet's name is
+                <strong data-bind="text: $data.name">error</strong>!</p>
+            Rounds Left:
+            <input class="form-control" type="number" data-bind="value: $data.roundsLeft, valueUpdate: 'afterkeydown'" />
+        </div>
 
-        <script src="./externals/require.js"></script>
-        <script src="./built/require-config.js"></script>
-        <script>
-            require(["built/viewmodel"]);
-        </script>
     </div>
+
+    <script src="./externals/require.js"></script>
+    <script src="./built/require-config.js"></script>
+    <script>
+        require(["built/viewmodel"]);
+    </script>
 </body>
 
 </html>

@@ -3,8 +3,6 @@ import * as ko from "knockout";
 export class Druid {
     name: KnockoutObservable<string>;
     level: KnockoutObservable<number>;
-    fakeArray: KnockoutObservableArray<string>;
-
 
     //Wild Shape specs located at: http://paizo.com/pathfinderRPG/prd/coreRulebook/classes/druid.html#wild-shape
     wildShapeSizes: KnockoutObservableArray<string>;
@@ -73,7 +71,6 @@ export class Druid {
         if (this.level() >= 8) {
             this.wildShapeSizes.push("Diminutive");
             this.wildShapeSizes.push("Huge");
-
         }
     }
 }
