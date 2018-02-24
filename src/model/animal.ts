@@ -8,6 +8,7 @@ export class Animal {
     hitpoints: KnockoutObservable<number>;
     size: string;
     abilities: string[];
+    skills: string[];
     armorclass: number;
     attack: string;
     speed: number;

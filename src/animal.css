@@ -4,7 +4,6 @@
     border-radius: 15px;
     margin-bottom: 30px;
     padding-top: 15px;
-    padding-bottom: 15px;
     font-size: 12px;
 }
 
@@ -45,4 +44,10 @@
 .animal ul
 {
     padding-left: 15px;
+}
+
+.button-holder
+{
+    margin-top: 17px;
+    width: 100%;
 }

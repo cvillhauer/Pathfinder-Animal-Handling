@@ -10,8 +10,9 @@ export class DireRat extends Animal{
         this.hitpoints = ko.observable(5);
         this.size = "Small";
         this.abilities = ["low-light vision", "scent", "climb 20ft", "swim 20ft"];
+        this.skills = ["Climb +11", "Perception +11", "Stealth +11", "Swim +11"];
         this.armorclass = 14;
-        this.attack = "bite +1, 1d4";
+        this.attack = "Bite +1, 1d4";
         this.speed = 40;
 
         this.cmb = -1;

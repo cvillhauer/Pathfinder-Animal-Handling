@@ -72,7 +72,7 @@
                                 <input class="form-control" type="number" data-bind="value: $data.hitpoints, valueUpdate: 'afterkeydown'" />
                             </div>
                             <div class="col-xs-4">
-                                <button type="button" class="btn btn-default" data-bind="click: $parent.deleteAnimal">Delete</button>
+                                <button type="button" class="btn btn-default button-holder" data-bind="click: $parent.deleteAnimal">Delete</button>
                             </div>
                         </div>
                         <div class="row">
@@ -99,48 +99,50 @@
                                 </h4>
                             </div>
                         </div>
+                        <div class="row">
+                            <div class="col-xs-3">
+                                Abilities:
+                                <ul data-bind="foreach: $data.abilities">
+                                    <li data-bind="text: $data"></li>
+                                </ul>
+                            </div>
+                            <div class="col-xs-3">
+                                Skills:
+                                <ul data-bind="foreach: $data.skills">
+                                    <li data-bind="text: $data"></li>
+                                </ul>
+                            </div>
+                            <div class="col-xs-3" style="text-align: right;">
+                                Str:
+                                <span data-bind="text: $data.str"></span>
+                                <br />Dex:
+                                <span data-bind="text: $data.dex"></span>
+                                <br />Con:
+                                <span data-bind="text: $data.con"></span>
+                                <br />Int:
+                                <span data-bind="text: $data.int"></span>
+                                <br />Wis:
+                                <span data-bind="text: $data.wis"></span>
+                                <br />Cha:
+                                <span data-bind="text: $data.cha"></span>
+                            </div>
+                            <div class="col-xs-3" style="text-align: right;">
+                                Fortitude:
+                                <span data-bind="text: $data.fort"></span>
+                                <br />Reflex:
+                                <span data-bind="text: $data.ref"></span>
+                                <br />Will:
+                                <span data-bind="text: $data.will"></span>
+                                <br />
+                                <br />CMB:
+                                <span data-bind="text: $data.cmb"></span>
+                                <br />CMD:
+                                <span data-bind="text: $data.cmd"></span>
+                            </div>
+                        </div>
                     </div>
                     <div class="col-xs-6">
                         <img class="col-xs-12" src="https://pathfinderwiki.com/mediawiki/images/1/12/Dire_rat.jpg" />
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-xs-3 col-lg-1">
-                        Abilities:
-                        <ul data-bind="foreach: $data.abilities">
-                            <li data-bind="text: $data"></li>
-                        </ul>
-                    </div>
-                    <div class="col-xs-3 col-lg-1" style="text-align: right;">
-                        Str:
-                        <span data-bind="text: $data.str"></span>
-                        <br /> Dex:
-                        <span data-bind="text: $data.dex"></span>
-                        <br /> Con:
-                        <span data-bind="text: $data.con"></span>
-                        <br /> Int:
-                        <span data-bind="text: $data.int"></span>
-                        <br /> Wis:
-                        <span data-bind="text: $data.wis"></span>
-                        <br /> Cha:
-                        <span data-bind="text: $data.cha"></span>
-                        <br />
-                    </div>
-                    <div class="col-xs-3 col-lg-1" style="text-align: right;">
-                        Fortitude:
-                        <span data-bind="text: $data.fort"></span>
-                        <br /> Reflex:
-                        <span data-bind="text: $data.ref"></span>
-                        <br /> Will:
-                        <span data-bind="text: $data.will"></span>
-                        <br />
-                    </div>
-                    <div class="col-xs-3 col-lg-1" style="text-align: right;">
-                        CMB:
-                        <span data-bind="text: $data.cmb"></span>
-                        <br /> CMD:
-                        <span data-bind="text: $data.cmd"></span>
-                        <br />
                     </div>
                 </div>
             </div>
