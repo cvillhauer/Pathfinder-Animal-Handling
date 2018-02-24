@@ -27,6 +27,10 @@ class AnimalsViewModel {
         this.pets.push(new DireRat(this.addedAnimalName(), this.addedAnimalRounds()));
     }
 
+    deleteAnimal(){
+        console.log("Delete not implemented yet.");
+    }
+
 }
 
 ko.applyBindings(new AnimalsViewModel(new Druid("Courtney", 1)));

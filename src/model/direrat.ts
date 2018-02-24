@@ -9,7 +9,7 @@ export class DireRat extends Animal{
         this.description = "Dire Rat"
         this.hitpoints = ko.observable(5);
         this.size = "Small";
-        this.abilities = ["low-light vision", "scent", "climb 20", "swim 20"];
+        this.abilities = ["low-light vision", "scent", "climb 20ft", "swim 20ft"];
         this.armorclass = 14;
         this.attack = "bite +1, 1d4";
         this.speed = 40;

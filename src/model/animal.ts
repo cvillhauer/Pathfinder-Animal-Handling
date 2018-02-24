@@ -1,7 +1,7 @@
 import * as ko from "knockout";
 
 export class Animal {
-    name: KnockoutObservable<string>;
+    name: string;
     description: string;
     roundsLeft: KnockoutObservable<number>;
     status: KnockoutObservable<string>;
@@ -27,7 +27,7 @@ export class Animal {
     cha: number; //charisma
 
     constructor(name: string, rounds: number) {
-        this.name = ko.observable(name);
+        this.name = name;
         this.roundsLeft = ko.observable(rounds);
         this.status = ko.observable("");
     }

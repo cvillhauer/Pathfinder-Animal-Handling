@@ -5,6 +5,7 @@
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="src/animal.css">
 
     <meta charset="UTF-8" />
     <title>Pathfinder - Animal Handling</title>
@@ -49,13 +50,101 @@
         </div>
         <hr />
 
-        <div class="animal" data-bind="foreach: pets()">
-            <p>Your pet's name is
-                <strong data-bind="text: $data.name">error</strong>!</p>
-            Rounds Left:
-            <input class="form-control" type="number" data-bind="value: $data.roundsLeft, valueUpdate: 'afterkeydown'" />
+        <div class="row" data-bind="foreach: pets()">
+            <div class="container animal">
+                <div class="row">
+                    <div class="col-xs-6">
+                        <div class="row">
+                            <div class="col-xs-6">
+                                <h1 data-bind="text: $data.name"></h1>
+                            </div>
+                            <div class="col-xs-6">
+                                <h2 data-bind="text: $data.description"></h2>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-4">
+                                Rounds Left:
+                                <input class="form-control" type="number" data-bind="value: $data.roundsLeft, valueUpdate: 'afterkeydown'" />
+                            </div>
+                            <div class="col-xs-4">
+                                Hit Points:
+                                <input class="form-control" type="number" data-bind="value: $data.hitpoints, valueUpdate: 'afterkeydown'" />
+                            </div>
+                            <div class="col-xs-4">
+                                <button type="button" class="btn btn-default" data-bind="click: $parent.deleteAnimal">Delete</button>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-12">
+                                Status:
+                                <input class="form-control" type="text" data-bind="value: $data.status, valueUpdate: 'afterkeydown'" />
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-6">
+                                <h3>Armor Class:
+                                    <strong data-bind="text: $data.armorclass"></strong>
+                                </h3>
+                                <h3>Attack:
+                                    <strong data-bind="text: $data.attack"></strong>
+                                </h3>
+                            </div>
+                            <div class="col-xs-6">
+                                <h4>Size:
+                                    <span data-bind="text: $data.size"></span>
+                                </h4>
+                                <h4>Speed:
+                                    <span data-bind="text: $data.speed"></span> feet
+                                </h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-6">
+                        <img class="col-xs-12" src="https://pathfinderwiki.com/mediawiki/images/1/12/Dire_rat.jpg" />
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-3 col-lg-1">
+                        Abilities:
+                        <ul data-bind="foreach: $data.abilities">
+                            <li data-bind="text: $data"></li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-3 col-lg-1" style="text-align: right;">
+                        Str:
+                        <span data-bind="text: $data.str"></span>
+                        <br /> Dex:
+                        <span data-bind="text: $data.dex"></span>
+                        <br /> Con:
+                        <span data-bind="text: $data.con"></span>
+                        <br /> Int:
+                        <span data-bind="text: $data.int"></span>
+                        <br /> Wis:
+                        <span data-bind="text: $data.wis"></span>
+                        <br /> Cha:
+                        <span data-bind="text: $data.cha"></span>
+                        <br />
+                    </div>
+                    <div class="col-xs-3 col-lg-1" style="text-align: right;">
+                        Fortitude:
+                        <span data-bind="text: $data.fort"></span>
+                        <br /> Reflex:
+                        <span data-bind="text: $data.ref"></span>
+                        <br /> Will:
+                        <span data-bind="text: $data.will"></span>
+                        <br />
+                    </div>
+                    <div class="col-xs-3 col-lg-1" style="text-align: right;">
+                        CMB:
+                        <span data-bind="text: $data.cmb"></span>
+                        <br /> CMD:
+                        <span data-bind="text: $data.cmd"></span>
+                        <br />
+                    </div>
+                </div>
+            </div>
         </div>
-
     </div>
 
     <script src="./externals/require.js"></script>
