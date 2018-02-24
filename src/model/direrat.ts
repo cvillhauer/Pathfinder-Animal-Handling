@@ -7,6 +7,7 @@ export class DireRat extends Animal{
     constructor(name: string, rounds: number) {
         super(name, rounds);
         this.description = "Dire Rat"
+        this.image = "https://pathfinderwiki.com/mediawiki/images/1/12/Dire_rat.jpg";
         this.hitpoints = ko.observable(5);
         this.size = "Small";
         this.abilities = ["low-light vision", "scent", "climb 20ft", "swim 20ft"];

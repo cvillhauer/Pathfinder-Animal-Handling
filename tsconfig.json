@@ -11,6 +11,10 @@
         "./src/viewmodel.ts",
         "./src/model/druid.ts",
         "./src/model/animal.ts",
-        "./src/model/direrat.ts"
+
+        //All the animals!
+        "./src/model/direrat.ts",
+        "./src/model/dog.ts",
+        "./src/model/dolphin.ts"
     ]
 }

@@ -3,6 +3,7 @@ import * as ko from "knockout";
 export class Animal {
     name: string;
     description: string;
+    image: string;
     roundsLeft: KnockoutObservable<number>;
     status: KnockoutObservable<string>;
     hitpoints: KnockoutObservable<number>;
