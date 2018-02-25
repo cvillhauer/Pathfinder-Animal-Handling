@@ -14,16 +14,16 @@
         "./src/model/animal.ts",
 
         //All the animals!
-        "./src/model/direrat.ts",
-        "./src/model/dog.ts",
-        "./src/model/dolphin.ts",
-        "./src/model/eagle.ts",
-        "./src/model/firebeetle.ts",
-        "./src/model/giantcentipede.ts",
-        "./src/model/mite.ts",
-        "./src/model/poisonousfrog.ts",
-        "./src/model/pony.ts",
-        "./src/model/stirge.ts",
-        "./src/model/viper.ts"
+        "./src/model/natureally1/direrat.ts",
+        "./src/model/natureally1/dog.ts",
+        "./src/model/natureally1/dolphin.ts",
+        "./src/model/natureally1/eagle.ts",
+        "./src/model/natureally1/firebeetle.ts",
+        "./src/model/natureally1/giantcentipede.ts",
+        "./src/model/natureally1/mite.ts",
+        "./src/model/natureally1/poisonousfrog.ts",
+        "./src/model/natureally1/pony.ts",
+        "./src/model/natureally1/stirge.ts",
+        "./src/model/natureally1/viper.ts"
     ]
 }

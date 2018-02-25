@@ -1,6 +1,6 @@
 import * as ko from "knockout";
-import { Size, CreatureType } from "./enums";
-import { Animal } from "./animal";
+import { Size, CreatureType } from "../enums";
+import { Animal } from "../animal";
 
 export class DireRat extends Animal{
 

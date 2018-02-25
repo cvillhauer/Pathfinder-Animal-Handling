@@ -8,6 +8,7 @@ export class Druid {
 
     //Wild Shape specs located at: http://paizo.com/pathfinderRPG/prd/coreRulebook/classes/druid.html#wild-shape
     wildShapeSizes: KnockoutObservableArray<Size>;
+    wildShapeTypes: KnockoutObservableArray<CreatureType>;
     wildShapeTimesPerDay: KnockoutObservable<number>;
     wildShapeDuration: KnockoutObservable<number>;
     beastShape: KnockoutObservable<number>;
@@ -66,14 +67,17 @@ export class Druid {
         if (this.level() >= 4) {
             this.wildShapeSizes.push(Size.Medium);
             this.wildShapeSizes.push(Size.Small);
+            this.wildShapeTypes.push(CreatureType.Animal);
         }
         if (this.level() >= 6) {
             this.wildShapeSizes.push(Size.Tiny);
             this.wildShapeSizes.push(Size.Large);
+            this.wildShapeTypes.push(CreatureType.Elemental);
         }
         if (this.level() >= 8) {
             this.wildShapeSizes.push(Size.Diminutive);
             this.wildShapeSizes.push(Size.Huge);
+            this.wildShapeTypes.push(CreatureType.Plant);
         }
     }
 }
