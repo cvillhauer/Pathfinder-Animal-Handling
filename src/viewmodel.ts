@@ -19,6 +19,7 @@ import { Viper } from "./model/natureally1/viper";
 class AnimalsViewModel {
     druid: KnockoutObservable<Druid>;
     pets: KnockoutObservableArray<Animal>;
+    currentRound: KnockoutObservable<number>;
 
     summonNaturesAlly1Choices: KnockoutObservableArray<string>;
 
@@ -29,6 +30,7 @@ class AnimalsViewModel {
     constructor(druid: Druid) {
         this.druid = ko.observable(druid);
         this.pets = ko.observableArray();
+        this.currentRound = ko.observable(1);
 
         this.addedAnimalType = ko.observable();
         this.summonNaturesAlly1Choices = ko.observableArray();
@@ -38,6 +40,18 @@ class AnimalsViewModel {
 
         this.addedAnimalName = ko.observable("Squeaky");
         this.addedAnimalRounds = ko.observable(this.druid().level());
+    }
+
+    nextRound(){
+        let petsRemaining = [];
+        for(let pet of this.pets()){
+            pet.roundsLeft(pet.roundsLeft() - 1);
+            if(pet.roundsLeft() >= 0)
+            {
+                petsRemaining.push(pet);
+            }
+        }
+        this.pets(petsRemaining);
     }
 
     incrementDruidLevel() {
