@@ -1,19 +1,21 @@
 import * as ko from "knockout";
-import { Animal } from "model/animal";
+import { Size, CreatureType } from "./enums";
+import { Animal } from "./animal";
 
 export class DireRat extends Animal{
-    //Dire Rat specs located at http://paizo.com/pathfinderRPG/prd/bestiary/rat.html#rat-dire
 
     constructor(name: string, rounds: number) {
         super(name, rounds);
-        this.description = "Dire Rat"
+        this.description = "Dire Rat";
         this.image = "https://pathfinderwiki.com/mediawiki/images/1/12/Dire_rat.jpg";
+        this.link = "http://paizo.com/pathfinderRPG/prd/bestiary/rat.html#rat-dire";
         this.hitpoints = ko.observable(5);
-        this.size = "Small";
+        this.size = Size.Small;
+        this.type = CreatureType.Animal;
         this.abilities = ["low-light vision", "scent", "climb 20ft", "swim 20ft"];
         this.skills = ["Climb +11", "Perception +11", "Stealth +11", "Swim +11"];
         this.armorclass = 14;
-        this.attack = "Bite +1, 1d4";
+        this.attack = ["Bite +1 1d4", "Disease - Filth Fever"];
         this.speed = 40;
 
         this.cmb = -1;

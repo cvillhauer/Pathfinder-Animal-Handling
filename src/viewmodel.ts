@@ -1,7 +1,7 @@
 import * as ko from "knockout";
 
-import { Druid } from "model/druid";
-import { Animal } from "model/animal";
+import { Druid } from "./model/druid";
+import { Animal } from "./model/animal";
 import { DireRat } from "./model/direrat";
 import { Dog } from "./model/dog";
 import { Dolphin } from "./model/dolphin";

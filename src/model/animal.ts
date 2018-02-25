@@ -1,17 +1,20 @@
 import * as ko from "knockout";
+import { Size, CreatureType } from "./enums";
 
 export class Animal {
     name: string;
     description: string;
     image: string;
+    link: string;
     roundsLeft: KnockoutObservable<number>;
     status: KnockoutObservable<string>;
     hitpoints: KnockoutObservable<number>;
-    size: string;
+    size: Size;
+    type: CreatureType;
     abilities: string[];
     skills: string[];
     armorclass: number;
-    attack: string;
+    attack: string[];
     speed: number;
     
     cmb: number; //combat maneuvers bonus

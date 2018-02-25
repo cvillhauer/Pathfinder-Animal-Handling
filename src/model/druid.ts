@@ -1,11 +1,13 @@
 import * as ko from "knockout";
+import {Size, CreatureType} from "./enums";
 
 export class Druid {
     name: KnockoutObservable<string>;
     level: KnockoutObservable<number>;
+    link: string;
 
     //Wild Shape specs located at: http://paizo.com/pathfinderRPG/prd/coreRulebook/classes/druid.html#wild-shape
-    wildShapeSizes: KnockoutObservableArray<string>;
+    wildShapeSizes: KnockoutObservableArray<Size>;
     wildShapeTimesPerDay: KnockoutObservable<number>;
     wildShapeDuration: KnockoutObservable<number>;
     beastShape: KnockoutObservable<number>;
@@ -15,6 +17,7 @@ export class Druid {
     constructor(name: string, level: number) {
         this.name = ko.observable(name);
         this.level = ko.observable(level);
+        this.link = "http://paizo.com/pathfinderRPG/prd/coreRulebook/classes/druid.html";
 
         this.wildShapeSizes = ko.observableArray();
 
@@ -61,16 +64,16 @@ export class Druid {
     calculateWildShapeSizes() {
         this.wildShapeSizes.removeAll();
         if (this.level() >= 4) {
-            this.wildShapeSizes.push("Small");
-            this.wildShapeSizes.push("Medium");
+            this.wildShapeSizes.push(Size.Medium);
+            this.wildShapeSizes.push(Size.Small);
         }
         if (this.level() >= 6) {
-            this.wildShapeSizes.push("Tiny");
-            this.wildShapeSizes.push("Large");
+            this.wildShapeSizes.push(Size.Tiny);
+            this.wildShapeSizes.push(Size.Large);
         }
         if (this.level() >= 8) {
-            this.wildShapeSizes.push("Diminutive");
-            this.wildShapeSizes.push("Huge");
+            this.wildShapeSizes.push(Size.Diminutive);
+            this.wildShapeSizes.push(Size.Huge);
         }
     }
 }

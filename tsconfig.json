@@ -8,6 +8,7 @@
     },
     "files": [
         "./src/require-config.ts",
+        "./src/model/enums.ts",
         "./src/viewmodel.ts",
         "./src/model/druid.ts",
         "./src/model/animal.ts",
@@ -15,6 +16,14 @@
         //All the animals!
         "./src/model/direrat.ts",
         "./src/model/dog.ts",
-        "./src/model/dolphin.ts"
+        "./src/model/dolphin.ts",
+        "./src/model/eagle.ts",
+        "./src/model/firebeetle.ts",
+        "./src/model/giantcentipede.ts",
+        "./src/model/mite.ts",
+        "./src/model/poisonousfrog.ts",
+        "./src/model/pony.ts",
+        "./src/model/stirge.ts",
+        "./src/model/viper.ts"
     ]
 }
