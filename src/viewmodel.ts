@@ -44,6 +44,10 @@ class AnimalsViewModel {
         this.druid().increaseLevel(1);
     }
 
+    deleteAnimal(animalToDelete: Animal) {
+        this.pets.remove(animalToDelete);
+    }
+
     createAnimal() {
         switch (this.addedAnimalType()) {
             case SummonNaturesAlly1.DireRat:
@@ -80,10 +84,6 @@ class AnimalsViewModel {
                 this.pets.push(new Viper(this.addedAnimalName(), this.addedAnimalRounds()));
                 break;
         }
-    }
-
-    deleteAnimal() {
-        console.log("Delete not implemented yet.");
     }
 
 }

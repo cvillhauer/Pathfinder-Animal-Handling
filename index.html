@@ -83,7 +83,7 @@
                                 <input class="form-control" type="number" data-bind="value: $data.hitpoints, valueUpdate: 'afterkeydown'" />
                             </div>
                             <div class="col-xs-4">
-                                <button type="button" class="btn btn-default button-holder" data-bind="click: $parent.deleteAnimal">Delete</button>
+                                <button type="button" class="btn btn-default button-holder" data-bind="click: $parent.deleteAnimal.bind($parent)">Delete</button>
                             </div>
                         </div>
                         <div class="row">

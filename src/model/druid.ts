@@ -21,6 +21,7 @@ export class Druid {
         this.link = "http://paizo.com/pathfinderRPG/prd/coreRulebook/classes/druid.html";
 
         this.wildShapeSizes = ko.observableArray();
+        this.wildShapeTypes = ko.observableArray();
 
         this.wildShapeTimesPerDay = ko.computed(function () {
             return Math.floor(Math.abs((this.level() - 2)) / 2);
@@ -64,6 +65,8 @@ export class Druid {
 
     calculateWildShapeSizes() {
         this.wildShapeSizes.removeAll();
+        this.wildShapeTypes.removeAll();
+
         if (this.level() >= 4) {
             this.wildShapeSizes.push(Size.Medium);
             this.wildShapeSizes.push(Size.Small);
