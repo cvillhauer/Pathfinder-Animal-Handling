@@ -12,8 +12,10 @@
         "./src/viewmodel.ts",
         "./src/model/druid.ts",
         "./src/model/animal.ts",
+        "./src/model/elemental.ts",
 
         //All the animals!
+
         "./src/model/natureally1/direrat.ts",
         "./src/model/natureally1/dog.ts",
         "./src/model/natureally1/dolphin.ts",
@@ -24,6 +26,17 @@
         "./src/model/natureally1/poisonousfrog.ts",
         "./src/model/natureally1/pony.ts",
         "./src/model/natureally1/stirge.ts",
-        "./src/model/natureally1/viper.ts"
+        "./src/model/natureally1/viper.ts",
+
+        "./src/model/natureally2/elementalsmall.ts",
+        "./src/model/natureally2/giantant.ts",
+        "./src/model/natureally2/giantfrog.ts",
+        "./src/model/natureally2/giantspider.ts",
+        "./src/model/natureally2/goblindog.ts",
+        "./src/model/natureally2/horse.ts",
+        "./src/model/natureally2/hyena.ts",
+        "./src/model/natureally2/octopus.ts",
+        "./src/model/natureally2/squid.ts",
+        "./src/model/natureally2/wolf.ts"
     ]
 }
