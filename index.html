@@ -19,14 +19,23 @@
             </p>
             <button type="button" class="btn btn-default" data-bind="click: incrementDruidLevel">Increment Level</button>
             <button type="button" class="btn btn-default" data-bind="click: nextRound">Next Round</button>
+            <br />
+            <br />
+            <button type="button" class="btn btn-default" data-bind="click: function(){$root.rollDice(4, 6)}">Roll Dice</button>
+        </div>
+        <hr />
+
+        <div class="">
             <p>Animal Name:
                 <input class="form-control" type="text" data-bind="value: addedAnimalName, valueUpdate: 'afterkeydown'" />
+            </p>
+            <p>Cast Summon Nature's Ally II for Animal Level:
+                <select class="form-control" data-bind="options: summonNaturesAllyLevelChoices, value: summonNatureLevel, optionsCaption: ''"></select>
             </p>
             <p>Animal Type:
                 <select class="form-control" data-bind="options: summonNaturesAlly1Choices, value: addedAnimalType, optionsCaption: ''"></select>
             </p>
-            <input class="form-control" type="number" data-bind="value: addedAnimalRounds, valueUpdate: 'afterkeydown'" />
-            <button type="button" class="btn btn-default" data-bind="click: createAnimal">Add Animal</button>
+            <button type="button" class="btn btn-default" data-bind="click: summonNaturesAllyTest">Summon Nature's Ally</button>
         </div>
         <hr />
 
