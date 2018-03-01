@@ -1,3 +1,8 @@
+body
+{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
 .animal
 {
     border: solid 3px #444444;
@@ -12,6 +17,7 @@
 {
     margin-top: 10px;
     font-size: 24px;
+    font-weight: bold;
 }
 
 .animal h2

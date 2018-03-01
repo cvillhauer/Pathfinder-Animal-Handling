@@ -42,12 +42,11 @@ class AnimalsViewModel {
         this.addedAnimalRounds = ko.observable(this.druid().level());
     }
 
-    nextRound(){
+    nextRound() {
         let petsRemaining = [];
-        for(let pet of this.pets()){
+        for (let pet of this.pets()) {
             pet.roundsLeft(pet.roundsLeft() - 1);
-            if(pet.roundsLeft() >= 0)
-            {
+            if (pet.roundsLeft() >= 0) {
                 petsRemaining.push(pet);
             }
         }
@@ -62,42 +61,50 @@ class AnimalsViewModel {
         this.pets.remove(animalToDelete);
     }
 
+    editAnimalName(petToEdit: Animal){
+        petToEdit.editName(true);
+    }
+
     createAnimal() {
+        let newAnimal: Animal;
+
         switch (this.addedAnimalType()) {
             case SummonNaturesAlly1.DireRat:
-                this.pets.push(new DireRat(this.addedAnimalName(), this.addedAnimalRounds()));
+                newAnimal = new DireRat(this.addedAnimalName(), this.addedAnimalRounds());
                 break;
             case SummonNaturesAlly1.Dog:
-                this.pets.push(new Dog(this.addedAnimalName(), this.addedAnimalRounds()));
+                newAnimal = new Dog(this.addedAnimalName(), this.addedAnimalRounds());
                 break;
             case SummonNaturesAlly1.Dolphin:
-                this.pets.push(new Dolphin(this.addedAnimalName(), this.addedAnimalRounds()));
+                newAnimal = new Dolphin(this.addedAnimalName(), this.addedAnimalRounds());
                 break;
             case SummonNaturesAlly1.Eagle:
-                this.pets.push(new Eagle(this.addedAnimalName(), this.addedAnimalRounds()));
+                newAnimal = new Eagle(this.addedAnimalName(), this.addedAnimalRounds());
                 break;
             case SummonNaturesAlly1.FireBeetle:
-                this.pets.push(new FireBeetle(this.addedAnimalName(), this.addedAnimalRounds()));
+                newAnimal = new FireBeetle(this.addedAnimalName(), this.addedAnimalRounds());
                 break;
             case SummonNaturesAlly1.GiantCentipede:
-                this.pets.push(new GiantCentipede(this.addedAnimalName(), this.addedAnimalRounds()));
+                newAnimal = new GiantCentipede(this.addedAnimalName(), this.addedAnimalRounds());
                 break;
             case SummonNaturesAlly1.Mite:
-                this.pets.push(new Mite(this.addedAnimalName(), this.addedAnimalRounds()));
+                newAnimal = new Mite(this.addedAnimalName(), this.addedAnimalRounds());
                 break;
             case SummonNaturesAlly1.PoisonousFrog:
-                this.pets.push(new PoisonousFrog(this.addedAnimalName(), this.addedAnimalRounds()));
+                newAnimal = new PoisonousFrog(this.addedAnimalName(), this.addedAnimalRounds());
                 break;
             case SummonNaturesAlly1.Pony:
-                this.pets.push(new Pony(this.addedAnimalName(), this.addedAnimalRounds()));
+                newAnimal = new Pony(this.addedAnimalName(), this.addedAnimalRounds());
                 break;
             case SummonNaturesAlly1.Stirge:
-                this.pets.push(new Stirge(this.addedAnimalName(), this.addedAnimalRounds()));
+                newAnimal = new Stirge(this.addedAnimalName(), this.addedAnimalRounds());
                 break;
             case SummonNaturesAlly1.Viper:
-                this.pets.push(new Viper(this.addedAnimalName(), this.addedAnimalRounds()));
+                newAnimal = new Viper(this.addedAnimalName(), this.addedAnimalRounds());
                 break;
         }
+
+        this.pets.push(newAnimal);
     }
 
 }

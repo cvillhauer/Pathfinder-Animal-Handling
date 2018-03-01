@@ -2,7 +2,8 @@ import * as ko from "knockout";
 import { Size, CreatureType } from "./enums";
 
 export class Animal {
-    name: string;
+    name: KnockoutObservable<string>;
+    editName: KnockoutObservable<boolean>;
     description: string;
     image: string;
     link: string;
@@ -32,7 +33,8 @@ export class Animal {
     cha: number; //charisma
 
     constructor(name: string, rounds: number) {
-        this.name = name;
+        this.name = ko.observable(name);
+        this.editName = ko.observable(false);
         this.roundsLeft = ko.observable(rounds);
         this.status = ko.observable("");
     }
