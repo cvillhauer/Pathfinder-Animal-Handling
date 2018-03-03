@@ -10,6 +10,7 @@
         "./src/require-config.ts",
         "./src/model/enums.ts",
         "./src/viewmodel.ts",
+        "./src/summonnaturesally.ts",
         "./src/model/druid.ts",
         "./src/model/animal.ts",
         "./src/model/elemental.ts",
