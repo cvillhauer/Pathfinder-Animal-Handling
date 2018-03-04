@@ -120,6 +120,8 @@ export class SummonNaturesAlly {
                 }
             }
         }
+        this.addedAnimalType1(undefined);
+        this.addedAnimalType2(undefined);
         return summonedAnimals;
     }
 

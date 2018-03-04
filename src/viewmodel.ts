@@ -23,8 +23,8 @@ class AnimalsViewModel {
 
         this.animalSummoner = new SummonNaturesAlly();
 
-        this.summonNatureLevel = ko.observable();
-        this.summonAnimalLevel = ko.observable();
+        this.summonNatureLevel = ko.observable(0);
+        this.summonAnimalLevel = ko.observable(0);
 
         this.addedAnimalName = ko.observable("Squeaky");
     }
@@ -66,12 +66,10 @@ class AnimalsViewModel {
     }
 
     selectSummonNaturesAlly(spellLevel: number){
-        console.log("User chose level " + spellLevel);
         this.summonNatureLevel(spellLevel);
     }
 
     selectSummonAnimalLevel(animalLevel: number){
-        console.log("User chose level " + animalLevel);
         this.summonAnimalLevel(animalLevel);
     }
 
@@ -82,6 +80,8 @@ class AnimalsViewModel {
         {
             this.pets.push(animal);
         }
+        this.summonNatureLevel(0);
+        this.summonAnimalLevel(0);
     }
 
 }

@@ -53,27 +53,27 @@
         <div class="summonNaturesAlly">
             <h2>Summon Nature's Ally</h2>
             <div class="container row" style="display: flex; justify-content: space-around;">
-                <button type="button" class="btn btn-default col-xs-1" data-bind="click: function () { selectSummonNaturesAlly(1) }">I</button>
-                <button type="button" class="btn btn-default col-xs-1" data-bind="click: function () { selectSummonNaturesAlly(2) }">II</button>
-                <button type="button" class="btn btn-default col-xs-1" data-bind="click: function () { selectSummonNaturesAlly(3) }">III</button>
-                <button type="button" class="btn btn-default col-xs-1" data-bind="click: function () { selectSummonNaturesAlly(4) }">IV</button>
-                <button type="button" class="btn btn-default col-xs-1" data-bind="click: function () { selectSummonNaturesAlly(5) }">V</button>
-                <button type="button" class="btn btn-default col-xs-1" data-bind="click: function () { selectSummonNaturesAlly(6) }">VI</button>
-                <button type="button" class="btn btn-default col-xs-1" data-bind="click: function () { selectSummonNaturesAlly(7) }">VII</button>
-                <button type="button" class="btn btn-default col-xs-1" data-bind="click: function () { selectSummonNaturesAlly(8) }">VII</button>
-                <button type="button" class="btn btn-default col-xs-1" data-bind="click: function () { selectSummonNaturesAlly(9) }">XI</button>
+                <button type="button" class="btn btn-default col-xs-1" data-bind="css: { active: summonNatureLevel() == 1 }, click: function () { selectSummonNaturesAlly(1) }">I</button>
+                <button type="button" class="btn btn-default col-xs-1" data-bind="css: { disabled: druid().level() < 3, active: summonNatureLevel() == 2 }, click: function () { selectSummonNaturesAlly(2) }">II</button>
+                <button type="button" class="btn btn-default col-xs-1" data-bind="css: { disabled: druid().level() < 5, active: summonNatureLevel() == 3 }, click: function () { selectSummonNaturesAlly(3) }">III</button>
+                <button type="button" class="btn btn-default col-xs-1" data-bind="css: { disabled: druid().level() < 7, active: summonNatureLevel() == 4 }, click: function () { selectSummonNaturesAlly(4) }">IV</button>
+                <button type="button" class="btn btn-default col-xs-1" data-bind="css: { disabled: druid().level() < 9, active: summonNatureLevel() == 5 }, click: function () { selectSummonNaturesAlly(5) }">V</button>
+                <button type="button" class="btn btn-default col-xs-1" data-bind="css: { disabled: druid().level() < 11, active: summonNatureLevel() == 6 }, click: function () { selectSummonNaturesAlly(6) }">VI</button>
+                <button type="button" class="btn btn-default col-xs-1" data-bind="css: { disabled: druid().level() < 13, active: summonNatureLevel() == 7 }, click: function () { selectSummonNaturesAlly(7) }">VII</button>
+                <button type="button" class="btn btn-default col-xs-1" data-bind="css: { disabled: druid().level() < 15, active: summonNatureLevel() == 8 }, click: function () { selectSummonNaturesAlly(8) }">VII</button>
+                <button type="button" class="btn btn-default col-xs-1" data-bind="css: { disabled: druid().level() < 17, active: summonNatureLevel() == 9 }, click: function () { selectSummonNaturesAlly(9) }">XI</button>
             </div>
             <h4>Cast Summon Nature's Ally for Animal Level:</h4>
             <div class="container row" style="display: flex; justify-content: space-around;">
-                <button type="button" class="btn btn-default col-xs-1" data-bind="click: function () { selectSummonAnimalLevel(1) }">1st</button>
-                <button type="button" class="btn btn-default col-xs-1" data-bind="click: function () { selectSummonAnimalLevel(2) }">2nd</button>
-                <button type="button" class="btn btn-default col-xs-1" data-bind="click: function () { selectSummonAnimalLevel(3) }">3rd</button>
-                <button type="button" class="btn btn-default col-xs-1" data-bind="click: function () { selectSummonAnimalLevel(4) }">4th</button>
-                <button type="button" class="btn btn-default col-xs-1" data-bind="click: function () { selectSummonAnimalLevel(5) }">5th</button>
-                <button type="button" class="btn btn-default col-xs-1" data-bind="click: function () { selectSummonAnimalLevel(6) }">6th</button>
-                <button type="button" class="btn btn-default col-xs-1" data-bind="click: function () { selectSummonAnimalLevel(7) }">7th</button>
-                <button type="button" class="btn btn-default col-xs-1" data-bind="click: function () { selectSummonAnimalLevel(8) }">8th</button>
-                <button type="button" class="btn btn-default col-xs-1" data-bind="click: function () { selectSummonAnimalLevel(9) }">9th</button>
+                <button type="button" class="btn btn-default col-xs-1" data-bind="css: { active: summonAnimalLevel() == 1 }, click: function () { selectSummonAnimalLevel(1) }">1st</button>
+                <button type="button" class="btn btn-default col-xs-1" data-bind="css: { disabled: summonNatureLevel() < 2, active: summonAnimalLevel() == 2 }, click: function () { selectSummonAnimalLevel(2) }">2nd</button>
+                <button type="button" class="btn btn-default col-xs-1" data-bind="css: { disabled: summonNatureLevel() < 3, active: summonAnimalLevel() == 3 }, click: function () { selectSummonAnimalLevel(3) }">3rd</button>
+                <button type="button" class="btn btn-default col-xs-1" data-bind="css: { disabled: summonNatureLevel() < 4, active: summonAnimalLevel() == 4 }, click: function () { selectSummonAnimalLevel(4) }">4th</button>
+                <button type="button" class="btn btn-default col-xs-1" data-bind="css: { disabled: summonNatureLevel() < 5, active: summonAnimalLevel() == 5 }, click: function () { selectSummonAnimalLevel(5) }">5th</button>
+                <button type="button" class="btn btn-default col-xs-1" data-bind="css: { disabled: summonNatureLevel() < 6, active: summonAnimalLevel() == 6 }, click: function () { selectSummonAnimalLevel(6) }">6th</button>
+                <button type="button" class="btn btn-default col-xs-1" data-bind="css: { disabled: summonNatureLevel() < 7, active: summonAnimalLevel() == 7 }, click: function () { selectSummonAnimalLevel(7) }">7th</button>
+                <button type="button" class="btn btn-default col-xs-1" data-bind="css: { disabled: summonNatureLevel() < 8, active: summonAnimalLevel() == 8 }, click: function () { selectSummonAnimalLevel(8) }">8th</button>
+                <button type="button" class="btn btn-default col-xs-1" data-bind="css: { disabled: summonNatureLevel() < 9, active: summonAnimalLevel() == 9 }, click: function () { selectSummonAnimalLevel(9) }">9th</button>
             </div>
             <p data-bind="visible: summonAnimalLevel() == 1">Summon Nature's Ally I Animal Type:
                 <select class="form-control" data-bind="options: animalSummoner.summonNaturesAlly1Choices, value: animalSummoner.addedAnimalType1, optionsCaption: ''"></select>
