@@ -17,7 +17,7 @@ import { Stirge } from "./model/natureally1/stirge";
 import { Viper } from "./model/natureally1/viper";
 
 //import { ElementalSmall } from "./model/natureally2/elementalsmall";
-import { GiantAnt } from "./model/natureally2/giantant";
+import { GiantAntWorker } from "./model/natureally2/giantant";
 import { GiantFrog } from "./model/natureally2/giantfrog";
 import { GiantSpider } from "./model/natureally2/giantspider";
 import { GoblinDog } from "./model/natureally2/goblindog";
@@ -183,8 +183,8 @@ export class SummonNaturesAlly {
             //case SummonNaturesAlly2.ElementalSmall:
             //    newAnimal = new ElementalSmall(name, rounds);
             //    break;
-            case SummonNaturesAlly2.GiantAnt:
-                newAnimal = new GiantAnt(name, rounds);
+            case SummonNaturesAlly2.GiantAntWorker:
+                newAnimal = new GiantAntWorker(name, rounds);
                 break;
             case SummonNaturesAlly2.GiantFrog:
                 newAnimal = new GiantFrog(name, rounds);

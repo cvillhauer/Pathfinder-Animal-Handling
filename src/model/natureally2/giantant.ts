@@ -2,11 +2,11 @@ import * as ko from "knockout";
 import { Size, CreatureType } from "../enums";
 import { Animal } from "../animal";
 
-export class GiantAnt extends Animal{
+export class GiantAntWorker extends Animal{
 
     constructor(name: string, rounds: number) {
         super(name, rounds);
-        this.description = "Giant Ant";
+        this.description = "Giant Ant - Worker";
         this.image = "https://vignette.wikia.nocookie.net/non-aliencreatures/images/5/5e/Fire_Ant_Warrior.png/revision/latest?cb=20101228091156";
         this.link = "http://paizo.com/pathfinderRPG/prd/bestiary/ant.html#ant-giant";
         this.hitpoints = ko.observable(18);
@@ -15,7 +15,7 @@ export class GiantAnt extends Animal{
         this.abilities = ["darkvision 60ft", "scent", "immune to mind affects", "climb 20ft"];
         this.skills = ["Climb +10", "Perception +5", "Survival +5"];
         this.armorclass = 15;
-        this.attack = ["Bite +3 1d6+2 plus grab", "Sting +3 1d4+2", "Poison DC 14 1d2 Str", "Grapple +7"];
+        this.attack = ["Bite +3 1d6+2"];
         this.speed = 50;
 
         this.cmb = 3;
