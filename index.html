@@ -19,23 +19,6 @@
             </p>
             <button type="button" class="btn btn-default" data-bind="click: incrementDruidLevel">Increment Level</button>
             <button type="button" class="btn btn-default" data-bind="click: nextRound">Next Round</button>
-            <br />
-            <br />
-            <button type="button" class="btn btn-default" data-bind="click: function(){$root.rollDice(4, 6)}">Roll Dice</button>
-        </div>
-        <hr />
-
-        <div class="">
-            <p>Animal Name:
-                <input class="form-control" type="text" data-bind="value: addedAnimalName, valueUpdate: 'afterkeydown'" />
-            </p>
-            <p>Cast Summon Nature's Ally II for Animal Level:
-                <select class="form-control" data-bind="options: animalSummoner.summonNaturesAllyLevelChoices, value: summonNatureLevel, optionsCaption: ''"></select>
-            </p>
-            <p>Animal Type:
-                <select class="form-control" data-bind="options: animalSummoner.summonNaturesAlly1Choices, value: animalSummoner.addedAnimalType1, optionsCaption: ''"></select>
-            </p>
-            <button type="button" class="btn btn-default" data-bind="click: summonNaturesAlly">Summon Nature's Ally</button>
         </div>
         <hr />
 
@@ -64,6 +47,44 @@
             <ul data-bind="foreach: druid().wildShapeTypes">
                 <li data-bind="text: $data"></li>
             </ul>
+        </div>
+        <hr />
+
+        <div class="summonNaturesAlly">
+            <h2>Summon Nature's Ally</h2>
+            <div class="container row" style="display: flex; justify-content: space-around;">
+                <button type="button" class="btn btn-default col-xs-1" data-bind="click: function () { selectSummonNaturesAlly(1) }">I</button>
+                <button type="button" class="btn btn-default col-xs-1" data-bind="click: function () { selectSummonNaturesAlly(2) }">II</button>
+                <button type="button" class="btn btn-default col-xs-1" data-bind="click: function () { selectSummonNaturesAlly(3) }">III</button>
+                <button type="button" class="btn btn-default col-xs-1" data-bind="click: function () { selectSummonNaturesAlly(4) }">IV</button>
+                <button type="button" class="btn btn-default col-xs-1" data-bind="click: function () { selectSummonNaturesAlly(5) }">V</button>
+                <button type="button" class="btn btn-default col-xs-1" data-bind="click: function () { selectSummonNaturesAlly(6) }">VI</button>
+                <button type="button" class="btn btn-default col-xs-1" data-bind="click: function () { selectSummonNaturesAlly(7) }">VII</button>
+                <button type="button" class="btn btn-default col-xs-1" data-bind="click: function () { selectSummonNaturesAlly(8) }">VII</button>
+                <button type="button" class="btn btn-default col-xs-1" data-bind="click: function () { selectSummonNaturesAlly(9) }">XI</button>
+            </div>
+            <h4>Cast Summon Nature's Ally for Animal Level:</h4>
+            <div class="container row" style="display: flex; justify-content: space-around;">
+                <button type="button" class="btn btn-default col-xs-1" data-bind="click: function () { selectSummonAnimalLevel(1) }">1st</button>
+                <button type="button" class="btn btn-default col-xs-1" data-bind="click: function () { selectSummonAnimalLevel(2) }">2nd</button>
+                <button type="button" class="btn btn-default col-xs-1" data-bind="click: function () { selectSummonAnimalLevel(3) }">3rd</button>
+                <button type="button" class="btn btn-default col-xs-1" data-bind="click: function () { selectSummonAnimalLevel(4) }">4th</button>
+                <button type="button" class="btn btn-default col-xs-1" data-bind="click: function () { selectSummonAnimalLevel(5) }">5th</button>
+                <button type="button" class="btn btn-default col-xs-1" data-bind="click: function () { selectSummonAnimalLevel(6) }">6th</button>
+                <button type="button" class="btn btn-default col-xs-1" data-bind="click: function () { selectSummonAnimalLevel(7) }">7th</button>
+                <button type="button" class="btn btn-default col-xs-1" data-bind="click: function () { selectSummonAnimalLevel(8) }">8th</button>
+                <button type="button" class="btn btn-default col-xs-1" data-bind="click: function () { selectSummonAnimalLevel(9) }">9th</button>
+            </div>
+            <p data-bind="visible: summonAnimalLevel() == 1">Summon Nature's Ally I Animal Type:
+                <select class="form-control" data-bind="options: animalSummoner.summonNaturesAlly1Choices, value: animalSummoner.addedAnimalType1, optionsCaption: ''"></select>
+            </p>
+            <p data-bind="visible: summonAnimalLevel() == 2">Summon Nature's Ally II Animal Type:
+                <select class="form-control" data-bind="options: animalSummoner.summonNaturesAlly2Choices, value: animalSummoner.addedAnimalType2, optionsCaption: ''"></select>
+            </p>
+            <p>Animal Name:
+                <input class="form-control" type="text" data-bind="value: addedAnimalName, valueUpdate: 'afterkeydown'" />
+            </p>
+            <button type="button" class="btn btn-default" data-bind="click: summonNaturesAlly">Summon Nature's Ally</button>
         </div>
         <hr />
 
@@ -151,6 +172,7 @@
                                 <span data-bind="text: wis"></span>
                                 <br />Cha:
                                 <span data-bind="text: cha"></span>
+                                <br />
                             </div>
                             <div class="col-xs-2" style="text-align: right;">
                                 Fortitude:
@@ -164,6 +186,7 @@
                                 <span data-bind="text: cmb"></span>
                                 <br />CMD:
                                 <span data-bind="text: cmd"></span>
+                                <br />
                             </div>
                         </div>
                     </div>

@@ -13,6 +13,7 @@ class AnimalsViewModel {
     animalSummoner: SummonNaturesAlly;
 
     summonNatureLevel: KnockoutObservable<number>;
+    summonAnimalLevel: KnockoutObservable<number>;
     addedAnimalName: KnockoutObservable<string>;
 
     constructor(druid: Druid) {
@@ -23,6 +24,7 @@ class AnimalsViewModel {
         this.animalSummoner = new SummonNaturesAlly();
 
         this.summonNatureLevel = ko.observable();
+        this.summonAnimalLevel = ko.observable();
 
         this.addedAnimalName = ko.observable("Squeaky");
     }
@@ -63,17 +65,19 @@ class AnimalsViewModel {
         petToEdit.editName(true);
     }
 
-    summonNaturesAlly1(name: string, rounds: number) {
-        let newAnimal: Animal;
+    selectSummonNaturesAlly(spellLevel: number){
+        console.log("User chose level " + spellLevel);
+        this.summonNatureLevel(spellLevel);
+    }
 
-        
-
-        this.pets.push(newAnimal);
+    selectSummonAnimalLevel(animalLevel: number){
+        console.log("User chose level " + animalLevel);
+        this.summonAnimalLevel(animalLevel);
     }
 
     summonNaturesAlly() {
         let newAnimals: Animal[];
-        newAnimals = this.animalSummoner.summonNaturesAlly(this.druid().level(), 2, 1, this.addedAnimalName());
+        newAnimals = this.animalSummoner.summonNaturesAlly(this.druid().level(), this.summonNatureLevel(), this.summonAnimalLevel(), this.addedAnimalName());
         for(let animal of newAnimals)
         {
             this.pets.push(animal);

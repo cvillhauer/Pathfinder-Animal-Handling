@@ -9,7 +9,7 @@ export class Wolf extends Animal{
         this.description = "Wolf";
         this.image = "https://vignette.wikia.nocookie.net/rollplaywestmarches/images/3/35/Worg.jpg/revision/latest?cb=20150210055421";
         this.link = "http://paizo.com/pathfinderRPG/prd/bestiary/wolf.html#wolf";
-        this.hitpoints = ko.observable(6);
+        this.hitpoints = ko.observable(13);
         this.size = Size.Medium;
         this.type = CreatureType.Animal;
         this.abilities = ["low-light vision", "scent"];

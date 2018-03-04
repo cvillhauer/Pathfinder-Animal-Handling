@@ -15,7 +15,7 @@ export class GoblinDog extends Animal{
         this.abilities = ["low-light vision", "scent", "immune to disease"];
         this.skills = ["Perception +1", "Stealth +6"];
         this.armorclass = 13;
-        this.attack = ["Bite +2 1d6+3", "Allergic Reaction DC 12, -2 Dex -2 Cha"];
+        this.attack = ["Bite +2 1d6+3", "Allergic Reaction DC 12"];
         this.speed = 50;
 
         this.cmb = 2;
