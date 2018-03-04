@@ -9,6 +9,7 @@ class AnimalsViewModel {
     druid: KnockoutObservable<Druid>;
     pets: KnockoutObservableArray<Animal>;
     currentRound: KnockoutObservable<number>;
+    editName: KnockoutObservable<boolean>;
 
     animalSummoner: SummonNaturesAlly;
 
@@ -20,6 +21,8 @@ class AnimalsViewModel {
         this.druid = ko.observable(druid);
         this.pets = ko.observableArray();
         this.currentRound = ko.observable(1);
+
+        this.editName = ko.observable(false);
 
         this.animalSummoner = new SummonNaturesAlly();
 
@@ -61,27 +64,32 @@ class AnimalsViewModel {
         this.pets.remove(animalToDelete);
     }
 
+    editDruidName() {
+        this.editName(true);
+    }
+
     editAnimalName(petToEdit: Animal) {
         petToEdit.editName(true);
     }
 
-    selectSummonNaturesAlly(spellLevel: number){
+    selectSummonNaturesAlly(spellLevel: number) {
         this.summonNatureLevel(spellLevel);
     }
 
-    selectSummonAnimalLevel(animalLevel: number){
+    selectSummonAnimalLevel(animalLevel: number) {
         this.summonAnimalLevel(animalLevel);
     }
 
     summonNaturesAlly() {
         let newAnimals: Animal[];
         newAnimals = this.animalSummoner.summonNaturesAlly(this.druid().level(), this.summonNatureLevel(), this.summonAnimalLevel(), this.addedAnimalName());
-        for(let animal of newAnimals)
-        {
+        for (let animal of newAnimals) {
             this.pets.push(animal);
         }
-        this.summonNatureLevel(0);
-        this.summonAnimalLevel(0);
+        if (newAnimals.length > 0) {
+            this.summonNatureLevel(0);
+            this.summonAnimalLevel(0);
+        }
     }
 
 }

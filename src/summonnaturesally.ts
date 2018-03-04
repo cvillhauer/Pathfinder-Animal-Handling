@@ -67,7 +67,10 @@ export class SummonNaturesAlly {
         let numberOfAnimals: number = 0;
         console.log("Cast Summon Nature's Ally " + spellLevel + " for animal level " + animalLevel);
         //TODO: Add user-visible validation and error messages
-        if (spellLevel < 1 || spellLevel > 9) {
+        if (spellLevel == 0 || animalLevel == 0) {
+            alert("Please select both a spell level and an animal level.");
+        }
+        else if (spellLevel < 1 || spellLevel > 9) {
             console.log("Spell level of " + spellLevel + " is invalid.");
         }
         else if (animalLevel < 1 || animalLevel > 9 || animalLevel > spellLevel) {
@@ -89,39 +92,48 @@ export class SummonNaturesAlly {
             }
             console.log("Summon " + numberOfAnimals + " animals of this level");
             for (let i = 1; i <= numberOfAnimals; i++) {
+                let newAnimal: Animal;
                 switch (animalLevel) {
                     case 1:
-                        summonedAnimals.push(this.summonNaturesAlly1(animalName + " " + i, druidLevel, this.addedAnimalType1()));
+                        newAnimal = this.summonNaturesAlly1(animalName + " " + i, druidLevel, this.addedAnimalType1());
                         break;
                     case 2:
-                        summonedAnimals.push(this.summonNaturesAlly2(animalName + " " + i, druidLevel, this.addedAnimalType2()));
+                        newAnimal = this.summonNaturesAlly2(animalName + " " + i, druidLevel, this.addedAnimalType2());
                         break;
                     case 3:
-                        //summonedAnimals.push(this.summonNaturesAlly3(animalName + " " + i, druidLevel, this.addedAnimalType3()));
+                        //newAnimal = this.summonNaturesAlly3(animalName + " " + i, druidLevel, this.addedAnimalType3());
                         break;
                     case 4:
-                        //summonedAnimals.push(this.summonNaturesAlly4(animalName + " " + i, druidLevel, this.addedAnimalType4()));
+                        //newAnimal = this.summonNaturesAlly4(animalName + " " + i, druidLevel, this.addedAnimalType4());
                         break;
                     case 5:
-                        //summonedAnimals.push(this.summonNaturesAlly5(animalName + " " + i, druidLevel, this.addedAnimalType5()));
+                        //newAnimal = this.summonNaturesAlly5(animalName + " " + i, druidLevel, this.addedAnimalType5());
                         break;
                     case 6:
-                        //summonedAnimals.push(this.summonNaturesAlly6(animalName + " " + i, druidLevel, this.addedAnimalType6()));
+                        //newAnimal = this.summonNaturesAlly6(animalName + " " + i, druidLevel, this.addedAnimalType6());
                         break;
                     case 7:
-                        //summonedAnimals.push(this.summonNaturesAlly7(animalName + " " + i, druidLevel, this.addedAnimalType7()));
+                        //newAnimal = this.summonNaturesAlly7(animalName + " " + i, druidLevel, this.addedAnimalType7());
                         break;
                     case 8:
-                        //summonedAnimals.push(this.summonNaturesAlly8(animalName + " " + i, druidLevel, this.addedAnimalType8()));
+                        //newAnimal = this.summonNaturesAlly8(animalName + " " + i, druidLevel, this.addedAnimalType8());
                         break;
                     case 9:
-                        //summonedAnimals.push(this.summonNaturesAlly9(animalName + " " + i, druidLevel, this.addedAnimalType9()));
+                        //newAnimal = this.summonNaturesAlly9(animalName + " " + i, druidLevel, this.addedAnimalType9());
                         break;
                 }
+                if (newAnimal != undefined) {
+                    summonedAnimals.push(newAnimal);
+                    this.addedAnimalType1(undefined);
+                    this.addedAnimalType2(undefined);
+                }
+                else {
+                    //TODO: Better error handling
+                    alert("Please select Animal Type.");
+                }
+
             }
         }
-        this.addedAnimalType1(undefined);
-        this.addedAnimalType2(undefined);
         return summonedAnimals;
     }
 

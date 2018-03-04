@@ -1,16 +1,34 @@
+/* Color theme: https://color.adobe.com/create/color-wheel/?base=2&rule=Shades&selected=3&name=My%20Color%20Theme&mode=rgb&rgbvalues=0.6549019607843137,0.7764705882352941,0.5450980392156862,0.42171717171712864,0.5,0.351010101010101,0.8434343434342573,1,0.702020202020202,0.21085858585856432,0.25,0.1755050505050505,0.7590909090908315,0.9,0.6318181818181818&swatchOrder=0,1,2,3,4 */
+/* Dark Green: #36402D */
+/* Medium Green: #6C7F5A */
+/* Light Green: #A7C68B */
+
 body
 {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #A7C68B;
 }
 
-.animal
+a
 {
-    border: solid 3px #444444;
+    color: #6C7F5A;
+}
+
+a:hover
+{
+    color: #36402D;
+}
+
+.druid, .animal, .summonNaturesAlly
+{
+    border: solid 3px #36402D;
     border-radius: 15px;
     margin-bottom: 30px;
     padding-top: 15px;
     padding-bottom: 15px;
     font-size: 12px;
+    background-color: #FFFFFF;
+    color: #36402D;
 }
 
 .animal h1
