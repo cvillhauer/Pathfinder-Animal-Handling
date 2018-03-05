@@ -30,7 +30,7 @@
         "./src/model/natureally1/viper.ts",
 
         "./src/model/natureally2/elementalsmall.ts",
-        "./src/model/natureally2/giantant.ts",
+        "./src/model/natureally2/giantantworker.ts",
         "./src/model/natureally2/giantfrog.ts",
         "./src/model/natureally2/giantspider.ts",
         "./src/model/natureally2/goblindog.ts",
@@ -38,6 +38,21 @@
         "./src/model/natureally2/hyena.ts",
         "./src/model/natureally2/octopus.ts",
         "./src/model/natureally2/squid.ts",
-        "./src/model/natureally2/wolf.ts"
+        "./src/model/natureally2/wolf.ts",
+
+        "./src/model/natureally3/ape.ts",
+        "./src/model/natureally3/auroch.ts",
+        "./src/model/natureally3/boar.ts",
+        "./src/model/natureally3/cheetah.ts",
+        "./src/model/natureally3/constrictorsnake.ts",
+        "./src/model/natureally3/crocodile.ts",
+        "./src/model/natureally3/direbat.ts",
+        "./src/model/natureally3/electriceel.ts",
+        "./src/model/natureally3/giantant.ts",
+        "./src/model/natureally3/giantcrab.ts",
+        "./src/model/natureally3/leopard.ts",
+        "./src/model/natureally3/monitorlizard.ts",
+        "./src/model/natureally3/shark.ts",
+        "./src/model/natureally3/wolverine.ts"
     ]
 }

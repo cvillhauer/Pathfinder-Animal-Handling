@@ -71,3 +71,21 @@ export enum SummonNaturesAlly2 {
     Squid = "Squid",
     Wolf = "Wolf"
 }
+
+export enum SummonNaturesAlly3 {
+    //TODO: Adding a space in the string description breaks KO databinding for AddAnimal
+    Ape = "Ape",
+    Auroch = "Auroch",
+    Boar = "Boar",
+    Cheetah = "Cheetah",
+    ConstrictorSnake = "ConstrictorSnake",
+    Crocodile = "Crocodile",
+    DireBat = "DireBat",
+    ElectricEel = "ElectricEel",
+    GiantAnt = "GiantAnt",
+    GiantCrab = "GiantCrab",
+    Leopard = "Leopard",
+    MonitorLizard = "MonitorLizard",
+    Shark = "Shark",
+    Wolverine = "Wolverine"
+}

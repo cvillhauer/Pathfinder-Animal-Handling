@@ -1,6 +1,6 @@
 import * as ko from "knockout";
 
-import { Size, CreatureType, SummonNaturesAlly1, SummonNaturesAlly2 } from "./model/enums";
+import { Size, CreatureType, SummonNaturesAlly1, SummonNaturesAlly2, SummonNaturesAlly3 } from "./model/enums";
 import { Animal } from "./model/animal";
 import { Elemental } from "./model/elemental";
 
@@ -17,7 +17,7 @@ import { Stirge } from "./model/natureally1/stirge";
 import { Viper } from "./model/natureally1/viper";
 
 //import { ElementalSmall } from "./model/natureally2/elementalsmall";
-import { GiantAntWorker } from "./model/natureally2/giantant";
+import { GiantAntWorker } from "./model/natureally2/giantantworker";
 import { GiantFrog } from "./model/natureally2/giantfrog";
 import { GiantSpider } from "./model/natureally2/giantspider";
 import { GoblinDog } from "./model/natureally2/goblindog";
@@ -27,16 +27,34 @@ import { Octopus } from "./model/natureally2/octopus";
 import { Squid } from "./model/natureally2/squid";
 import { Wolf } from "./model/natureally2/wolf";
 
+import { Ape } from "./model/natureally3/ape";
+import { Auroch } from "./model/natureally3/auroch";
+import { Boar } from "./model/natureally3/boar";
+import { Cheetah } from "./model/natureally3/cheetah";
+import { ConstrictorSnake } from "./model/natureally3/constrictorsnake";
+import { Crocodile } from "./model/natureally3/crocodile";
+import { DireBat } from "./model/natureally3/direbat";
+import { ElectricEel } from "./model/natureally3/electriceel";
+import { GiantAnt } from "./model/natureally3/giantant";
+import { GiantCrab } from "./model/natureally3/giantcrab";
+import { Leopard } from "./model/natureally3/leopard";
+import { MonitorLizard } from "./model/natureally3/monitorlizard";
+import { Shark } from "./model/natureally3/shark";
+import { Wolverine } from "./model/natureally3/wolverine";
 
 export class SummonNaturesAlly {
     summonNaturesAlly1Choices: KnockoutObservableArray<string>;
     summonNaturesAlly2Choices: KnockoutObservableArray<string>;
+    summonNaturesAlly3Choices: KnockoutObservableArray<string>;
+
     addedAnimalType1: KnockoutObservable<SummonNaturesAlly1>;
     addedAnimalType2: KnockoutObservable<SummonNaturesAlly2>;
+    addedAnimalType3: KnockoutObservable<SummonNaturesAlly3>;
 
     constructor() {
         this.addedAnimalType1 = ko.observable();
         this.addedAnimalType2 = ko.observable();
+        this.addedAnimalType3 = ko.observable();
 
         this.summonNaturesAlly1Choices = ko.observableArray();
         for (let animal in SummonNaturesAlly1) {
@@ -46,6 +64,11 @@ export class SummonNaturesAlly {
         this.summonNaturesAlly2Choices = ko.observableArray();
         for (let animal in SummonNaturesAlly2) {
             this.summonNaturesAlly2Choices.push(animal);
+        }
+
+        this.summonNaturesAlly3Choices = ko.observableArray();
+        for (let animal in SummonNaturesAlly3) {
+            this.summonNaturesAlly3Choices.push(animal);
         }
     }
 
@@ -101,7 +124,7 @@ export class SummonNaturesAlly {
                         newAnimal = this.summonNaturesAlly2(animalName + " " + i, druidLevel, this.addedAnimalType2());
                         break;
                     case 3:
-                        //newAnimal = this.summonNaturesAlly3(animalName + " " + i, druidLevel, this.addedAnimalType3());
+                        newAnimal = this.summonNaturesAlly3(animalName + " " + i, druidLevel, this.addedAnimalType3());
                         break;
                     case 4:
                         //newAnimal = this.summonNaturesAlly4(animalName + " " + i, druidLevel, this.addedAnimalType4());
@@ -126,6 +149,7 @@ export class SummonNaturesAlly {
                     summonedAnimals.push(newAnimal);
                     this.addedAnimalType1(undefined);
                     this.addedAnimalType2(undefined);
+                    this.addedAnimalType3(undefined);
                 }
                 else {
                     //TODO: Better error handling
@@ -209,6 +233,55 @@ export class SummonNaturesAlly {
                 break;
             case SummonNaturesAlly2.Wolf:
                 newAnimal = new Wolf(name, rounds);
+                break;
+        }
+        return newAnimal;
+    }
+
+    summonNaturesAlly3(name: string, rounds: number, animalType: SummonNaturesAlly3) {
+        let newAnimal: Animal;
+        switch (animalType) {
+            case SummonNaturesAlly3.Ape:
+                newAnimal = new Ape(name, rounds);
+                break;
+            case SummonNaturesAlly3.Auroch:
+                newAnimal = new Auroch(name, rounds);
+                break;
+            case SummonNaturesAlly3.Boar:
+                newAnimal = new Boar(name, rounds);
+                break;
+            case SummonNaturesAlly3.Cheetah:
+                newAnimal = new Cheetah(name, rounds);
+                break;
+            case SummonNaturesAlly3.ConstrictorSnake:
+                newAnimal = new ConstrictorSnake(name, rounds);
+                break;
+            case SummonNaturesAlly3.Crocodile:
+                newAnimal = new Crocodile(name, rounds);
+                break;
+            case SummonNaturesAlly3.DireBat:
+                newAnimal = new DireBat(name, rounds);
+                break;
+            case SummonNaturesAlly3.ElectricEel:
+                newAnimal = new ElectricEel(name, rounds);
+                break;
+            case SummonNaturesAlly3.GiantAnt:
+                newAnimal = new GiantAnt(name, rounds);
+                break;
+            case SummonNaturesAlly3.GiantCrab:
+                newAnimal = new GiantCrab(name, rounds);
+                break;
+            case SummonNaturesAlly3.Leopard:
+                newAnimal = new Leopard(name, rounds);
+                break;
+            case SummonNaturesAlly3.MonitorLizard:
+                newAnimal = new MonitorLizard(name, rounds);
+                break;
+            case SummonNaturesAlly3.Shark:
+                newAnimal = new Shark(name, rounds);
+                break;
+            case SummonNaturesAlly3.Wolverine:
+                newAnimal = new Wolverine(name, rounds);
                 break;
         }
         return newAnimal;

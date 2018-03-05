@@ -15,7 +15,7 @@ export class Octopus extends Animal{
         this.abilities = ["low-light vision", "swim 30ft", "jet 200ft"];
         this.skills = ["Escape Artist +13", "Perception +1", "Stealth +20", "Swim +9"];
         this.armorclass = 15;
-        this.attack = ["Bite +5 1d3+1", "Poison DC 13 1 Str", "Tentacles +3 grab", "Ink Cloud"];
+        this.attack = ["Bite +5 1d3+1", "Poison DC 13 1 Str", "Tentacles +3 grab", "Grapple +5", "Ink Cloud"];
         this.speed = 20;
 
         this.cmb = 1;

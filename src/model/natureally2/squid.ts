@@ -15,7 +15,7 @@ export class Squid extends Animal{
         this.abilities = ["low-light vision", "jet 240ft"];
         this.skills = ["Perception +7", "Swim +10"];
         this.armorclass = 13;
-        this.attack = ["Bite +4 1d3+2", "Tentacles +2 1d4+1 plus grab", "Ink Cloud"];
+        this.attack = ["Bite +4 1d3+2", "Tentacles +2 1d4+1 plus grab", "Grapple +8", "Ink Cloud"];
         this.speed = 60;
 
         this.cmb = 4;
