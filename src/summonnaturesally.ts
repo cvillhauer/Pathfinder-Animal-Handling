@@ -147,15 +147,16 @@ export class SummonNaturesAlly {
                 }
                 if (newAnimal != undefined) {
                     summonedAnimals.push(newAnimal);
-                    this.addedAnimalType1(undefined);
-                    this.addedAnimalType2(undefined);
-                    this.addedAnimalType3(undefined);
                 }
-                else {
-                    //TODO: Better error handling
-                    alert("Please select Animal Type.");
-                }
-
+            }
+            if (summonedAnimals.length > 0) {
+                this.addedAnimalType1(undefined);
+                this.addedAnimalType2(undefined);
+                this.addedAnimalType3(undefined);
+            }
+            else {
+                //TODO: Better error handling
+                alert("Please select Animal Type.");
             }
         }
         return summonedAnimals;
