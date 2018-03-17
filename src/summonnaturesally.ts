@@ -2,7 +2,7 @@ import * as ko from "knockout";
 
 import { Size, CreatureType, SummonNaturesAlly1, SummonNaturesAlly2, SummonNaturesAlly3 } from "./model/enums";
 import { Animal } from "./model/animal";
-import { Elemental } from "./model/elemental";
+import { Elemental } from "./model/elementals/elemental";
 
 import { DireRat } from "./model/natureally1/direrat";
 import { Dog } from "./model/natureally1/dog";
