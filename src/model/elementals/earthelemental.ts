@@ -7,8 +7,8 @@ export class EarthElemental extends Elemental {
     element: Element;
     elementalType: ElementalType;
 
-    constructor(name: string, rounds: number, element: Element, elementalType: ElementalType) {
-        super(name, rounds, element, elementalType);
+    constructor(name: string, rounds: number, elementalType: ElementalType) {
+        super(name, rounds, Element.Earth, elementalType);
 
         this.image = "https://pathfinderwiki.com/mediawiki/images/thumb/0/0a/Earth_elemental_1.jpg/250px-Earth_elemental_1.jpg";
         this.abilities.push("earth mastery");

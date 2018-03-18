@@ -7,8 +7,8 @@ export class AirElemental extends Elemental {
     element: Element;
     elementalType: ElementalType;
 
-    constructor(name: string, rounds: number, element: Element, elementalType: ElementalType) {
-        super(name, rounds, element, elementalType);
+    constructor(name: string, rounds: number, elementalType: ElementalType) {
+        super(name, rounds, Element.Air, elementalType);
 
         this.image = "http://www.killershrike.com/Fate/Fae/Pathfinder/Content/Characters/Elementals/images/MediumAirElemental.jpg";
         this.abilities.push("fly 100ft, perfect");
@@ -20,7 +20,7 @@ export class AirElemental extends Elemental {
 
     calculateStatsSmall() {
         this.hitpoints = ko.observable(13);
-        this.skills = ["Acrobatics +7", "Escape Artist +7", "Fly +17", "Know planes +1, Perception +4", "Stealth +11"];
+        this.skills = ["Acrobatics +7", "Escape Artist +7", "Fly +17", "Know planes +1", "Perception +4", "Stealth +11"];
         this.armorclass = 17;
         this.attack = ["Slam +6 1d4+1", "Flyby Attack", "Whirlwind DC 12"];
 
@@ -40,7 +40,7 @@ export class AirElemental extends Elemental {
 
     calculateStatsMedium() {
         this.hitpoints = ko.observable(30);
-        this.skills = ["Acrobatics +11", "Escape Artist +9", "Fly +17", "Know planes +1, Perception +7", "Stealth +10"];
+        this.skills = ["Acrobatics +11", "Escape Artist +9", "Fly +17", "Know planes +1", "Perception +7", "Stealth +10"];
         this.armorclass = 19;
         this.attack = ["Slam +9 1d6+3", "Flyby Attack", "Whirlwind DC 14"];
 
@@ -63,7 +63,7 @@ export class AirElemental extends Elemental {
         this.abilities.push("combat reflexes");
         this.abilities.push("DR 5/-");
         this.abilities.push("reach 10ft");
-        this.skills = ["Acrobatics +15", "Escape Artist +15", "Fly +21", "Know planes +5, Perception +11", "Stealth +11"];
+        this.skills = ["Acrobatics +15", "Escape Artist +15", "Fly +21", "Know planes +5", "Perception +11", "Stealth +11"];
         this.armorclass = 21;
         this.attack = ["Slam +14 1d8+4", "Slam +14 1d8+4", "Flyby Attack", "Whirlwind DC 18"];
 
@@ -86,7 +86,7 @@ export class AirElemental extends Elemental {
         this.abilities.push("combat reflexes");
         this.abilities.push("DR 5/-");
         this.abilities.push("reach 15ft");
-        this.skills = ["Acrobatics +18", "Escape Artist +18", "Fly +23", "Know planes +7, Perception +13", "Stealth +9"];
+        this.skills = ["Acrobatics +18", "Escape Artist +18", "Fly +23", "Know planes +7", "Perception +13", "Stealth +9"];
         this.armorclass = 22;
         this.attack = ["Slam +17 2d6+6", "Slam +17 2d6+6", "Flyby Attack", "Whirlwind DC 21"];
 
@@ -110,7 +110,7 @@ export class AirElemental extends Elemental {
         this.abilities.push("power attack");
         this.abilities.push("DR 10/-");
         this.abilities.push("reach 15ft");
-        this.skills = ["Acrobatics +25", "Escape Artist +23", "Fly +27", "Know planes +12, Perception +16", "Stealth +15"];
+        this.skills = ["Acrobatics +25", "Escape Artist +23", "Fly +27", "Know planes +12", "Perception +16", "Stealth +15"];
         this.armorclass = 25;
         this.attack = ["Slam +21 2d8+7", "Slam +21 2d8+7", "Flyby Attack", "Whirlwind DC 23"];
 
@@ -134,7 +134,7 @@ export class AirElemental extends Elemental {
         this.abilities.push("power attack");
         this.abilities.push("DR 10/-");
         this.abilities.push("reach 15ft");
-        this.skills = ["Acrobatics +30", "Escape Artist +30", "Fly +34", "Know planes +19, Perception +19", "Stealth +22"];
+        this.skills = ["Acrobatics +30", "Escape Artist +30", "Fly +34", "Know planes +19", "Perception +19", "Stealth +22"];
         this.armorclass = 28;
         this.attack = ["Slam +25 2d8+9", "Slam +25 2d8+9", "Flyby Attack", "Whirlwind DC 27"];
 

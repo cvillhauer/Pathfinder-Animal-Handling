@@ -212,16 +212,16 @@ export class SummonNaturesAlly {
         let newAnimal: Animal;
         switch (animalType) {
             case SummonNaturesAlly2.ElementalSmallAir:
-                newAnimal = new Elemental(name, rounds, Element.Air, ElementalType.Small);
+                newAnimal = new AirElemental(name, rounds, ElementalType.Small);
                 break;
             case SummonNaturesAlly2.ElementalSmallEarth:
-                newAnimal = new Elemental(name, rounds, Element.Earth, ElementalType.Small);
+                newAnimal = new EarthElemental(name, rounds, ElementalType.Small);
                 break;
             case SummonNaturesAlly2.ElementalSmallFire:
-                newAnimal = new Elemental(name, rounds, Element.Fire, ElementalType.Small);
+                newAnimal = new FireElemental(name, rounds, ElementalType.Small);
                 break;
             case SummonNaturesAlly2.ElementalSmallWater:
-                newAnimal = new Elemental(name, rounds, Element.Water, ElementalType.Small);
+                newAnimal = new WaterElemental(name, rounds, ElementalType.Small);
                 break;
             case SummonNaturesAlly2.GiantAntWorker:
                 newAnimal = new GiantAntWorker(name, rounds);

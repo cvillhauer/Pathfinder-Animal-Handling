@@ -7,8 +7,8 @@ export class WaterElemental extends Elemental {
     element: Element;
     elementalType: ElementalType;
 
-    constructor(name: string, rounds: number, element: Element, elementalType: ElementalType) {
-        super(name, rounds, element, elementalType);
+    constructor(name: string, rounds: number, elementalType: ElementalType) {
+        super(name, rounds, Element.Water, elementalType);
 
         this.image = "http://www.killershrike.com/Fate/Fae/Pathfinder/Content/Characters/Elementals/images/LargeWaterElemental.jpg";
         this.abilities.push("water mastery");
