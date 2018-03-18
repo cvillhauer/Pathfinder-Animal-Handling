@@ -1,8 +1,15 @@
 import * as ko from "knockout";
 
-import { Size, CreatureType, SummonNaturesAlly1, SummonNaturesAlly2, SummonNaturesAlly3 } from "./model/enums";
+import { Size, CreatureType, ElementalType, Element } from "./model/enums";
+import { SummonNaturesAlly1, SummonNaturesAlly2, SummonNaturesAlly3 } from "./model/enums";
 import { Animal } from "./model/animal";
+
+//TODO Isn't there an easier way to import a bunch of models?
 import { Elemental } from "./model/elementals/elemental";
+import { AirElemental } from "./model/elementals/airelemental";
+import { EarthElemental } from "./model/elementals/earthelemental";
+import { FireElemental } from "./model/elementals/fireelemental";
+import { WaterElemental } from "./model/elementals/waterelemental";
 
 import { DireRat } from "./model/natureally1/direrat";
 import { Dog } from "./model/natureally1/dog";
@@ -16,7 +23,6 @@ import { Pony } from "./model/natureally1/pony";
 import { Stirge } from "./model/natureally1/stirge";
 import { Viper } from "./model/natureally1/viper";
 
-//import { ElementalSmall } from "./model/natureally2/elementalsmall";
 import { GiantAntWorker } from "./model/natureally2/giantantworker";
 import { GiantFrog } from "./model/natureally2/giantfrog";
 import { GiantSpider } from "./model/natureally2/giantspider";
@@ -205,9 +211,18 @@ export class SummonNaturesAlly {
     summonNaturesAlly2(name: string, rounds: number, animalType: SummonNaturesAlly2) {
         let newAnimal: Animal;
         switch (animalType) {
-            //case SummonNaturesAlly2.ElementalSmall:
-            //    newAnimal = new ElementalSmall(name, rounds);
-            //    break;
+            case SummonNaturesAlly2.ElementalSmallAir:
+                newAnimal = new Elemental(name, rounds, Element.Air, ElementalType.Small);
+                break;
+            case SummonNaturesAlly2.ElementalSmallEarth:
+                newAnimal = new Elemental(name, rounds, Element.Earth, ElementalType.Small);
+                break;
+            case SummonNaturesAlly2.ElementalSmallFire:
+                newAnimal = new Elemental(name, rounds, Element.Fire, ElementalType.Small);
+                break;
+            case SummonNaturesAlly2.ElementalSmallWater:
+                newAnimal = new Elemental(name, rounds, Element.Water, ElementalType.Small);
+                break;
             case SummonNaturesAlly2.GiantAntWorker:
                 newAnimal = new GiantAntWorker(name, rounds);
                 break;

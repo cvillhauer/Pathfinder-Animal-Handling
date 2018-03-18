@@ -60,7 +60,10 @@ export enum SummonNaturesAlly1 {
 
 export enum SummonNaturesAlly2 {
     //TODO: Adding a space in the string description breaks KO databinding for AddAnimal
-    ElementalSmall = "ElementalSmall",
+    ElementalSmallAir = "ElementalSmallAir",
+    ElementalSmallEarth = "ElementalSmallEarth",
+    ElementalSmallFire = "ElementalSmallFire",
+    ElementalSmallWater = "ElementalSmallWater",
     GiantAntWorker = "GiantAntWorker",
     GiantFrog = "GiantFrog",
     GiantSpider = "GiantSpider",
