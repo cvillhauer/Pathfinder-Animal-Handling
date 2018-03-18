@@ -12,7 +12,7 @@ export class Leopard extends Animal{
         this.hitpoints = ko.observable(19);
         this.size = Size.Medium;
         this.type = CreatureType.Animal;
-        this.abilities = ["low-light vision", "scent", "climb 20ft"];
+        this.abilities = ["low-light vision", "scent", "pounce", "climb 20ft"];
         this.skills = ["Acrobatics +8", "Climb +11", "Perception +5", "Stealth +11"];
         this.armorclass = 15;
         this.attack = ["Bite +6 1d6+3 plus grab", "Grapple +9", "Claw +6 1d3+3", "Claw +6 1d3+3", "Rake +6 1d3+3", "Rake +6 1d3+3"];

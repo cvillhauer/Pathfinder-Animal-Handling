@@ -12,7 +12,7 @@ export class Shark extends Animal{
         this.hitpoints = ko.observable(22);
         this.size = Size.Large;
         this.type = CreatureType.Animal;
-        this.abilities = ["blindsense 30ft", "keen scent", "aquatic"];
+        this.abilities = ["blindsense 30ft", "keen scent", "aquatic", "reach 5ft"];
         this.skills = ["Perception +8", "Swim +11"];
         this.armorclass = 14;
         this.attack = ["Bite +5 1d8+4"];

@@ -12,6 +12,7 @@ export class AirElemental extends Elemental {
 
         this.image = "http://www.killershrike.com/Fate/Fae/Pathfinder/Content/Characters/Elementals/images/MediumAirElemental.jpg";
         this.abilities.push("fly 100ft, perfect");
+        this.abilities.push("air mastery");
         this.speed = 100;
 
         this.calculateStats();
@@ -21,7 +22,7 @@ export class AirElemental extends Elemental {
         this.hitpoints = ko.observable(13);
         this.skills = ["Acrobatics +7", "Escape Artist +7", "Fly +17", "Know planes +1, Perception +4", "Stealth +11"];
         this.armorclass = 17;
-        this.attack = ["Flyby Attack", "Whirlwind DC 12", "Slam +6 1d4+1"];
+        this.attack = ["Slam +6 1d4+1", "Flyby Attack", "Whirlwind DC 12"];
 
         this.cmb = 2;
         this.cmd = 15;
@@ -41,7 +42,7 @@ export class AirElemental extends Elemental {
         this.hitpoints = ko.observable(30);
         this.skills = ["Acrobatics +11", "Escape Artist +9", "Fly +17", "Know planes +1, Perception +7", "Stealth +10"];
         this.armorclass = 19;
-        this.attack = ["Flyby Attack", "Whirlwind DC 14", "Slam +9 1d6+3"];
+        this.attack = ["Slam +9 1d6+3", "Flyby Attack", "Whirlwind DC 14"];
 
         this.cmb = 6;
         this.cmd = 22;
@@ -64,7 +65,7 @@ export class AirElemental extends Elemental {
         this.abilities.push("reach 10ft");
         this.skills = ["Acrobatics +15", "Escape Artist +15", "Fly +21", "Know planes +5, Perception +11", "Stealth +11"];
         this.armorclass = 21;
-        this.attack = ["Flyby Attack", "Whirlwind DC 18", "Slam +14 1d8+4", "Slam +14 1d8+4"];
+        this.attack = ["Slam +14 1d8+4", "Slam +14 1d8+4", "Flyby Attack", "Whirlwind DC 18"];
 
         this.cmb = 13;
         this.cmd = 31;
@@ -87,7 +88,7 @@ export class AirElemental extends Elemental {
         this.abilities.push("reach 15ft");
         this.skills = ["Acrobatics +18", "Escape Artist +18", "Fly +23", "Know planes +7, Perception +13", "Stealth +9"];
         this.armorclass = 22;
-        this.attack = ["Flyby Attack", "Whirlwind DC 21", "Slam +17 2d6+6", "Slam +17 2d6+6"];
+        this.attack = ["Slam +17 2d6+6", "Slam +17 2d6+6", "Flyby Attack", "Whirlwind DC 21"];
 
         this.cmb = 18;
         this.cmd = 38;
@@ -106,11 +107,12 @@ export class AirElemental extends Elemental {
     calculateStatsGreater() {
         this.hitpoints = ko.observable(123);
         this.abilities.push("combat reflexes");
+        this.abilities.push("power attack");
         this.abilities.push("DR 10/-");
         this.abilities.push("reach 15ft");
         this.skills = ["Acrobatics +25", "Escape Artist +23", "Fly +27", "Know planes +12, Perception +16", "Stealth +15"];
         this.armorclass = 25;
-        this.attack = ["Flyby Attack", "Whirlwind DC 23", "Slam +21 2d8+7", "Slam +21 2d8+7"];
+        this.attack = ["Slam +21 2d8+7", "Slam +21 2d8+7", "Flyby Attack", "Whirlwind DC 23"];
 
         this.cmb = 22;
         this.cmd = 43;
@@ -129,11 +131,12 @@ export class AirElemental extends Elemental {
     calculateStatsElder() {
         this.hitpoints = ko.observable(152);
         this.abilities.push("combat reflexes");
+        this.abilities.push("power attack");
         this.abilities.push("DR 10/-");
         this.abilities.push("reach 15ft");
         this.skills = ["Acrobatics +30", "Escape Artist +30", "Fly +34", "Know planes +19, Perception +19", "Stealth +22"];
         this.armorclass = 28;
-        this.attack = ["Flyby Attack", "Whirlwind DC 27", "Slam +25 2d8+9", "Slam +25 2d8+9"];
+        this.attack = ["Slam +25 2d8+9", "Slam +25 2d8+9", "Flyby Attack", "Whirlwind DC 27"];
 
         this.cmb = 27;
         this.cmd = 49;

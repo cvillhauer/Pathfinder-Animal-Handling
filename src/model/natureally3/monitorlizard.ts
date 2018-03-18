@@ -15,7 +15,7 @@ export class MonitorLizard extends Animal{
         this.abilities = ["low-light vision", "scent", "swim 30ft"];
         this.skills = ["Climb +7", "Perception +8", "Stealth +10", "Swim +11"];
         this.armorclass = 15;
-        this.attack = ["Bite +5 1d8+4 plus grab", "Grapple +9", "Poison DC 14 1d2 Dex"];
+        this.attack = ["Bite +5 1d8+4 plus grab", "Grapple +9", "Poison DC 14 1d2 Dex onset 1 minute"];
         this.speed = 30;
 
         this.cmb = 5;

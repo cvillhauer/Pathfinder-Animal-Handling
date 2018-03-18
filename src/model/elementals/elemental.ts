@@ -16,7 +16,7 @@ export class Elemental extends Animal {
         this.link = "http://paizo.com/pathfinderRPG/prd/bestiary/elemental.html";
         this.size = this.calculateSize(elementalType);
         this.type = CreatureType.Outsider;
-        this.abilities = [elementalType.toString() + " mastery", "immune to bleed, paralysis, poison, sleep, stun", "immune to critical hits, flanking, sneak attacks", "darkvision 60ft"];
+        this.abilities = ["immune to bleed, paralysis, poison, sleep, stun", "immune to critical hits, flanking, sneak attacks", "darkvision 60ft"];
     }
 
     calculateSize(elementalType: ElementalType) {

@@ -12,7 +12,7 @@ export class DireBat extends Animal{
         this.hitpoints = ko.observable(22);
         this.size = Size.Large;
         this.type = CreatureType.Animal;
-        this.abilities = ["blindsense 40ft", "fly 40ft"];
+        this.abilities = ["blindsense 40ft", "reach 5ft", "fly 40ft"];
         this.skills = ["Fly +9", "Perception +12", "Stealth +4"];
         this.armorclass = 14;
         this.attack = ["Bite +5 1d8+4"];

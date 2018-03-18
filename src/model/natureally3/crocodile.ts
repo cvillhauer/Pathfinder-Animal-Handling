@@ -12,7 +12,7 @@ export class Crocodile extends Animal{
         this.hitpoints = ko.observable(22);
         this.size = Size.Large;
         this.type = CreatureType.Animal;
-        this.abilities = ["low-light vision", "hold breath", "sprint", "swim 30ft"];
+        this.abilities = ["low-light vision", "hold breath", "sprint", "reach 5ft", "swim 30ft"];
         this.skills = ["Perception +8", "Stealth +5", "Swim +12"];
         this.armorclass = 14;
         this.attack = ["Bite +5 1d8+4 plus grab", "Grapple +11", "Tail Slap +0 1d12+2", "Death Roll 1d8+6 plus trip"];
