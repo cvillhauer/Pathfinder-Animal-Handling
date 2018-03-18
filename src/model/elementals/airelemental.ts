@@ -10,7 +10,7 @@ export class AirElemental extends Elemental {
     constructor(name: string, rounds: number, elementalType: ElementalType) {
         super(name, rounds, Element.Air, elementalType);
 
-        this.image = "http://www.killershrike.com/Fate/Fae/Pathfinder/Content/Characters/Elementals/images/MediumAirElemental.jpg";
+        this.image = "http://cdn.obsidianportal.com/assets/94811/windelemental.jpg";
         this.abilities.push("fly 100ft, perfect");
         this.abilities.push("air mastery");
         this.speed = 100;

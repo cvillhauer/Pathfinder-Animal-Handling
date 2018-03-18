@@ -92,3 +92,43 @@ export enum SummonNaturesAlly3 {
     Shark = "Shark",
     Wolverine = "Wolverine"
 }
+
+export enum SummonNaturesAlly4 {
+    //TODO: Adding a space in the string description breaks KO databinding for AddAnimal
+    ElementalMediumAir = "ElementalMediumAir",
+    ElementalMediumEarth = "ElementalMediumEarth",
+    ElementalMediumFire = "ElementalMediumFire",
+    ElementalMediumWater = "ElementalMediumWater"
+}
+
+export enum SummonNaturesAlly5 {
+    //TODO: Adding a space in the string description breaks KO databinding for AddAnimal
+    ElementalLargeAir = "ElementalLargeAir",
+    ElementalLargeEarth = "ElementalLargeEarth",
+    ElementalLargeFire = "ElementalLargeFire",
+    ElementalLargeWater = "ElementalLargeWater"
+}
+
+export enum SummonNaturesAlly6 {
+    //TODO: Adding a space in the string description breaks KO databinding for AddAnimal
+    ElementalHugeAir = "ElementalHugeAir",
+    ElementalHugeEarth = "ElementalHugeEarth",
+    ElementalHugeFire = "ElementalHugeFire",
+    ElementalHugeWater = "ElementalHugeWater"
+}
+
+export enum SummonNaturesAlly7 {
+    //TODO: Adding a space in the string description breaks KO databinding for AddAnimal
+    ElementalGreaterAir = "ElementalGreaterAir",
+    ElementalGreaterEarth = "ElementalGreaterEarth",
+    ElementalGreaterFire = "ElementalGreaterFire",
+    ElementalGreaterWater = "ElementalGreaterWater"
+}
+
+export enum SummonNaturesAlly8 {
+    //TODO: Adding a space in the string description breaks KO databinding for AddAnimal
+    ElementalElderAir = "ElementalElderAir",
+    ElementalElderEarth = "ElementalElderEarth",
+    ElementalElderFire = "ElementalElderFire",
+    ElementalElderWater = "ElementalElderWater"
+}

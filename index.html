@@ -85,6 +85,21 @@
                     <p data-bind="visible: summonAnimalLevel() == 3">Summon Nature's Ally III Animal Type:
                         <select class="form-control" data-bind="options: animalSummoner.summonNaturesAlly3Choices, value: animalSummoner.addedAnimalType3, optionsCaption: ''"></select>
                     </p>
+                    <p data-bind="visible: summonAnimalLevel() == 4">Summon Nature's Ally IV Animal Type:
+                        <select class="form-control" data-bind="options: animalSummoner.summonNaturesAlly4Choices, value: animalSummoner.addedAnimalType4, optionsCaption: ''"></select>
+                    </p>
+                    <p data-bind="visible: summonAnimalLevel() == 5">Summon Nature's Ally V Animal Type:
+                        <select class="form-control" data-bind="options: animalSummoner.summonNaturesAlly5Choices, value: animalSummoner.addedAnimalType5, optionsCaption: ''"></select>
+                    </p>
+                    <p data-bind="visible: summonAnimalLevel() == 6">Summon Nature's Ally VI Animal Type:
+                        <select class="form-control" data-bind="options: animalSummoner.summonNaturesAlly6Choices, value: animalSummoner.addedAnimalType6, optionsCaption: ''"></select>
+                    </p>
+                    <p data-bind="visible: summonAnimalLevel() == 7">Summon Nature's Ally VII Animal Type:
+                        <select class="form-control" data-bind="options: animalSummoner.summonNaturesAlly7Choices, value: animalSummoner.addedAnimalType7, optionsCaption: ''"></select>
+                    </p>
+                    <p data-bind="visible: summonAnimalLevel() == 8">Summon Nature's Ally VIII Animal Type:
+                        <select class="form-control" data-bind="options: animalSummoner.summonNaturesAlly8Choices, value: animalSummoner.addedAnimalType8, optionsCaption: ''"></select>
+                    </p>
                     <p>Animal Name:
                         <input class="form-control" type="text" data-bind="value: addedAnimalName, valueUpdate: 'afterkeydown'" />
                         <button type="button" class="btn btn-default" data-bind="click: summonNaturesAlly">Summon Nature's Ally</button>
