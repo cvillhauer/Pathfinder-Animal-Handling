@@ -98,7 +98,25 @@ export enum SummonNaturesAlly4 {
     ElementalMediumAir = "ElementalMediumAir",
     ElementalMediumEarth = "ElementalMediumEarth",
     ElementalMediumFire = "ElementalMediumFire",
-    ElementalMediumWater = "ElementalMediumWater"
+    ElementalMediumWater = "ElementalMediumWater",
+    Bison = "Bison",
+    //Deinonychus = "Deinonychus",
+    DireApe = "DireApe",
+    DireBoar = "DireBoar",
+    DireWolf = "DireWolf",
+    GiantAntDrone = "GiantAntDrone",
+    GiantScorpion = "GiantScorpion",
+    GiantStagBeetle = "GiantStagBeetle",
+    GiantWasp = "GiantWasp",
+    Griffon = "Griffon",
+    GrizzlyBear = "GrizzlyBear",
+    Lion = "Lion",
+    //Mephit = "Mephit",
+    Owlbear = "Owlbear",
+    //Pteranodon = "Pteranodon",
+    Rhinoceros = "Rhinoceros",
+    Satyr = "Satyr",
+    Tiger = "Tiger"
 }
 
 export enum SummonNaturesAlly5 {
