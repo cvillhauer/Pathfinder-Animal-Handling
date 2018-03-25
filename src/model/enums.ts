@@ -111,7 +111,7 @@ export enum SummonNaturesAlly4 {
     Griffon = "Griffon",
     GrizzlyBear = "GrizzlyBear",
     Lion = "Lion",
-    //Mephit = "Mephit",
+    Mephit = "Mephit",
     Owlbear = "Owlbear",
     //Pteranodon = "Pteranodon",
     Rhinoceros = "Rhinoceros",

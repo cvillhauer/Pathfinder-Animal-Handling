@@ -70,6 +70,7 @@
         "./src/model/natureally4/griffon.ts",
         "./src/model/natureally4/grizzlybear.ts",
         "./src/model/natureally4/lion.ts",
+        "./src/model/natureally4/mephit.ts",
         "./src/model/natureally4/owlbear.ts",
         "./src/model/natureally4/rhinoceros.ts",
         "./src/model/natureally4/satyr.ts",

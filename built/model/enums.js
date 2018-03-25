@@ -115,7 +115,7 @@ define(["require", "exports"], function (require, exports) {
         SummonNaturesAlly4["Griffon"] = "Griffon";
         SummonNaturesAlly4["GrizzlyBear"] = "GrizzlyBear";
         SummonNaturesAlly4["Lion"] = "Lion";
-        //Mephit = "Mephit",
+        SummonNaturesAlly4["Mephit"] = "Mephit";
         SummonNaturesAlly4["Owlbear"] = "Owlbear";
         //Pteranodon = "Pteranodon",
         SummonNaturesAlly4["Rhinoceros"] = "Rhinoceros";

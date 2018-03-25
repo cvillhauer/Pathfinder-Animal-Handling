@@ -61,6 +61,7 @@ import { GiantWasp } from "./model/natureally4/giantwasp";
 import { Griffon } from "./model/natureally4/griffon";
 import { GrizzlyBear } from "./model/natureally4/grizzlybear";
 import { Lion } from "./model/natureally4/lion";
+import { Mephit } from "./model/natureally4/mephit";
 import { Owlbear } from "./model/natureally4/owlbear";
 import { Rhinoceros } from "./model/natureally4/rhinoceros";
 import { Satyr } from "./model/natureally4/satyr";
@@ -413,6 +414,9 @@ export class SummonNaturesAlly {
                 break;
             case SummonNaturesAlly4.Lion:
                 newAnimal = new Lion(name, rounds);
+                break;
+            case SummonNaturesAlly4.Mephit:
+                newAnimal = new Mephit(name, rounds);
                 break;
             case SummonNaturesAlly4.Owlbear:
                 newAnimal = new Owlbear(name, rounds);
