@@ -25,26 +25,28 @@
                 </h2>
                 <button type="button" class="btn btn-default" data-bind="click: incrementDruidLevel">Increment Level</button>
                 <button type="button" class="btn btn-default" data-bind="click: nextRound">Next Round</button>
-                <h3>Wild Shape
-                    <span data-bind="text: druid().wildShapeTimesPerDay"></span> times per day for up to
-                    <span data-bind="text: druid().wildShapeDuration"></span> hours each time</h3>
-                <h4>Beast Shape
-                    <span data-bind="text: druid().beastShape"></span>
-                </h4>
-                <h4>Elemental Body
-                    <span data-bind="text: druid().elementalBody"></span>
-                </h4>
-                <h4>Plant Shape
-                    <span data-bind="text: druid().plantShape"></span>
-                </h4>
-                <h4>Wild Shape Sizes:</h4>
-                <ul data-bind="foreach: druid().wildShapeSizes">
-                    <li data-bind="text: $data"></li>
-                </ul>
-                <h4>Wild Shape Types:</h4>
-                <ul data-bind="foreach: druid().wildShapeTypes">
-                    <li data-bind="text: $data"></li>
-                </ul>
+                <div style="display: none;">
+                    <h3>Wild Shape
+                        <span data-bind="text: druid().wildShapeTimesPerDay"></span> times per day for up to
+                        <span data-bind="text: druid().wildShapeDuration"></span> hours each time</h3>
+                    <h4>Beast Shape
+                        <span data-bind="text: druid().beastShape"></span>
+                    </h4>
+                    <h4>Elemental Body
+                        <span data-bind="text: druid().elementalBody"></span>
+                    </h4>
+                    <h4>Plant Shape
+                        <span data-bind="text: druid().plantShape"></span>
+                    </h4>
+                    <h4>Wild Shape Sizes:</h4>
+                    <ul data-bind="foreach: druid().wildShapeSizes">
+                        <li data-bind="text: $data"></li>
+                    </ul>
+                    <h4>Wild Shape Types:</h4>
+                    <ul data-bind="foreach: druid().wildShapeTypes">
+                        <li data-bind="text: $data"></li>
+                    </ul>
+                </div>
             </div>
         </div>
         <hr />
