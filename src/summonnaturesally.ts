@@ -50,6 +50,22 @@ import { MonitorLizard } from "./model/natureally3/monitorlizard";
 import { Shark } from "./model/natureally3/shark";
 import { Wolverine } from "./model/natureally3/wolverine";
 
+import { Bison } from "./model/natureally4/bison";
+import { DireApe } from "./model/natureally4/direape";
+import { DireBoar } from "./model/natureally4/direboar";
+import { DireWolf } from "./model/natureally4/direwolf";
+import { GiantAntDrone } from "./model/natureally4/giantantdrone";
+import { GiantScorpion } from "./model/natureally4/giantscorpion";
+import { GiantStagBeetle } from "./model/natureally4/giantstagbeetle";
+import { GiantWasp } from "./model/natureally4/giantwasp";
+import { Griffon } from "./model/natureally4/griffon";
+import { GrizzlyBear } from "./model/natureally4/grizzlybear";
+import { Lion } from "./model/natureally4/lion";
+import { Owlbear } from "./model/natureally4/owlbear";
+import { Rhinoceros } from "./model/natureally4/rhinoceros";
+import { Satyr } from "./model/natureally4/satyr";
+import { Tiger } from "./model/natureally4/tiger";
+
 export class SummonNaturesAlly {
     summonNaturesAlly1Choices: KnockoutObservableArray<string>;
     summonNaturesAlly2Choices: KnockoutObservableArray<string>;
@@ -364,6 +380,51 @@ export class SummonNaturesAlly {
                 break;
             case SummonNaturesAlly4.ElementalMediumWater:
                 newAnimal = new WaterElemental(name, rounds, ElementalType.Medium);
+                break;
+            case SummonNaturesAlly4.Bison:
+                newAnimal = new Bison(name, rounds);
+                break;
+            case SummonNaturesAlly4.DireApe:
+                newAnimal = new DireApe(name, rounds);
+                break;
+            case SummonNaturesAlly4.DireBoar:
+                newAnimal = new DireBoar(name, rounds);
+                break;
+            case SummonNaturesAlly4.DireWolf:
+                newAnimal = new DireWolf(name, rounds);
+                break;
+            case SummonNaturesAlly4.GiantAntDrone:
+                newAnimal = new GiantAntDrone(name, rounds);
+                break;
+            case SummonNaturesAlly4.GiantScorpion:
+                newAnimal = new GiantScorpion(name, rounds);
+                break;
+            case SummonNaturesAlly4.GiantStagBeetle:
+                newAnimal = new GiantStagBeetle(name, rounds);
+                break;
+            case SummonNaturesAlly4.GiantWasp:
+                newAnimal = new GiantWasp(name, rounds);
+                break;
+            case SummonNaturesAlly4.Griffon:
+                newAnimal = new Griffon(name, rounds);
+                break;
+            case SummonNaturesAlly4.GrizzlyBear:
+                newAnimal = new GrizzlyBear(name, rounds);
+                break;
+            case SummonNaturesAlly4.Lion:
+                newAnimal = new Lion(name, rounds);
+                break;
+            case SummonNaturesAlly4.Owlbear:
+                newAnimal = new Owlbear(name, rounds);
+                break;
+            case SummonNaturesAlly4.Rhinoceros:
+                newAnimal = new Rhinoceros(name, rounds);
+                break;
+            case SummonNaturesAlly4.Satyr:
+                newAnimal = new Satyr(name, rounds);
+                break;
+            case SummonNaturesAlly4.Tiger:
+                newAnimal = new Tiger(name, rounds);
                 break;
         }
         return newAnimal;

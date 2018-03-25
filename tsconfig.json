@@ -57,6 +57,22 @@
         "./src/model/natureally3/leopard.ts",
         "./src/model/natureally3/monitorlizard.ts",
         "./src/model/natureally3/shark.ts",
-        "./src/model/natureally3/wolverine.ts"
+        "./src/model/natureally3/wolverine.ts",
+
+        "./src/model/natureally4/bison.ts",
+        "./src/model/natureally4/direape.ts",
+        "./src/model/natureally4/direboar.ts",
+        "./src/model/natureally4/direwolf.ts",
+        "./src/model/natureally4/giantantdrone.ts",
+        "./src/model/natureally4/giantscorpion.ts",
+        "./src/model/natureally4/giantstagbeetle.ts",
+        "./src/model/natureally4/giantwasp.ts",
+        "./src/model/natureally4/griffon.ts",
+        "./src/model/natureally4/grizzlybear.ts",
+        "./src/model/natureally4/lion.ts",
+        "./src/model/natureally4/owlbear.ts",
+        "./src/model/natureally4/rhinoceros.ts",
+        "./src/model/natureally4/satyr.ts",
+        "./src/model/natureally4/tiger.ts"
     ]
 }
