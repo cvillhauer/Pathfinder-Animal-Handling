@@ -24,7 +24,7 @@ define(["require", "exports", "knockout", "../enums", "../animal"], function (re
             _this.abilities = ["low-light vision", "scent", "climb 30ft", "reach 10ft"];
             _this.skills = ["Acrobatics +6", "Climb +16", "Perception +8", "Stealth +2"];
             _this.armorclass = 15;
-            _this.attack = ["Bite +6 1d6+4", "Claw +6 1d4+4", "Claw +6 1d4+4", "Rend 1d4+6", "Rake +6 1d3+3"];
+            _this.attack = ["Bite +6 1d6+4", "Claw +6 1d4+4 plus rend", "Claw +6 1d4+4 plus rend", "Rend 1d4+6"];
             _this.speed = 30;
             _this.cmb = 8;
             _this.cmd = 20;

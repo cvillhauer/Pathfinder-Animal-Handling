@@ -15,7 +15,7 @@ export class DireApe extends Animal{
         this.abilities = ["low-light vision", "scent", "climb 30ft", "reach 10ft"];
         this.skills = ["Acrobatics +6", "Climb +16", "Perception +8", "Stealth +2"];
         this.armorclass = 15;
-        this.attack = ["Bite +6 1d6+4", "Claw +6 1d4+4", "Claw +6 1d4+4", "Rend 1d4+6", "Rake +6 1d3+3"];
+        this.attack = ["Bite +6 1d6+4", "Claw +6 1d4+4 plus rend", "Claw +6 1d4+4 plus rend", "Rend 1d4+6"];
         this.speed = 30;
 
         this.cmb = 8;

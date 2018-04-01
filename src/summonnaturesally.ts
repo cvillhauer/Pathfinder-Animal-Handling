@@ -67,6 +67,15 @@ import { Rhinoceros } from "./model/natureally4/rhinoceros";
 import { Satyr } from "./model/natureally4/satyr";
 import { Tiger } from "./model/natureally4/tiger";
 
+import { Cyclops } from "./model/natureally5/cyclops";
+import { DireLion } from "./model/natureally5/direlion";
+import { Ettin } from "./model/natureally5/ettin";
+import { GiantMorayEel } from "./model/natureally5/giantmorayeel";
+import { Girallon } from "./model/natureally5/girallon";
+import { Manticore } from "./model/natureally5/manticore";
+import { Orca } from "./model/natureally5/orca";
+import { WoollyRhinoceros } from "./model/natureally5/woollyrhinoceros";
+
 export class SummonNaturesAlly {
     summonNaturesAlly1Choices: KnockoutObservableArray<string>;
     summonNaturesAlly2Choices: KnockoutObservableArray<string>;
@@ -448,6 +457,30 @@ export class SummonNaturesAlly {
                 break;
             case SummonNaturesAlly5.ElementalLargeWater:
                 newAnimal = new WaterElemental(name, rounds, ElementalType.Large);
+                break;
+            case SummonNaturesAlly5.Cyclops:
+                newAnimal = new Cyclops(name, rounds);
+                break;
+            case SummonNaturesAlly5.DireLion:
+                newAnimal = new DireLion(name, rounds);
+                break;
+            case SummonNaturesAlly5.Ettin:
+                newAnimal = new Ettin(name, rounds);
+                break;
+            case SummonNaturesAlly5.GiantMorayEel:
+                newAnimal = new GiantMorayEel(name, rounds);
+                break;
+            case SummonNaturesAlly5.Girallon:
+                newAnimal = new Girallon(name, rounds);
+                break;
+            case SummonNaturesAlly5.Manticore:
+                newAnimal = new Manticore(name, rounds);
+                break;
+            case SummonNaturesAlly5.Orca:
+                newAnimal = new Orca(name, rounds);
+                break;
+            case SummonNaturesAlly5.WoollyRhinoceros:
+                newAnimal = new WoollyRhinoceros(name, rounds);
                 break;
         }
         return newAnimal;

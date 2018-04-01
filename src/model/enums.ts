@@ -124,7 +124,15 @@ export enum SummonNaturesAlly5 {
     ElementalLargeAir = "ElementalLargeAir",
     ElementalLargeEarth = "ElementalLargeEarth",
     ElementalLargeFire = "ElementalLargeFire",
-    ElementalLargeWater = "ElementalLargeWater"
+    ElementalLargeWater = "ElementalLargeWater",
+    Cyclops = "Cyclops",
+    DireLion = "DireLion",
+    Ettin = "Ettin",
+    GiantMorayEel = "GiantMorayEel",
+    Girallon = "Girallon",
+    Manticore = "Manticore",
+    Orca = "Orca",
+    WoollyRhinoceros = "WoollyRhinoceros"
 }
 
 export enum SummonNaturesAlly6 {
