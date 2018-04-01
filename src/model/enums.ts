@@ -125,6 +125,7 @@ export enum SummonNaturesAlly5 {
     ElementalLargeEarth = "ElementalLargeEarth",
     ElementalLargeFire = "ElementalLargeFire",
     ElementalLargeWater = "ElementalLargeWater",
+    //Ankylosaurus = "Ankylosaurus",
     Cyclops = "Cyclops",
     DireLion = "DireLion",
     Ettin = "Ettin",
@@ -140,7 +141,17 @@ export enum SummonNaturesAlly6 {
     ElementalHugeAir = "ElementalHugeAir",
     ElementalHugeEarth = "ElementalHugeEarth",
     ElementalHugeFire = "ElementalHugeFire",
-    ElementalHugeWater = "ElementalHugeWater"
+    ElementalHugeWater = "ElementalHugeWater",
+    Bulette = "Bulette",
+    DireBear = "DireBear",
+    DireTiger = "DireTiger",
+    //Elasmosaurus = "Elasmosaurus",
+    Elephant = "Elephant",
+    GiantOctopus = "GiantOctopus",
+    HillGiant = "HillGiant",
+    //Stegosaurus = "Stegosaurus",
+    StoneGiant = "StoneGiant"
+    //Triceratops = "Triceratops"
 }
 
 export enum SummonNaturesAlly7 {

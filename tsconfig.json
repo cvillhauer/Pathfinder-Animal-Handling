@@ -74,6 +74,23 @@
         "./src/model/natureally4/owlbear.ts",
         "./src/model/natureally4/rhinoceros.ts",
         "./src/model/natureally4/satyr.ts",
-        "./src/model/natureally4/tiger.ts"
+        "./src/model/natureally4/tiger.ts",
+
+        "./src/model/natureally5/cyclops.ts",
+        "./src/model/natureally5/direlion.ts",
+        "./src/model/natureally5/ettin.ts",
+        "./src/model/natureally5/giantmorayeel.ts",
+        "./src/model/natureally5/girallon.ts",
+        "./src/model/natureally5/manticore.ts",
+        "./src/model/natureally5/orca.ts",
+        "./src/model/natureally5/woollyrhinoceros.ts",
+
+        "./src/model/natureally6/bulette.ts",
+        "./src/model/natureally6/direbear.ts",
+        "./src/model/natureally6/diretiger.ts",
+        "./src/model/natureally6/elephant.ts",
+        "./src/model/natureally6/giantoctopus.ts",
+        "./src/model/natureally6/hillgiant.ts",
+        "./src/model/natureally6/stonegiant.ts"
     ]
 }

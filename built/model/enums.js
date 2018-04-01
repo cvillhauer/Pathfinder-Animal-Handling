@@ -129,6 +129,7 @@ define(["require", "exports"], function (require, exports) {
         SummonNaturesAlly5["ElementalLargeEarth"] = "ElementalLargeEarth";
         SummonNaturesAlly5["ElementalLargeFire"] = "ElementalLargeFire";
         SummonNaturesAlly5["ElementalLargeWater"] = "ElementalLargeWater";
+        //Ankylosaurus = "Ankylosaurus",
         SummonNaturesAlly5["Cyclops"] = "Cyclops";
         SummonNaturesAlly5["DireLion"] = "DireLion";
         SummonNaturesAlly5["Ettin"] = "Ettin";
@@ -145,6 +146,16 @@ define(["require", "exports"], function (require, exports) {
         SummonNaturesAlly6["ElementalHugeEarth"] = "ElementalHugeEarth";
         SummonNaturesAlly6["ElementalHugeFire"] = "ElementalHugeFire";
         SummonNaturesAlly6["ElementalHugeWater"] = "ElementalHugeWater";
+        SummonNaturesAlly6["Bulette"] = "Bulette";
+        SummonNaturesAlly6["DireBear"] = "DireBear";
+        SummonNaturesAlly6["DireTiger"] = "DireTiger";
+        //Elasmosaurus = "Elasmosaurus",
+        SummonNaturesAlly6["Elephant"] = "Elephant";
+        SummonNaturesAlly6["GiantOctopus"] = "GiantOctopus";
+        SummonNaturesAlly6["HillGiant"] = "HillGiant";
+        //Stegosaurus = "Stegosaurus",
+        SummonNaturesAlly6["StoneGiant"] = "StoneGiant";
+        //Triceratops = "Triceratops"
     })(SummonNaturesAlly6 = exports.SummonNaturesAlly6 || (exports.SummonNaturesAlly6 = {}));
     var SummonNaturesAlly7;
     (function (SummonNaturesAlly7) {

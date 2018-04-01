@@ -76,6 +76,14 @@ import { Manticore } from "./model/natureally5/manticore";
 import { Orca } from "./model/natureally5/orca";
 import { WoollyRhinoceros } from "./model/natureally5/woollyrhinoceros";
 
+import { Bulette } from "./model/natureally6/bulette";
+import { DireBear } from "./model/natureally6/direbear";
+import { DireTiger } from "./model/natureally6/diretiger";
+import { Elephant } from "./model/natureally6/elephant";
+import { GiantOctopus } from "./model/natureally6/giantoctopus";
+import { HillGiant } from "./model/natureally6/hillgiant";
+import { StoneGiant } from "./model/natureally6/stonegiant";
+
 export class SummonNaturesAlly {
     summonNaturesAlly1Choices: KnockoutObservableArray<string>;
     summonNaturesAlly2Choices: KnockoutObservableArray<string>;
@@ -500,6 +508,27 @@ export class SummonNaturesAlly {
                 break;
             case SummonNaturesAlly6.ElementalHugeWater:
                 newAnimal = new WaterElemental(name, rounds, ElementalType.Huge);
+                break;
+            case SummonNaturesAlly6.Bulette:
+                newAnimal = new Bulette(name, rounds);
+                break;
+            case SummonNaturesAlly6.DireBear:
+                newAnimal = new DireBear(name, rounds);
+                break;
+            case SummonNaturesAlly6.DireTiger:
+                newAnimal = new DireTiger(name, rounds);
+                break;
+            case SummonNaturesAlly6.Elephant:
+                newAnimal = new Elephant(name, rounds);
+                break;
+            case SummonNaturesAlly6.GiantOctopus:
+                newAnimal = new GiantOctopus(name, rounds);
+                break;
+            case SummonNaturesAlly6.HillGiant:
+                newAnimal = new HillGiant(name, rounds);
+                break;
+            case SummonNaturesAlly6.StoneGiant:
+                newAnimal = new StoneGiant(name, rounds);
                 break;
         }
         return newAnimal;
