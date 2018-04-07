@@ -159,7 +159,14 @@ export enum SummonNaturesAlly7 {
     ElementalGreaterAir = "ElementalGreaterAir",
     ElementalGreaterEarth = "ElementalGreaterEarth",
     ElementalGreaterFire = "ElementalGreaterFire",
-    ElementalGreaterWater = "ElementalGreaterWater"
+    ElementalGreaterWater = "ElementalGreaterWater",
+    DireCrocodile = "DireCrocodile",
+    DireShark = "DireShark",
+    FireGiant = "FireGiant",
+    FrostGiant = "FrostGiant",
+    GiantSquid = "GiantSquid",
+    Mastodon = "Mastodon",
+    Roc = "Roc"
 }
 
 export enum SummonNaturesAlly8 {

@@ -164,6 +164,13 @@ define(["require", "exports"], function (require, exports) {
         SummonNaturesAlly7["ElementalGreaterEarth"] = "ElementalGreaterEarth";
         SummonNaturesAlly7["ElementalGreaterFire"] = "ElementalGreaterFire";
         SummonNaturesAlly7["ElementalGreaterWater"] = "ElementalGreaterWater";
+        SummonNaturesAlly7["DireCrocodile"] = "DireCrocodile";
+        SummonNaturesAlly7["DireShark"] = "DireShark";
+        SummonNaturesAlly7["FireGiant"] = "FireGiant";
+        SummonNaturesAlly7["FrostGiant"] = "FrostGiant";
+        SummonNaturesAlly7["GiantSquid"] = "GiantSquid";
+        SummonNaturesAlly7["Mastodon"] = "Mastodon";
+        SummonNaturesAlly7["Roc"] = "Roc";
     })(SummonNaturesAlly7 = exports.SummonNaturesAlly7 || (exports.SummonNaturesAlly7 = {}));
     var SummonNaturesAlly8;
     (function (SummonNaturesAlly8) {

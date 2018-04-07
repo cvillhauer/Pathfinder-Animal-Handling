@@ -91,6 +91,14 @@
         "./src/model/natureally6/elephant.ts",
         "./src/model/natureally6/giantoctopus.ts",
         "./src/model/natureally6/hillgiant.ts",
-        "./src/model/natureally6/stonegiant.ts"
+        "./src/model/natureally6/stonegiant.ts",
+
+        "./src/model/natureally7/direcrocodile.ts",
+        "./src/model/natureally7/direshark.ts",
+        "./src/model/natureally7/firegiant.ts",
+        "./src/model/natureally7/frostgiant.ts",
+        "./src/model/natureally7/giantsquid.ts",
+        "./src/model/natureally7/mastodon.ts",
+        "./src/model/natureally7/roc.ts"
     ]
 }
