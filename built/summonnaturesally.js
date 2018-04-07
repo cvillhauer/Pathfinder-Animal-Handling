@@ -1,4 +1,4 @@
-define(["require", "exports", "knockout", "./model/enums", "./model/enums", "./model/enums", "./model/enums", "./model/elementals/airelemental", "./model/elementals/earthelemental", "./model/elementals/fireelemental", "./model/elementals/waterelemental", "./model/natureally1/direrat", "./model/natureally1/dog", "./model/natureally1/dolphin", "./model/natureally1/eagle", "./model/natureally1/firebeetle", "./model/natureally1/giantcentipede", "./model/natureally1/mite", "./model/natureally1/poisonousfrog", "./model/natureally1/pony", "./model/natureally1/stirge", "./model/natureally1/viper", "./model/natureally2/giantantworker", "./model/natureally2/giantfrog", "./model/natureally2/giantspider", "./model/natureally2/goblindog", "./model/natureally2/horse", "./model/natureally2/hyena", "./model/natureally2/octopus", "./model/natureally2/squid", "./model/natureally2/wolf", "./model/natureally3/ape", "./model/natureally3/auroch", "./model/natureally3/boar", "./model/natureally3/cheetah", "./model/natureally3/constrictorsnake", "./model/natureally3/crocodile", "./model/natureally3/direbat", "./model/natureally3/electriceel", "./model/natureally3/giantant", "./model/natureally3/giantcrab", "./model/natureally3/leopard", "./model/natureally3/monitorlizard", "./model/natureally3/shark", "./model/natureally3/wolverine", "./model/natureally4/bison", "./model/natureally4/direape", "./model/natureally4/direboar", "./model/natureally4/direwolf", "./model/natureally4/giantantdrone", "./model/natureally4/giantscorpion", "./model/natureally4/giantstagbeetle", "./model/natureally4/giantwasp", "./model/natureally4/griffon", "./model/natureally4/grizzlybear", "./model/natureally4/lion", "./model/natureally4/mephit", "./model/natureally4/owlbear", "./model/natureally4/rhinoceros", "./model/natureally4/satyr", "./model/natureally4/tiger", "./model/natureally5/cyclops", "./model/natureally5/direlion", "./model/natureally5/ettin", "./model/natureally5/giantmorayeel", "./model/natureally5/girallon", "./model/natureally5/manticore", "./model/natureally5/orca", "./model/natureally5/woollyrhinoceros", "./model/natureally6/bulette", "./model/natureally6/direbear", "./model/natureally6/diretiger", "./model/natureally6/elephant", "./model/natureally6/giantoctopus", "./model/natureally6/hillgiant", "./model/natureally6/stonegiant", "./model/natureally7/direcrocodile", "./model/natureally7/direshark", "./model/natureally7/firegiant", "./model/natureally7/frostgiant", "./model/natureally7/giantsquid", "./model/natureally7/mastodon", "./model/natureally7/roc"], function (require, exports, ko, enums_1, enums_2, enums_3, enums_4, airelemental_1, earthelemental_1, fireelemental_1, waterelemental_1, direrat_1, dog_1, dolphin_1, eagle_1, firebeetle_1, giantcentipede_1, mite_1, poisonousfrog_1, pony_1, stirge_1, viper_1, giantantworker_1, giantfrog_1, giantspider_1, goblindog_1, horse_1, hyena_1, octopus_1, squid_1, wolf_1, ape_1, auroch_1, boar_1, cheetah_1, constrictorsnake_1, crocodile_1, direbat_1, electriceel_1, giantant_1, giantcrab_1, leopard_1, monitorlizard_1, shark_1, wolverine_1, bison_1, direape_1, direboar_1, direwolf_1, giantantdrone_1, giantscorpion_1, giantstagbeetle_1, giantwasp_1, griffon_1, grizzlybear_1, lion_1, mephit_1, owlbear_1, rhinoceros_1, satyr_1, tiger_1, cyclops_1, direlion_1, ettin_1, giantmorayeel_1, girallon_1, manticore_1, orca_1, woollyrhinoceros_1, bulette_1, direbear_1, diretiger_1, elephant_1, giantoctopus_1, hillgiant_1, stonegiant_1, direcrocodile_1, direshark_1, firegiant_1, frostgiant_1, giantsquid_1, mastodon_1, roc_1) {
+define(["require", "exports", "knockout", "./model/enums", "./model/enums", "./model/enums", "./model/enums", "./model/elementals/airelemental", "./model/elementals/earthelemental", "./model/elementals/fireelemental", "./model/elementals/waterelemental", "./model/natureally1/direrat", "./model/natureally1/dog", "./model/natureally1/dolphin", "./model/natureally1/eagle", "./model/natureally1/firebeetle", "./model/natureally1/giantcentipede", "./model/natureally1/mite", "./model/natureally1/poisonousfrog", "./model/natureally1/pony", "./model/natureally1/stirge", "./model/natureally1/viper", "./model/natureally2/giantantworker", "./model/natureally2/giantfrog", "./model/natureally2/giantspider", "./model/natureally2/goblindog", "./model/natureally2/horse", "./model/natureally2/hyena", "./model/natureally2/octopus", "./model/natureally2/squid", "./model/natureally2/wolf", "./model/natureally3/ape", "./model/natureally3/auroch", "./model/natureally3/boar", "./model/natureally3/cheetah", "./model/natureally3/constrictorsnake", "./model/natureally3/crocodile", "./model/natureally3/direbat", "./model/natureally3/electriceel", "./model/natureally3/giantant", "./model/natureally3/giantcrab", "./model/natureally3/leopard", "./model/natureally3/monitorlizard", "./model/natureally3/shark", "./model/natureally3/wolverine", "./model/natureally4/bison", "./model/natureally4/direape", "./model/natureally4/direboar", "./model/natureally4/direwolf", "./model/natureally4/giantantdrone", "./model/natureally4/giantscorpion", "./model/natureally4/giantstagbeetle", "./model/natureally4/giantwasp", "./model/natureally4/griffon", "./model/natureally4/grizzlybear", "./model/natureally4/lion", "./model/natureally4/mephit", "./model/natureally4/owlbear", "./model/natureally4/rhinoceros", "./model/natureally4/satyr", "./model/natureally4/tiger", "./model/natureally5/cyclops", "./model/natureally5/direlion", "./model/natureally5/ettin", "./model/natureally5/giantmorayeel", "./model/natureally5/girallon", "./model/natureally5/manticore", "./model/natureally5/orca", "./model/natureally5/woollyrhinoceros", "./model/natureally6/bulette", "./model/natureally6/direbear", "./model/natureally6/diretiger", "./model/natureally6/elephant", "./model/natureally6/giantoctopus", "./model/natureally6/hillgiant", "./model/natureally6/stonegiant", "./model/natureally7/direcrocodile", "./model/natureally7/direshark", "./model/natureally7/firegiant", "./model/natureally7/frostgiant", "./model/natureally7/giantsquid", "./model/natureally7/mastodon", "./model/natureally7/roc", "./model/natureally8/cloudgiant", "./model/natureally8/purpleworm", "./model/natureally9/pixie", "./model/natureally9/stormgiant"], function (require, exports, ko, enums_1, enums_2, enums_3, enums_4, airelemental_1, earthelemental_1, fireelemental_1, waterelemental_1, direrat_1, dog_1, dolphin_1, eagle_1, firebeetle_1, giantcentipede_1, mite_1, poisonousfrog_1, pony_1, stirge_1, viper_1, giantantworker_1, giantfrog_1, giantspider_1, goblindog_1, horse_1, hyena_1, octopus_1, squid_1, wolf_1, ape_1, auroch_1, boar_1, cheetah_1, constrictorsnake_1, crocodile_1, direbat_1, electriceel_1, giantant_1, giantcrab_1, leopard_1, monitorlizard_1, shark_1, wolverine_1, bison_1, direape_1, direboar_1, direwolf_1, giantantdrone_1, giantscorpion_1, giantstagbeetle_1, giantwasp_1, griffon_1, grizzlybear_1, lion_1, mephit_1, owlbear_1, rhinoceros_1, satyr_1, tiger_1, cyclops_1, direlion_1, ettin_1, giantmorayeel_1, girallon_1, manticore_1, orca_1, woollyrhinoceros_1, bulette_1, direbear_1, diretiger_1, elephant_1, giantoctopus_1, hillgiant_1, stonegiant_1, direcrocodile_1, direshark_1, firegiant_1, frostgiant_1, giantsquid_1, mastodon_1, roc_1, cloudgiant_1, purpleworm_1, pixie_1, stormgiant_1) {
     "use strict";
     Object.defineProperty(exports, "__esModule", { value: true });
     var SummonNaturesAlly = /** @class */ (function () {
@@ -11,6 +11,7 @@ define(["require", "exports", "knockout", "./model/enums", "./model/enums", "./m
             this.addedAnimalType6 = ko.observable();
             this.addedAnimalType7 = ko.observable();
             this.addedAnimalType8 = ko.observable();
+            this.addedAnimalType9 = ko.observable();
             this.summonNaturesAlly1Choices = ko.observableArray();
             for (var animal in enums_2.SummonNaturesAlly1) {
                 this.summonNaturesAlly1Choices.push(animal);
@@ -42,6 +43,10 @@ define(["require", "exports", "knockout", "./model/enums", "./model/enums", "./m
             this.summonNaturesAlly8Choices = ko.observableArray();
             for (var animal in enums_4.SummonNaturesAlly8) {
                 this.summonNaturesAlly8Choices.push(animal);
+            }
+            this.summonNaturesAlly9Choices = ko.observableArray();
+            for (var animal in enums_4.SummonNaturesAlly9) {
+                this.summonNaturesAlly9Choices.push(animal);
             }
         }
         //TODO: Move RollDice somewhere where both viewmodel and other classes can use it
@@ -113,7 +118,7 @@ define(["require", "exports", "knockout", "./model/enums", "./model/enums", "./m
                             newAnimal = this.summonNaturesAlly8(animalName + " " + i, druidLevel, this.addedAnimalType8());
                             break;
                         case 9:
-                            //newAnimal = this.summonNaturesAlly9(animalName + " " + i, druidLevel, this.addedAnimalType9());
+                            newAnimal = this.summonNaturesAlly9(animalName + " " + i, druidLevel, this.addedAnimalType9());
                             break;
                     }
                     if (newAnimal != undefined) {
@@ -129,6 +134,7 @@ define(["require", "exports", "knockout", "./model/enums", "./model/enums", "./m
                     this.addedAnimalType6(undefined);
                     this.addedAnimalType7(undefined);
                     this.addedAnimalType8(undefined);
+                    this.addedAnimalType9(undefined);
                 }
                 else {
                     //TODO: Better error handling
@@ -469,6 +475,24 @@ define(["require", "exports", "knockout", "./model/enums", "./model/enums", "./m
                     break;
                 case enums_4.SummonNaturesAlly8.ElementalElderWater:
                     newAnimal = new waterelemental_1.WaterElemental(name, rounds, enums_1.ElementalType.Elder);
+                    break;
+                case enums_4.SummonNaturesAlly8.CloudGiant:
+                    newAnimal = new cloudgiant_1.CloudGiant(name, rounds);
+                    break;
+                case enums_4.SummonNaturesAlly8.PurpleWorm:
+                    newAnimal = new purpleworm_1.PurpleWorm(name, rounds);
+                    break;
+            }
+            return newAnimal;
+        };
+        SummonNaturesAlly.prototype.summonNaturesAlly9 = function (name, rounds, animalType) {
+            var newAnimal;
+            switch (animalType) {
+                case enums_4.SummonNaturesAlly9.Pixie:
+                    newAnimal = new pixie_1.Pixie(name, rounds);
+                    break;
+                case enums_4.SummonNaturesAlly9.StormGiant:
+                    newAnimal = new stormgiant_1.StormGiant(name, rounds);
                     break;
             }
             return newAnimal;

@@ -99,6 +99,12 @@
         "./src/model/natureally7/frostgiant.ts",
         "./src/model/natureally7/giantsquid.ts",
         "./src/model/natureally7/mastodon.ts",
-        "./src/model/natureally7/roc.ts"
+        "./src/model/natureally7/roc.ts",
+
+        "./src/model/natureally8/cloudgiant.ts",
+        "./src/model/natureally8/purpleworm.ts",
+
+        "./src/model/natureally9/pixie.ts",
+        "./src/model/natureally9/stormgiant.ts"
     ]
 }

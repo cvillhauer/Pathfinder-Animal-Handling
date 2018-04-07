@@ -174,5 +174,13 @@ export enum SummonNaturesAlly8 {
     ElementalElderAir = "ElementalElderAir",
     ElementalElderEarth = "ElementalElderEarth",
     ElementalElderFire = "ElementalElderFire",
-    ElementalElderWater = "ElementalElderWater"
+    ElementalElderWater = "ElementalElderWater",
+    CloudGiant = "CloudGiant",
+    PurpleWorm = "PurpleWorm"
+}
+
+export enum SummonNaturesAlly9 {
+    //TODO: Adding a space in the string description breaks KO databinding for AddAnimal
+    Pixie = "Pixie",
+    StormGiant = "StormGiant"
 }

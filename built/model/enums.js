@@ -179,6 +179,14 @@ define(["require", "exports"], function (require, exports) {
         SummonNaturesAlly8["ElementalElderEarth"] = "ElementalElderEarth";
         SummonNaturesAlly8["ElementalElderFire"] = "ElementalElderFire";
         SummonNaturesAlly8["ElementalElderWater"] = "ElementalElderWater";
+        SummonNaturesAlly8["CloudGiant"] = "CloudGiant";
+        SummonNaturesAlly8["PurpleWorm"] = "PurpleWorm";
     })(SummonNaturesAlly8 = exports.SummonNaturesAlly8 || (exports.SummonNaturesAlly8 = {}));
+    var SummonNaturesAlly9;
+    (function (SummonNaturesAlly9) {
+        //TODO: Adding a space in the string description breaks KO databinding for AddAnimal
+        SummonNaturesAlly9["Pixie"] = "Pixie";
+        SummonNaturesAlly9["StormGiant"] = "StormGiant";
+    })(SummonNaturesAlly9 = exports.SummonNaturesAlly9 || (exports.SummonNaturesAlly9 = {}));
 });
 //# sourceMappingURL=enums.js.map

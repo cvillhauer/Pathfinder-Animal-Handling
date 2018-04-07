@@ -3,7 +3,7 @@ import * as ko from "knockout";
 import { Size, CreatureType, ElementalType, Element } from "./model/enums";
 import { SummonNaturesAlly1, SummonNaturesAlly2, SummonNaturesAlly3 } from "./model/enums";
 import { SummonNaturesAlly4, SummonNaturesAlly5, SummonNaturesAlly6 } from "./model/enums";
-import { SummonNaturesAlly7, SummonNaturesAlly8 } from "./model/enums";
+import { SummonNaturesAlly7, SummonNaturesAlly8, SummonNaturesAlly9 } from "./model/enums";
 import { Animal } from "./model/animal";
 
 //TODO Isn't there an easier way to import a bunch of models?
@@ -92,6 +92,12 @@ import { GiantSquid } from "./model/natureally7/giantsquid";
 import { Mastodon } from "./model/natureally7/mastodon";
 import { Roc } from "./model/natureally7/roc";
 
+import { CloudGiant } from "./model/natureally8/cloudgiant";
+import { PurpleWorm } from "./model/natureally8/purpleworm";
+
+import { Pixie } from "./model/natureally9/pixie";
+import { StormGiant } from "./model/natureally9/stormgiant";
+
 
 export class SummonNaturesAlly {
     summonNaturesAlly1Choices: KnockoutObservableArray<string>;
@@ -102,6 +108,7 @@ export class SummonNaturesAlly {
     summonNaturesAlly6Choices: KnockoutObservableArray<string>;
     summonNaturesAlly7Choices: KnockoutObservableArray<string>;
     summonNaturesAlly8Choices: KnockoutObservableArray<string>;
+    summonNaturesAlly9Choices: KnockoutObservableArray<string>;
 
     addedAnimalType1: KnockoutObservable<SummonNaturesAlly1>;
     addedAnimalType2: KnockoutObservable<SummonNaturesAlly2>;
@@ -111,6 +118,7 @@ export class SummonNaturesAlly {
     addedAnimalType6: KnockoutObservable<SummonNaturesAlly6>;
     addedAnimalType7: KnockoutObservable<SummonNaturesAlly7>;
     addedAnimalType8: KnockoutObservable<SummonNaturesAlly8>;
+    addedAnimalType9: KnockoutObservable<SummonNaturesAlly9>;
 
     constructor() {
         this.addedAnimalType1 = ko.observable();
@@ -121,6 +129,7 @@ export class SummonNaturesAlly {
         this.addedAnimalType6 = ko.observable();
         this.addedAnimalType7 = ko.observable();
         this.addedAnimalType8 = ko.observable();
+        this.addedAnimalType9 = ko.observable();
 
         this.summonNaturesAlly1Choices = ko.observableArray();
         for (let animal in SummonNaturesAlly1) {
@@ -160,6 +169,11 @@ export class SummonNaturesAlly {
         this.summonNaturesAlly8Choices = ko.observableArray();
         for (let animal in SummonNaturesAlly8) {
             this.summonNaturesAlly8Choices.push(animal);
+        }
+
+        this.summonNaturesAlly9Choices = ko.observableArray();
+        for (let animal in SummonNaturesAlly9) {
+            this.summonNaturesAlly9Choices.push(animal);
         }
     }
 
@@ -233,7 +247,7 @@ export class SummonNaturesAlly {
                         newAnimal = this.summonNaturesAlly8(animalName + " " + i, druidLevel, this.addedAnimalType8());
                         break;
                     case 9:
-                        //newAnimal = this.summonNaturesAlly9(animalName + " " + i, druidLevel, this.addedAnimalType9());
+                        newAnimal = this.summonNaturesAlly9(animalName + " " + i, druidLevel, this.addedAnimalType9());
                         break;
                 }
                 if (newAnimal != undefined) {
@@ -249,6 +263,7 @@ export class SummonNaturesAlly {
                 this.addedAnimalType6(undefined);
                 this.addedAnimalType7(undefined);
                 this.addedAnimalType8(undefined);
+                this.addedAnimalType9(undefined);
             }
             else {
                 //TODO: Better error handling
@@ -597,6 +612,25 @@ export class SummonNaturesAlly {
                 break;
             case SummonNaturesAlly8.ElementalElderWater:
                 newAnimal = new WaterElemental(name, rounds, ElementalType.Elder);
+                break;
+            case SummonNaturesAlly8.CloudGiant:
+                newAnimal = new CloudGiant(name, rounds);
+                break;
+            case SummonNaturesAlly8.PurpleWorm:
+                newAnimal = new PurpleWorm(name, rounds);
+                break;
+        }
+        return newAnimal;
+    }
+
+    summonNaturesAlly9(name: string, rounds: number, animalType: SummonNaturesAlly9) {
+        let newAnimal: Animal;
+        switch (animalType) {
+            case SummonNaturesAlly9.Pixie:
+                newAnimal = new Pixie(name, rounds);
+                break;
+            case SummonNaturesAlly9.StormGiant:
+                newAnimal = new StormGiant(name, rounds);
                 break;
         }
         return newAnimal;

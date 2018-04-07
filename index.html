@@ -63,7 +63,7 @@
                     <button type="button" class="btn btn-default col-xs-1" data-bind="css: { disabled: druid().level() < 11, active: summonNatureLevel() == 6 }, click: function () { selectSummonNaturesAlly(6) }">VI</button>
                     <button type="button" class="btn btn-default col-xs-1" data-bind="css: { disabled: druid().level() < 13, active: summonNatureLevel() == 7 }, click: function () { selectSummonNaturesAlly(7) }">VII</button>
                     <button type="button" class="btn btn-default col-xs-1" data-bind="css: { disabled: druid().level() < 15, active: summonNatureLevel() == 8 }, click: function () { selectSummonNaturesAlly(8) }">VIII</button>
-                    <button type="button" class="btn btn-default col-xs-1" data-bind="css: { disabled: druid().level() < 17, active: summonNatureLevel() == 9 }, click: function () { selectSummonNaturesAlly(9) }">XI</button>
+                    <button type="button" class="btn btn-default col-xs-1" data-bind="css: { disabled: druid().level() < 17, active: summonNatureLevel() == 9 }, click: function () { selectSummonNaturesAlly(9) }">IX</button>
                 </div>
                 <h4>Cast Summon Nature's Ally for Animal Level:</h4>
                 <div style="display: flex; justify-content: space-around;">
@@ -101,6 +101,9 @@
                     </p>
                     <p data-bind="visible: summonAnimalLevel() == 8">Summon Nature's Ally VIII Animal Type:
                         <select class="form-control" data-bind="options: animalSummoner.summonNaturesAlly8Choices, value: animalSummoner.addedAnimalType8, optionsCaption: ''"></select>
+                    </p>
+                    <p data-bind="visible: summonAnimalLevel() == 9">Summon Nature's Ally IX Animal Type:
+                        <select class="form-control" data-bind="options: animalSummoner.summonNaturesAlly9Choices, value: animalSummoner.addedAnimalType9, optionsCaption: ''"></select>
                     </p>
                     <p>Animal Name:
                         <input class="form-control" type="text" data-bind="value: addedAnimalName, valueUpdate: 'afterkeydown'" />
