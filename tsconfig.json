@@ -20,7 +20,7 @@
         "./src/model/elementals/fireelemental.ts",
         "./src/model/elementals/waterelemental.ts",
 
-        //All the animals!
+        //All the creatures!
 
         "./src/model/natureally1/direrat.ts",
         "./src/model/natureally1/dog.ts",
