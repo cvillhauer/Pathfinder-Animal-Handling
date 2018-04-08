@@ -46,9 +46,9 @@ define(["require", "exports"], function (require, exports) {
         ElementalType["Greater"] = "Greater";
         ElementalType["Elder"] = "Elder";
     })(ElementalType = exports.ElementalType || (exports.ElementalType = {}));
+    //TODO: Adding a space in the string description breaks KO databinding for AddCreature
     var SummonNaturesAlly1;
     (function (SummonNaturesAlly1) {
-        //TODO: Adding a space in the string description breaks KO databinding for AddAnimal
         SummonNaturesAlly1["DireRat"] = "DireRat";
         SummonNaturesAlly1["Dog"] = "Dog";
         SummonNaturesAlly1["Dolphin"] = "Dolphin";
@@ -63,7 +63,6 @@ define(["require", "exports"], function (require, exports) {
     })(SummonNaturesAlly1 = exports.SummonNaturesAlly1 || (exports.SummonNaturesAlly1 = {}));
     var SummonNaturesAlly2;
     (function (SummonNaturesAlly2) {
-        //TODO: Adding a space in the string description breaks KO databinding for AddAnimal
         SummonNaturesAlly2["ElementalSmallAir"] = "ElementalSmallAir";
         SummonNaturesAlly2["ElementalSmallEarth"] = "ElementalSmallEarth";
         SummonNaturesAlly2["ElementalSmallFire"] = "ElementalSmallFire";
@@ -80,7 +79,6 @@ define(["require", "exports"], function (require, exports) {
     })(SummonNaturesAlly2 = exports.SummonNaturesAlly2 || (exports.SummonNaturesAlly2 = {}));
     var SummonNaturesAlly3;
     (function (SummonNaturesAlly3) {
-        //TODO: Adding a space in the string description breaks KO databinding for AddAnimal
         SummonNaturesAlly3["Ape"] = "Ape";
         SummonNaturesAlly3["Auroch"] = "Auroch";
         SummonNaturesAlly3["Boar"] = "Boar";
@@ -98,7 +96,6 @@ define(["require", "exports"], function (require, exports) {
     })(SummonNaturesAlly3 = exports.SummonNaturesAlly3 || (exports.SummonNaturesAlly3 = {}));
     var SummonNaturesAlly4;
     (function (SummonNaturesAlly4) {
-        //TODO: Adding a space in the string description breaks KO databinding for AddAnimal
         SummonNaturesAlly4["ElementalMediumAir"] = "ElementalMediumAir";
         SummonNaturesAlly4["ElementalMediumEarth"] = "ElementalMediumEarth";
         SummonNaturesAlly4["ElementalMediumFire"] = "ElementalMediumFire";
@@ -124,7 +121,6 @@ define(["require", "exports"], function (require, exports) {
     })(SummonNaturesAlly4 = exports.SummonNaturesAlly4 || (exports.SummonNaturesAlly4 = {}));
     var SummonNaturesAlly5;
     (function (SummonNaturesAlly5) {
-        //TODO: Adding a space in the string description breaks KO databinding for AddAnimal
         SummonNaturesAlly5["ElementalLargeAir"] = "ElementalLargeAir";
         SummonNaturesAlly5["ElementalLargeEarth"] = "ElementalLargeEarth";
         SummonNaturesAlly5["ElementalLargeFire"] = "ElementalLargeFire";
@@ -141,7 +137,6 @@ define(["require", "exports"], function (require, exports) {
     })(SummonNaturesAlly5 = exports.SummonNaturesAlly5 || (exports.SummonNaturesAlly5 = {}));
     var SummonNaturesAlly6;
     (function (SummonNaturesAlly6) {
-        //TODO: Adding a space in the string description breaks KO databinding for AddAnimal
         SummonNaturesAlly6["ElementalHugeAir"] = "ElementalHugeAir";
         SummonNaturesAlly6["ElementalHugeEarth"] = "ElementalHugeEarth";
         SummonNaturesAlly6["ElementalHugeFire"] = "ElementalHugeFire";
@@ -159,11 +154,11 @@ define(["require", "exports"], function (require, exports) {
     })(SummonNaturesAlly6 = exports.SummonNaturesAlly6 || (exports.SummonNaturesAlly6 = {}));
     var SummonNaturesAlly7;
     (function (SummonNaturesAlly7) {
-        //TODO: Adding a space in the string description breaks KO databinding for AddAnimal
         SummonNaturesAlly7["ElementalGreaterAir"] = "ElementalGreaterAir";
         SummonNaturesAlly7["ElementalGreaterEarth"] = "ElementalGreaterEarth";
         SummonNaturesAlly7["ElementalGreaterFire"] = "ElementalGreaterFire";
         SummonNaturesAlly7["ElementalGreaterWater"] = "ElementalGreaterWater";
+        //Brachiosaurus = "Brachiosaurus",
         SummonNaturesAlly7["DireCrocodile"] = "DireCrocodile";
         SummonNaturesAlly7["DireShark"] = "DireShark";
         SummonNaturesAlly7["FireGiant"] = "FireGiant";
@@ -171,10 +166,10 @@ define(["require", "exports"], function (require, exports) {
         SummonNaturesAlly7["GiantSquid"] = "GiantSquid";
         SummonNaturesAlly7["Mastodon"] = "Mastodon";
         SummonNaturesAlly7["Roc"] = "Roc";
+        //Tyrannosaurus = "Tyrannosaurus"
     })(SummonNaturesAlly7 = exports.SummonNaturesAlly7 || (exports.SummonNaturesAlly7 = {}));
     var SummonNaturesAlly8;
     (function (SummonNaturesAlly8) {
-        //TODO: Adding a space in the string description breaks KO databinding for AddAnimal
         SummonNaturesAlly8["ElementalElderAir"] = "ElementalElderAir";
         SummonNaturesAlly8["ElementalElderEarth"] = "ElementalElderEarth";
         SummonNaturesAlly8["ElementalElderFire"] = "ElementalElderFire";
@@ -184,7 +179,6 @@ define(["require", "exports"], function (require, exports) {
     })(SummonNaturesAlly8 = exports.SummonNaturesAlly8 || (exports.SummonNaturesAlly8 = {}));
     var SummonNaturesAlly9;
     (function (SummonNaturesAlly9) {
-        //TODO: Adding a space in the string description breaks KO databinding for AddAnimal
         SummonNaturesAlly9["Pixie"] = "Pixie";
         SummonNaturesAlly9["StormGiant"] = "StormGiant";
     })(SummonNaturesAlly9 = exports.SummonNaturesAlly9 || (exports.SummonNaturesAlly9 = {}));
