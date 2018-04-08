@@ -3,7 +3,7 @@ import * as ko from "knockout";
 import { Size, CreatureType } from "./model/enums";
 import { Druid } from "./model/druid";
 import { Creature } from "./model/creature";
-import { SummonNaturesAlly } from "./summonnaturesally";
+import { SummonNaturesAlly } from "./summon";
 
 class CreaturesViewModel {
     druid: KnockoutObservable<Druid>;

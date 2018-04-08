@@ -1,4 +1,4 @@
-define(["require", "exports", "knockout", "./model/druid", "./summonnaturesally"], function (require, exports, ko, druid_1, summonnaturesally_1) {
+define(["require", "exports", "knockout", "./model/druid", "./summon"], function (require, exports, ko, druid_1, summon_1) {
     "use strict";
     Object.defineProperty(exports, "__esModule", { value: true });
     var CreaturesViewModel = /** @class */ (function () {
@@ -7,7 +7,7 @@ define(["require", "exports", "knockout", "./model/druid", "./summonnaturesally"
             this.pets = ko.observableArray();
             this.currentRound = ko.observable(1);
             this.editName = ko.observable(false);
-            this.creatureSummoner = new summonnaturesally_1.SummonNaturesAlly();
+            this.creatureSummoner = new summon_1.SummonNaturesAlly();
             this.summonNatureLevel = ko.observable(0);
             this.summonCreatureLevel = ko.observable(0);
             this.addedCreatureName = ko.observable("Squeaky");

@@ -501,4 +501,4 @@ define(["require", "exports", "knockout", "./model/enums", "./model/enums", "./m
     }());
     exports.SummonNaturesAlly = SummonNaturesAlly;
 });
-//# sourceMappingURL=summonnaturesally.js.map
+//# sourceMappingURL=summon.js.map
