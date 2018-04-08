@@ -1,7 +1,7 @@
 import * as ko from "knockout";
 import { Size, CreatureType } from "./enums";
 
-export class Animal {
+export class Creature {
     name: KnockoutObservable<string>;
     editName: KnockoutObservable<boolean>;
     description: string;

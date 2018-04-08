@@ -1,8 +1,8 @@
 import * as ko from "knockout";
 import { Size, CreatureType } from "../enums";
-import { Animal } from "../animal";
+import { Creature } from "../creature";
 
-export class Bison extends Animal{
+export class Bison extends Creature{
 
     constructor(name: string, rounds: number) {
         super(name, rounds);

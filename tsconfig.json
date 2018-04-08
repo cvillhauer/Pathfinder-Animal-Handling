@@ -12,7 +12,7 @@
         "./src/viewmodel.ts",
         "./src/summonnaturesally.ts",
         "./src/model/druid.ts",
-        "./src/model/animal.ts",
+        "./src/model/creature.ts",
         
         "./src/model/elementals/elemental.ts",
         "./src/model/elementals/airelemental.ts",

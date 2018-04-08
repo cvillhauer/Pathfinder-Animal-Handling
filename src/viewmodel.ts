@@ -2,20 +2,20 @@ import * as ko from "knockout";
 
 import { Size, CreatureType } from "./model/enums";
 import { Druid } from "./model/druid";
-import { Animal } from "./model/animal";
+import { Creature } from "./model/creature";
 import { SummonNaturesAlly } from "./summonnaturesally";
 
-class AnimalsViewModel {
+class CreaturesViewModel {
     druid: KnockoutObservable<Druid>;
-    pets: KnockoutObservableArray<Animal>;
+    pets: KnockoutObservableArray<Creature>;
     currentRound: KnockoutObservable<number>;
     editName: KnockoutObservable<boolean>;
 
-    animalSummoner: SummonNaturesAlly;
+    creatureSummoner: SummonNaturesAlly;
 
     summonNatureLevel: KnockoutObservable<number>;
-    summonAnimalLevel: KnockoutObservable<number>;
-    addedAnimalName: KnockoutObservable<string>;
+    summonCreatureLevel: KnockoutObservable<number>;
+    addedCreatureName: KnockoutObservable<string>;
 
     constructor(druid: Druid) {
         this.druid = ko.observable(druid);
@@ -24,12 +24,12 @@ class AnimalsViewModel {
 
         this.editName = ko.observable(false);
 
-        this.animalSummoner = new SummonNaturesAlly();
+        this.creatureSummoner = new SummonNaturesAlly();
 
         this.summonNatureLevel = ko.observable(0);
-        this.summonAnimalLevel = ko.observable(0);
+        this.summonCreatureLevel = ko.observable(0);
 
-        this.addedAnimalName = ko.observable("Squeaky");
+        this.addedCreatureName = ko.observable("Squeaky");
     }
 
     //TODO: Move RollDice somewhere where both viewmodel and other classes can use it
@@ -60,15 +60,15 @@ class AnimalsViewModel {
         this.druid().increaseLevel(1);
     }
 
-    deleteAnimal(animalToDelete: Animal) {
-        this.pets.remove(animalToDelete);
+    deleteCreature(creatureToDelete: Creature) {
+        this.pets.remove(creatureToDelete);
     }
 
     editDruidName() {
         this.editName(true);
     }
 
-    editAnimalName(petToEdit: Animal) {
+    editCreatureName(petToEdit: Creature) {
         petToEdit.editName(true);
     }
 
@@ -76,22 +76,22 @@ class AnimalsViewModel {
         this.summonNatureLevel(spellLevel);
     }
 
-    selectSummonAnimalLevel(animalLevel: number) {
-        this.summonAnimalLevel(animalLevel);
+    selectSummonCreatureLevel(creatureLevel: number) {
+        this.summonCreatureLevel(creatureLevel);
     }
 
     summonNaturesAlly() {
-        let newAnimals: Animal[];
-        newAnimals = this.animalSummoner.summonNaturesAlly(this.druid().level(), this.summonNatureLevel(), this.summonAnimalLevel(), this.addedAnimalName());
-        for (let animal of newAnimals) {
-            this.pets.push(animal);
+        let newCreatures: Creature[];
+        newCreatures = this.creatureSummoner.summonNaturesAlly(this.druid().level(), this.summonNatureLevel(), this.summonCreatureLevel(), this.addedCreatureName());
+        for (let creature of newCreatures) {
+            this.pets.push(creature);
         }
-        if (newAnimals.length > 0) {
+        if (newCreatures.length > 0) {
             this.summonNatureLevel(0);
-            this.summonAnimalLevel(0);
+            this.summonCreatureLevel(0);
         }
     }
 
 }
 
-ko.applyBindings(new AnimalsViewModel(new Druid("Courtney", 1)));
+ko.applyBindings(new CreaturesViewModel(new Druid("Courtney", 1)));

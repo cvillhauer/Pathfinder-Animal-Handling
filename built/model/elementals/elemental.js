@@ -8,7 +8,7 @@ var __extends = (this && this.__extends) || (function () {
         d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
     };
 })();
-define(["require", "exports", "../enums", "../animal"], function (require, exports, enums_1, animal_1) {
+define(["require", "exports", "../enums", "../creature"], function (require, exports, enums_1, creature_1) {
     "use strict";
     Object.defineProperty(exports, "__esModule", { value: true });
     var Elemental = /** @class */ (function (_super) {
@@ -85,7 +85,7 @@ define(["require", "exports", "../enums", "../animal"], function (require, expor
             //Implemented in subclasses
         };
         return Elemental;
-    }(animal_1.Animal));
+    }(creature_1.Creature));
     exports.Elemental = Elemental;
 });
 //# sourceMappingURL=elemental.js.map

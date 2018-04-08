@@ -8,7 +8,7 @@ var __extends = (this && this.__extends) || (function () {
         d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
     };
 })();
-define(["require", "exports", "knockout", "../enums", "../animal"], function (require, exports, ko, enums_1, animal_1) {
+define(["require", "exports", "knockout", "../enums", "../creature"], function (require, exports, ko, enums_1, creature_1) {
     "use strict";
     Object.defineProperty(exports, "__esModule", { value: true });
     var Mephit = /** @class */ (function (_super) {
@@ -113,7 +113,7 @@ define(["require", "exports", "knockout", "../enums", "../animal"], function (re
             return _this;
         }
         return Mephit;
-    }(animal_1.Animal));
+    }(creature_1.Creature));
     exports.Mephit = Mephit;
 });
 //# sourceMappingURL=mephit.js.map

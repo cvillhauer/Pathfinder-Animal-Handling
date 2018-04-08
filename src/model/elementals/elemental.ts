@@ -1,8 +1,8 @@
 import * as ko from "knockout";
 import { Size, CreatureType, ElementalType, Element } from "../enums";
-import { Animal } from "../animal";
+import { Creature } from "../creature";
 
-export class Elemental extends Animal {
+export class Elemental extends Creature {
 
     element: Element;
     elementalType: ElementalType;

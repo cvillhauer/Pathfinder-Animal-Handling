@@ -1,19 +1,19 @@
 define(["require", "exports", "knockout", "./model/druid", "./summonnaturesally"], function (require, exports, ko, druid_1, summonnaturesally_1) {
     "use strict";
     Object.defineProperty(exports, "__esModule", { value: true });
-    var AnimalsViewModel = /** @class */ (function () {
-        function AnimalsViewModel(druid) {
+    var CreaturesViewModel = /** @class */ (function () {
+        function CreaturesViewModel(druid) {
             this.druid = ko.observable(druid);
             this.pets = ko.observableArray();
             this.currentRound = ko.observable(1);
             this.editName = ko.observable(false);
-            this.animalSummoner = new summonnaturesally_1.SummonNaturesAlly();
+            this.creatureSummoner = new summonnaturesally_1.SummonNaturesAlly();
             this.summonNatureLevel = ko.observable(0);
-            this.summonAnimalLevel = ko.observable(0);
-            this.addedAnimalName = ko.observable("Squeaky");
+            this.summonCreatureLevel = ko.observable(0);
+            this.addedCreatureName = ko.observable("Squeaky");
         }
         //TODO: Move RollDice somewhere where both viewmodel and other classes can use it
-        AnimalsViewModel.prototype.rollDice = function (numberOfDice, typeOfDice) {
+        CreaturesViewModel.prototype.rollDice = function (numberOfDice, typeOfDice) {
             var result = 0;
             console.log("Rolling " + numberOfDice + "d" + typeOfDice);
             for (var i = 0; i < numberOfDice; i++) {
@@ -24,7 +24,7 @@ define(["require", "exports", "knockout", "./model/druid", "./summonnaturesally"
             console.log("Total of dice rolls is a " + result);
             return result;
         };
-        AnimalsViewModel.prototype.nextRound = function () {
+        CreaturesViewModel.prototype.nextRound = function () {
             var petsRemaining = [];
             for (var _i = 0, _a = this.pets(); _i < _a.length; _i++) {
                 var pet = _a[_i];
@@ -35,38 +35,38 @@ define(["require", "exports", "knockout", "./model/druid", "./summonnaturesally"
             }
             this.pets(petsRemaining);
         };
-        AnimalsViewModel.prototype.incrementDruidLevel = function () {
+        CreaturesViewModel.prototype.incrementDruidLevel = function () {
             this.druid().increaseLevel(1);
         };
-        AnimalsViewModel.prototype.deleteAnimal = function (animalToDelete) {
-            this.pets.remove(animalToDelete);
+        CreaturesViewModel.prototype.deleteCreature = function (creatureToDelete) {
+            this.pets.remove(creatureToDelete);
         };
-        AnimalsViewModel.prototype.editDruidName = function () {
+        CreaturesViewModel.prototype.editDruidName = function () {
             this.editName(true);
         };
-        AnimalsViewModel.prototype.editAnimalName = function (petToEdit) {
+        CreaturesViewModel.prototype.editCreatureName = function (petToEdit) {
             petToEdit.editName(true);
         };
-        AnimalsViewModel.prototype.selectSummonNaturesAlly = function (spellLevel) {
+        CreaturesViewModel.prototype.selectSummonNaturesAlly = function (spellLevel) {
             this.summonNatureLevel(spellLevel);
         };
-        AnimalsViewModel.prototype.selectSummonAnimalLevel = function (animalLevel) {
-            this.summonAnimalLevel(animalLevel);
+        CreaturesViewModel.prototype.selectSummonCreatureLevel = function (creatureLevel) {
+            this.summonCreatureLevel(creatureLevel);
         };
-        AnimalsViewModel.prototype.summonNaturesAlly = function () {
-            var newAnimals;
-            newAnimals = this.animalSummoner.summonNaturesAlly(this.druid().level(), this.summonNatureLevel(), this.summonAnimalLevel(), this.addedAnimalName());
-            for (var _i = 0, newAnimals_1 = newAnimals; _i < newAnimals_1.length; _i++) {
-                var animal = newAnimals_1[_i];
-                this.pets.push(animal);
+        CreaturesViewModel.prototype.summonNaturesAlly = function () {
+            var newCreatures;
+            newCreatures = this.creatureSummoner.summonNaturesAlly(this.druid().level(), this.summonNatureLevel(), this.summonCreatureLevel(), this.addedCreatureName());
+            for (var _i = 0, newCreatures_1 = newCreatures; _i < newCreatures_1.length; _i++) {
+                var creature = newCreatures_1[_i];
+                this.pets.push(creature);
             }
-            if (newAnimals.length > 0) {
+            if (newCreatures.length > 0) {
                 this.summonNatureLevel(0);
-                this.summonAnimalLevel(0);
+                this.summonCreatureLevel(0);
             }
         };
-        return AnimalsViewModel;
+        return CreaturesViewModel;
     }());
-    ko.applyBindings(new AnimalsViewModel(new druid_1.Druid("Courtney", 1)));
+    ko.applyBindings(new CreaturesViewModel(new druid_1.Druid("Courtney", 1)));
 });
 //# sourceMappingURL=viewmodel.js.map
