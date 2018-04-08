@@ -64,7 +64,7 @@ define(["require", "exports", "knockout", "./model/enums", "./model/enums", "./m
         Summon.prototype.Summon = function (druidLevel, spellLevel, creatureLevel, creatureName) {
             var summonedCreatures = [];
             var numberOfCreatures = 0;
-            console.log("Cast Summon Nature's Ally " + spellLevel + " for creature level " + creatureLevel);
+            console.log("Cast Summon " + spellLevel + " for creature level " + creatureLevel);
             //TODO: Add user-visible validation and error messages
             if (spellLevel == 0 || creatureLevel == 0) {
                 alert("Please select both a spell level and an creature level.");

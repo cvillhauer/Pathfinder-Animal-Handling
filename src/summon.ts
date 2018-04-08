@@ -193,7 +193,7 @@ export class Summon {
     Summon(druidLevel: number, spellLevel: number, creatureLevel: number, creatureName: string) {
         let summonedCreatures: Creature[] = [];
         let numberOfCreatures: number = 0;
-        console.log("Cast Summon Nature's Ally " + spellLevel + " for creature level " + creatureLevel);
+        console.log("Cast Summon " + spellLevel + " for creature level " + creatureLevel);
         //TODO: Add user-visible validation and error messages
         if (spellLevel == 0 || creatureLevel == 0) {
             alert("Please select both a spell level and an creature level.");
