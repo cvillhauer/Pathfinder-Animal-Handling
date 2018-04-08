@@ -1,9 +1,9 @@
 import * as ko from "knockout";
 
 import { Size, CreatureType, ElementalType, Element } from "./model/enums";
-import { SummonNaturesAlly1, SummonNaturesAlly2, SummonNaturesAlly3 } from "./model/enums";
-import { SummonNaturesAlly4, SummonNaturesAlly5, SummonNaturesAlly6 } from "./model/enums";
-import { SummonNaturesAlly7, SummonNaturesAlly8, SummonNaturesAlly9 } from "./model/enums";
+import { Summon1, Summon2, Summon3 } from "./model/enums";
+import { Summon4, Summon5, Summon6 } from "./model/enums";
+import { Summon7, Summon8, Summon9 } from "./model/enums";
 import { Creature } from "./model/creature";
 
 //TODO Isn't there an easier way to import a bunch of models?
@@ -99,26 +99,26 @@ import { Pixie } from "./model/natureally9/pixie";
 import { StormGiant } from "./model/natureally9/stormgiant";
 
 
-export class SummonNaturesAlly {
-    summonNaturesAlly1Choices: KnockoutObservableArray<string>;
-    summonNaturesAlly2Choices: KnockoutObservableArray<string>;
-    summonNaturesAlly3Choices: KnockoutObservableArray<string>;
-    summonNaturesAlly4Choices: KnockoutObservableArray<string>;
-    summonNaturesAlly5Choices: KnockoutObservableArray<string>;
-    summonNaturesAlly6Choices: KnockoutObservableArray<string>;
-    summonNaturesAlly7Choices: KnockoutObservableArray<string>;
-    summonNaturesAlly8Choices: KnockoutObservableArray<string>;
-    summonNaturesAlly9Choices: KnockoutObservableArray<string>;
+export class Summon {
+    Summon1Choices: KnockoutObservableArray<string>;
+    Summon2Choices: KnockoutObservableArray<string>;
+    Summon3Choices: KnockoutObservableArray<string>;
+    Summon4Choices: KnockoutObservableArray<string>;
+    Summon5Choices: KnockoutObservableArray<string>;
+    Summon6Choices: KnockoutObservableArray<string>;
+    Summon7Choices: KnockoutObservableArray<string>;
+    Summon8Choices: KnockoutObservableArray<string>;
+    Summon9Choices: KnockoutObservableArray<string>;
 
-    addedCreatureType1: KnockoutObservable<SummonNaturesAlly1>;
-    addedCreatureType2: KnockoutObservable<SummonNaturesAlly2>;
-    addedCreatureType3: KnockoutObservable<SummonNaturesAlly3>;
-    addedCreatureType4: KnockoutObservable<SummonNaturesAlly4>;
-    addedCreatureType5: KnockoutObservable<SummonNaturesAlly5>;
-    addedCreatureType6: KnockoutObservable<SummonNaturesAlly6>;
-    addedCreatureType7: KnockoutObservable<SummonNaturesAlly7>;
-    addedCreatureType8: KnockoutObservable<SummonNaturesAlly8>;
-    addedCreatureType9: KnockoutObservable<SummonNaturesAlly9>;
+    addedCreatureType1: KnockoutObservable<Summon1>;
+    addedCreatureType2: KnockoutObservable<Summon2>;
+    addedCreatureType3: KnockoutObservable<Summon3>;
+    addedCreatureType4: KnockoutObservable<Summon4>;
+    addedCreatureType5: KnockoutObservable<Summon5>;
+    addedCreatureType6: KnockoutObservable<Summon6>;
+    addedCreatureType7: KnockoutObservable<Summon7>;
+    addedCreatureType8: KnockoutObservable<Summon8>;
+    addedCreatureType9: KnockoutObservable<Summon9>;
 
     constructor() {
         this.addedCreatureType1 = ko.observable();
@@ -131,49 +131,49 @@ export class SummonNaturesAlly {
         this.addedCreatureType8 = ko.observable();
         this.addedCreatureType9 = ko.observable();
 
-        this.summonNaturesAlly1Choices = ko.observableArray();
-        for (let creature in SummonNaturesAlly1) {
-            this.summonNaturesAlly1Choices.push(creature);
+        this.Summon1Choices = ko.observableArray();
+        for (let creature in Summon1) {
+            this.Summon1Choices.push(creature);
         }
 
-        this.summonNaturesAlly2Choices = ko.observableArray();
-        for (let creature in SummonNaturesAlly2) {
-            this.summonNaturesAlly2Choices.push(creature);
+        this.Summon2Choices = ko.observableArray();
+        for (let creature in Summon2) {
+            this.Summon2Choices.push(creature);
         }
 
-        this.summonNaturesAlly3Choices = ko.observableArray();
-        for (let creature in SummonNaturesAlly3) {
-            this.summonNaturesAlly3Choices.push(creature);
+        this.Summon3Choices = ko.observableArray();
+        for (let creature in Summon3) {
+            this.Summon3Choices.push(creature);
         }
 
-        this.summonNaturesAlly4Choices = ko.observableArray();
-        for (let creature in SummonNaturesAlly4) {
-            this.summonNaturesAlly4Choices.push(creature);
+        this.Summon4Choices = ko.observableArray();
+        for (let creature in Summon4) {
+            this.Summon4Choices.push(creature);
         }
 
-        this.summonNaturesAlly5Choices = ko.observableArray();
-        for (let creature in SummonNaturesAlly5) {
-            this.summonNaturesAlly5Choices.push(creature);
+        this.Summon5Choices = ko.observableArray();
+        for (let creature in Summon5) {
+            this.Summon5Choices.push(creature);
         }
 
-        this.summonNaturesAlly6Choices = ko.observableArray();
-        for (let creature in SummonNaturesAlly6) {
-            this.summonNaturesAlly6Choices.push(creature);
+        this.Summon6Choices = ko.observableArray();
+        for (let creature in Summon6) {
+            this.Summon6Choices.push(creature);
         }
 
-        this.summonNaturesAlly7Choices = ko.observableArray();
-        for (let creature in SummonNaturesAlly7) {
-            this.summonNaturesAlly7Choices.push(creature);
+        this.Summon7Choices = ko.observableArray();
+        for (let creature in Summon7) {
+            this.Summon7Choices.push(creature);
         }
 
-        this.summonNaturesAlly8Choices = ko.observableArray();
-        for (let creature in SummonNaturesAlly8) {
-            this.summonNaturesAlly8Choices.push(creature);
+        this.Summon8Choices = ko.observableArray();
+        for (let creature in Summon8) {
+            this.Summon8Choices.push(creature);
         }
 
-        this.summonNaturesAlly9Choices = ko.observableArray();
-        for (let creature in SummonNaturesAlly9) {
-            this.summonNaturesAlly9Choices.push(creature);
+        this.Summon9Choices = ko.observableArray();
+        for (let creature in Summon9) {
+            this.Summon9Choices.push(creature);
         }
     }
 
@@ -190,7 +190,7 @@ export class SummonNaturesAlly {
         return result;
     }
 
-    summonNaturesAlly(druidLevel: number, spellLevel: number, creatureLevel: number, creatureName: string) {
+    Summon(druidLevel: number, spellLevel: number, creatureLevel: number, creatureName: string) {
         let summonedCreatures: Creature[] = [];
         let numberOfCreatures: number = 0;
         console.log("Cast Summon Nature's Ally " + spellLevel + " for creature level " + creatureLevel);
@@ -223,31 +223,31 @@ export class SummonNaturesAlly {
                 let newCreature: Creature;
                 switch (creatureLevel) {
                     case 1:
-                        newCreature = this.summonNaturesAlly1(creatureName + " " + i, druidLevel, this.addedCreatureType1());
+                        newCreature = this.Summon1(creatureName + " " + i, druidLevel, this.addedCreatureType1());
                         break;
                     case 2:
-                        newCreature = this.summonNaturesAlly2(creatureName + " " + i, druidLevel, this.addedCreatureType2());
+                        newCreature = this.Summon2(creatureName + " " + i, druidLevel, this.addedCreatureType2());
                         break;
                     case 3:
-                        newCreature = this.summonNaturesAlly3(creatureName + " " + i, druidLevel, this.addedCreatureType3());
+                        newCreature = this.Summon3(creatureName + " " + i, druidLevel, this.addedCreatureType3());
                         break;
                     case 4:
-                        newCreature = this.summonNaturesAlly4(creatureName + " " + i, druidLevel, this.addedCreatureType4());
+                        newCreature = this.Summon4(creatureName + " " + i, druidLevel, this.addedCreatureType4());
                         break;
                     case 5:
-                        newCreature = this.summonNaturesAlly5(creatureName + " " + i, druidLevel, this.addedCreatureType5());
+                        newCreature = this.Summon5(creatureName + " " + i, druidLevel, this.addedCreatureType5());
                         break;
                     case 6:
-                        newCreature = this.summonNaturesAlly6(creatureName + " " + i, druidLevel, this.addedCreatureType6());
+                        newCreature = this.Summon6(creatureName + " " + i, druidLevel, this.addedCreatureType6());
                         break;
                     case 7:
-                        newCreature = this.summonNaturesAlly7(creatureName + " " + i, druidLevel, this.addedCreatureType7());
+                        newCreature = this.Summon7(creatureName + " " + i, druidLevel, this.addedCreatureType7());
                         break;
                     case 8:
-                        newCreature = this.summonNaturesAlly8(creatureName + " " + i, druidLevel, this.addedCreatureType8());
+                        newCreature = this.Summon8(creatureName + " " + i, druidLevel, this.addedCreatureType8());
                         break;
                     case 9:
-                        newCreature = this.summonNaturesAlly9(creatureName + " " + i, druidLevel, this.addedCreatureType9());
+                        newCreature = this.Summon9(creatureName + " " + i, druidLevel, this.addedCreatureType9());
                         break;
                 }
                 if (newCreature != undefined) {
@@ -273,363 +273,363 @@ export class SummonNaturesAlly {
         return summonedCreatures;
     }
 
-    summonNaturesAlly1(name: string, rounds: number, creatureType: SummonNaturesAlly1) {
+    Summon1(name: string, rounds: number, creatureType: Summon1) {
         let newCreature: Creature;
         switch (creatureType) {
-            case SummonNaturesAlly1.DireRat:
+            case Summon1.DireRat:
                 newCreature = new DireRat(name, rounds);
                 break;
-            case SummonNaturesAlly1.Dog:
+            case Summon1.Dog:
                 newCreature = new Dog(name, rounds);
                 break;
-            case SummonNaturesAlly1.Dolphin:
+            case Summon1.Dolphin:
                 newCreature = new Dolphin(name, rounds);
                 break;
-            case SummonNaturesAlly1.Eagle:
+            case Summon1.Eagle:
                 newCreature = new Eagle(name, rounds);
                 break;
-            case SummonNaturesAlly1.FireBeetle:
+            case Summon1.FireBeetle:
                 newCreature = new FireBeetle(name, rounds);
                 break;
-            case SummonNaturesAlly1.GiantCentipede:
+            case Summon1.GiantCentipede:
                 newCreature = new GiantCentipede(name, rounds);
                 break;
-            case SummonNaturesAlly1.Mite:
+            case Summon1.Mite:
                 newCreature = new Mite(name, rounds);
                 break;
-            case SummonNaturesAlly1.PoisonousFrog:
+            case Summon1.PoisonousFrog:
                 newCreature = new PoisonousFrog(name, rounds);
                 break;
-            case SummonNaturesAlly1.Pony:
+            case Summon1.Pony:
                 newCreature = new Pony(name, rounds);
                 break;
-            case SummonNaturesAlly1.Stirge:
+            case Summon1.Stirge:
                 newCreature = new Stirge(name, rounds);
                 break;
-            case SummonNaturesAlly1.Viper:
+            case Summon1.Viper:
                 newCreature = new Viper(name, rounds);
                 break;
         }
         return newCreature;
     }
 
-    summonNaturesAlly2(name: string, rounds: number, creatureType: SummonNaturesAlly2) {
+    Summon2(name: string, rounds: number, creatureType: Summon2) {
         let newCreature: Creature;
         switch (creatureType) {
-            case SummonNaturesAlly2.ElementalSmallAir:
+            case Summon2.ElementalSmallAir:
                 newCreature = new AirElemental(name, rounds, ElementalType.Small);
                 break;
-            case SummonNaturesAlly2.ElementalSmallEarth:
+            case Summon2.ElementalSmallEarth:
                 newCreature = new EarthElemental(name, rounds, ElementalType.Small);
                 break;
-            case SummonNaturesAlly2.ElementalSmallFire:
+            case Summon2.ElementalSmallFire:
                 newCreature = new FireElemental(name, rounds, ElementalType.Small);
                 break;
-            case SummonNaturesAlly2.ElementalSmallWater:
+            case Summon2.ElementalSmallWater:
                 newCreature = new WaterElemental(name, rounds, ElementalType.Small);
                 break;
-            case SummonNaturesAlly2.GiantAntWorker:
+            case Summon2.GiantAntWorker:
                 newCreature = new GiantAntWorker(name, rounds);
                 break;
-            case SummonNaturesAlly2.GiantFrog:
+            case Summon2.GiantFrog:
                 newCreature = new GiantFrog(name, rounds);
                 break;
-            case SummonNaturesAlly2.GiantSpider:
+            case Summon2.GiantSpider:
                 newCreature = new GiantSpider(name, rounds);
                 break;
-            case SummonNaturesAlly2.GoblinDog:
+            case Summon2.GoblinDog:
                 newCreature = new GoblinDog(name, rounds);
                 break;
-            case SummonNaturesAlly2.Horse:
+            case Summon2.Horse:
                 newCreature = new Horse(name, rounds);
                 break;
-            case SummonNaturesAlly2.Hyena:
+            case Summon2.Hyena:
                 newCreature = new Hyena(name, rounds);
                 break;
-            case SummonNaturesAlly2.Octopus:
+            case Summon2.Octopus:
                 newCreature = new Octopus(name, rounds);
                 break;
-            case SummonNaturesAlly2.Squid:
+            case Summon2.Squid:
                 newCreature = new Squid(name, rounds);
                 break;
-            case SummonNaturesAlly2.Wolf:
+            case Summon2.Wolf:
                 newCreature = new Wolf(name, rounds);
                 break;
         }
         return newCreature;
     }
 
-    summonNaturesAlly3(name: string, rounds: number, creatureType: SummonNaturesAlly3) {
+    Summon3(name: string, rounds: number, creatureType: Summon3) {
         let newCreature: Creature;
         switch (creatureType) {
-            case SummonNaturesAlly3.Ape:
+            case Summon3.Ape:
                 newCreature = new Ape(name, rounds);
                 break;
-            case SummonNaturesAlly3.Auroch:
+            case Summon3.Auroch:
                 newCreature = new Auroch(name, rounds);
                 break;
-            case SummonNaturesAlly3.Boar:
+            case Summon3.Boar:
                 newCreature = new Boar(name, rounds);
                 break;
-            case SummonNaturesAlly3.Cheetah:
+            case Summon3.Cheetah:
                 newCreature = new Cheetah(name, rounds);
                 break;
-            case SummonNaturesAlly3.ConstrictorSnake:
+            case Summon3.ConstrictorSnake:
                 newCreature = new ConstrictorSnake(name, rounds);
                 break;
-            case SummonNaturesAlly3.Crocodile:
+            case Summon3.Crocodile:
                 newCreature = new Crocodile(name, rounds);
                 break;
-            case SummonNaturesAlly3.DireBat:
+            case Summon3.DireBat:
                 newCreature = new DireBat(name, rounds);
                 break;
-            case SummonNaturesAlly3.ElectricEel:
+            case Summon3.ElectricEel:
                 newCreature = new ElectricEel(name, rounds);
                 break;
-            case SummonNaturesAlly3.GiantAnt:
+            case Summon3.GiantAnt:
                 newCreature = new GiantAnt(name, rounds);
                 break;
-            case SummonNaturesAlly3.GiantCrab:
+            case Summon3.GiantCrab:
                 newCreature = new GiantCrab(name, rounds);
                 break;
-            case SummonNaturesAlly3.Leopard:
+            case Summon3.Leopard:
                 newCreature = new Leopard(name, rounds);
                 break;
-            case SummonNaturesAlly3.MonitorLizard:
+            case Summon3.MonitorLizard:
                 newCreature = new MonitorLizard(name, rounds);
                 break;
-            case SummonNaturesAlly3.Shark:
+            case Summon3.Shark:
                 newCreature = new Shark(name, rounds);
                 break;
-            case SummonNaturesAlly3.Wolverine:
+            case Summon3.Wolverine:
                 newCreature = new Wolverine(name, rounds);
                 break;
         }
         return newCreature;
     }
 
-    summonNaturesAlly4(name: string, rounds: number, creatureType: SummonNaturesAlly4) {
+    Summon4(name: string, rounds: number, creatureType: Summon4) {
         let newCreature: Creature;
         switch (creatureType) {
-            case SummonNaturesAlly4.ElementalMediumAir:
+            case Summon4.ElementalMediumAir:
                 newCreature = new AirElemental(name, rounds, ElementalType.Medium);
                 break;
-            case SummonNaturesAlly4.ElementalMediumEarth:
+            case Summon4.ElementalMediumEarth:
                 newCreature = new EarthElemental(name, rounds, ElementalType.Medium);
                 break;
-            case SummonNaturesAlly4.ElementalMediumFire:
+            case Summon4.ElementalMediumFire:
                 newCreature = new FireElemental(name, rounds, ElementalType.Medium);
                 break;
-            case SummonNaturesAlly4.ElementalMediumWater:
+            case Summon4.ElementalMediumWater:
                 newCreature = new WaterElemental(name, rounds, ElementalType.Medium);
                 break;
-            case SummonNaturesAlly4.Bison:
+            case Summon4.Bison:
                 newCreature = new Bison(name, rounds);
                 break;
-            case SummonNaturesAlly4.DireApe:
+            case Summon4.DireApe:
                 newCreature = new DireApe(name, rounds);
                 break;
-            case SummonNaturesAlly4.DireBoar:
+            case Summon4.DireBoar:
                 newCreature = new DireBoar(name, rounds);
                 break;
-            case SummonNaturesAlly4.DireWolf:
+            case Summon4.DireWolf:
                 newCreature = new DireWolf(name, rounds);
                 break;
-            case SummonNaturesAlly4.GiantAntDrone:
+            case Summon4.GiantAntDrone:
                 newCreature = new GiantAntDrone(name, rounds);
                 break;
-            case SummonNaturesAlly4.GiantScorpion:
+            case Summon4.GiantScorpion:
                 newCreature = new GiantScorpion(name, rounds);
                 break;
-            case SummonNaturesAlly4.GiantStagBeetle:
+            case Summon4.GiantStagBeetle:
                 newCreature = new GiantStagBeetle(name, rounds);
                 break;
-            case SummonNaturesAlly4.GiantWasp:
+            case Summon4.GiantWasp:
                 newCreature = new GiantWasp(name, rounds);
                 break;
-            case SummonNaturesAlly4.Griffon:
+            case Summon4.Griffon:
                 newCreature = new Griffon(name, rounds);
                 break;
-            case SummonNaturesAlly4.GrizzlyBear:
+            case Summon4.GrizzlyBear:
                 newCreature = new GrizzlyBear(name, rounds);
                 break;
-            case SummonNaturesAlly4.Lion:
+            case Summon4.Lion:
                 newCreature = new Lion(name, rounds);
                 break;
-            case SummonNaturesAlly4.Mephit:
+            case Summon4.Mephit:
                 newCreature = new Mephit(name, rounds);
                 break;
-            case SummonNaturesAlly4.Owlbear:
+            case Summon4.Owlbear:
                 newCreature = new Owlbear(name, rounds);
                 break;
-            case SummonNaturesAlly4.Rhinoceros:
+            case Summon4.Rhinoceros:
                 newCreature = new Rhinoceros(name, rounds);
                 break;
-            case SummonNaturesAlly4.Satyr:
+            case Summon4.Satyr:
                 newCreature = new Satyr(name, rounds);
                 break;
-            case SummonNaturesAlly4.Tiger:
+            case Summon4.Tiger:
                 newCreature = new Tiger(name, rounds);
                 break;
         }
         return newCreature;
     }
 
-    summonNaturesAlly5(name: string, rounds: number, creatureType: SummonNaturesAlly5) {
+    Summon5(name: string, rounds: number, creatureType: Summon5) {
         let newCreature: Creature;
         switch (creatureType) {
-            case SummonNaturesAlly5.ElementalLargeAir:
+            case Summon5.ElementalLargeAir:
                 newCreature = new AirElemental(name, rounds, ElementalType.Large);
                 break;
-            case SummonNaturesAlly5.ElementalLargeEarth:
+            case Summon5.ElementalLargeEarth:
                 newCreature = new EarthElemental(name, rounds, ElementalType.Large);
                 break;
-            case SummonNaturesAlly5.ElementalLargeFire:
+            case Summon5.ElementalLargeFire:
                 newCreature = new FireElemental(name, rounds, ElementalType.Large);
                 break;
-            case SummonNaturesAlly5.ElementalLargeWater:
+            case Summon5.ElementalLargeWater:
                 newCreature = new WaterElemental(name, rounds, ElementalType.Large);
                 break;
-            case SummonNaturesAlly5.Cyclops:
+            case Summon5.Cyclops:
                 newCreature = new Cyclops(name, rounds);
                 break;
-            case SummonNaturesAlly5.DireLion:
+            case Summon5.DireLion:
                 newCreature = new DireLion(name, rounds);
                 break;
-            case SummonNaturesAlly5.Ettin:
+            case Summon5.Ettin:
                 newCreature = new Ettin(name, rounds);
                 break;
-            case SummonNaturesAlly5.GiantMorayEel:
+            case Summon5.GiantMorayEel:
                 newCreature = new GiantMorayEel(name, rounds);
                 break;
-            case SummonNaturesAlly5.Girallon:
+            case Summon5.Girallon:
                 newCreature = new Girallon(name, rounds);
                 break;
-            case SummonNaturesAlly5.Manticore:
+            case Summon5.Manticore:
                 newCreature = new Manticore(name, rounds);
                 break;
-            case SummonNaturesAlly5.Orca:
+            case Summon5.Orca:
                 newCreature = new Orca(name, rounds);
                 break;
-            case SummonNaturesAlly5.WoollyRhinoceros:
+            case Summon5.WoollyRhinoceros:
                 newCreature = new WoollyRhinoceros(name, rounds);
                 break;
         }
         return newCreature;
     }
 
-    summonNaturesAlly6(name: string, rounds: number, creatureType: SummonNaturesAlly6) {
+    Summon6(name: string, rounds: number, creatureType: Summon6) {
         let newCreature: Creature;
         switch (creatureType) {
-            case SummonNaturesAlly6.ElementalHugeAir:
+            case Summon6.ElementalHugeAir:
                 newCreature = new AirElemental(name, rounds, ElementalType.Huge);
                 break;
-            case SummonNaturesAlly6.ElementalHugeEarth:
+            case Summon6.ElementalHugeEarth:
                 newCreature = new EarthElemental(name, rounds, ElementalType.Huge);
                 break;
-            case SummonNaturesAlly6.ElementalHugeFire:
+            case Summon6.ElementalHugeFire:
                 newCreature = new FireElemental(name, rounds, ElementalType.Huge);
                 break;
-            case SummonNaturesAlly6.ElementalHugeWater:
+            case Summon6.ElementalHugeWater:
                 newCreature = new WaterElemental(name, rounds, ElementalType.Huge);
                 break;
-            case SummonNaturesAlly6.Bulette:
+            case Summon6.Bulette:
                 newCreature = new Bulette(name, rounds);
                 break;
-            case SummonNaturesAlly6.DireBear:
+            case Summon6.DireBear:
                 newCreature = new DireBear(name, rounds);
                 break;
-            case SummonNaturesAlly6.DireTiger:
+            case Summon6.DireTiger:
                 newCreature = new DireTiger(name, rounds);
                 break;
-            case SummonNaturesAlly6.Elephant:
+            case Summon6.Elephant:
                 newCreature = new Elephant(name, rounds);
                 break;
-            case SummonNaturesAlly6.GiantOctopus:
+            case Summon6.GiantOctopus:
                 newCreature = new GiantOctopus(name, rounds);
                 break;
-            case SummonNaturesAlly6.HillGiant:
+            case Summon6.HillGiant:
                 newCreature = new HillGiant(name, rounds);
                 break;
-            case SummonNaturesAlly6.StoneGiant:
+            case Summon6.StoneGiant:
                 newCreature = new StoneGiant(name, rounds);
                 break;
         }
         return newCreature;
     }
 
-    summonNaturesAlly7(name: string, rounds: number, creatureType: SummonNaturesAlly7) {
+    Summon7(name: string, rounds: number, creatureType: Summon7) {
         let newCreature: Creature;
         switch (creatureType) {
-            case SummonNaturesAlly7.ElementalGreaterAir:
+            case Summon7.ElementalGreaterAir:
                 newCreature = new AirElemental(name, rounds, ElementalType.Greater);
                 break;
-            case SummonNaturesAlly7.ElementalGreaterEarth:
+            case Summon7.ElementalGreaterEarth:
                 newCreature = new EarthElemental(name, rounds, ElementalType.Greater);
                 break;
-            case SummonNaturesAlly7.ElementalGreaterFire:
+            case Summon7.ElementalGreaterFire:
                 newCreature = new FireElemental(name, rounds, ElementalType.Greater);
                 break;
-            case SummonNaturesAlly7.ElementalGreaterWater:
+            case Summon7.ElementalGreaterWater:
                 newCreature = new WaterElemental(name, rounds, ElementalType.Greater);
                 break;
-            case SummonNaturesAlly7.DireCrocodile:
+            case Summon7.DireCrocodile:
                 newCreature = new DireCrocodile(name, rounds);
                 break;
-            case SummonNaturesAlly7.DireShark:
+            case Summon7.DireShark:
                 newCreature = new DireShark(name, rounds);
                 break;
-            case SummonNaturesAlly7.FireGiant:
+            case Summon7.FireGiant:
                 newCreature = new FireGiant(name, rounds);
                 break;
-            case SummonNaturesAlly7.FrostGiant:
+            case Summon7.FrostGiant:
                 newCreature = new FrostGiant(name, rounds);
                 break;
-            case SummonNaturesAlly7.GiantSquid:
+            case Summon7.GiantSquid:
                 newCreature = new GiantSquid(name, rounds);
                 break;
-            case SummonNaturesAlly7.Mastodon:
+            case Summon7.Mastodon:
                 newCreature = new Mastodon(name, rounds);
                 break;
-            case SummonNaturesAlly7.Roc:
+            case Summon7.Roc:
                 newCreature = new Roc(name, rounds);
                 break;
         }
         return newCreature;
     }
 
-    summonNaturesAlly8(name: string, rounds: number, creatureType: SummonNaturesAlly8) {
+    Summon8(name: string, rounds: number, creatureType: Summon8) {
         let newCreature: Creature;
         switch (creatureType) {
-            case SummonNaturesAlly8.ElementalElderAir:
+            case Summon8.ElementalElderAir:
                 newCreature = new AirElemental(name, rounds, ElementalType.Elder);
                 break;
-            case SummonNaturesAlly8.ElementalElderEarth:
+            case Summon8.ElementalElderEarth:
                 newCreature = new EarthElemental(name, rounds, ElementalType.Elder);
                 break;
-            case SummonNaturesAlly8.ElementalElderFire:
+            case Summon8.ElementalElderFire:
                 newCreature = new FireElemental(name, rounds, ElementalType.Elder);
                 break;
-            case SummonNaturesAlly8.ElementalElderWater:
+            case Summon8.ElementalElderWater:
                 newCreature = new WaterElemental(name, rounds, ElementalType.Elder);
                 break;
-            case SummonNaturesAlly8.CloudGiant:
+            case Summon8.CloudGiant:
                 newCreature = new CloudGiant(name, rounds);
                 break;
-            case SummonNaturesAlly8.PurpleWorm:
+            case Summon8.PurpleWorm:
                 newCreature = new PurpleWorm(name, rounds);
                 break;
         }
         return newCreature;
     }
 
-    summonNaturesAlly9(name: string, rounds: number, creatureType: SummonNaturesAlly9) {
+    Summon9(name: string, rounds: number, creatureType: Summon9) {
         let newCreature: Creature;
         switch (creatureType) {
-            case SummonNaturesAlly9.Pixie:
+            case Summon9.Pixie:
                 newCreature = new Pixie(name, rounds);
                 break;
-            case SummonNaturesAlly9.StormGiant:
+            case Summon9.StormGiant:
                 newCreature = new StormGiant(name, rounds);
                 break;
         }

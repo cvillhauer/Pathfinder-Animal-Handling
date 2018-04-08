@@ -7,7 +7,7 @@ define(["require", "exports", "knockout", "./model/druid", "./summon"], function
             this.pets = ko.observableArray();
             this.currentRound = ko.observable(1);
             this.editName = ko.observable(false);
-            this.creatureSummoner = new summon_1.SummonNaturesAlly();
+            this.creatureSummoner = new summon_1.Summon();
             this.summonNatureLevel = ko.observable(0);
             this.summonCreatureLevel = ko.observable(0);
             this.addedCreatureName = ko.observable("Squeaky");
@@ -47,15 +47,15 @@ define(["require", "exports", "knockout", "./model/druid", "./summon"], function
         CreaturesViewModel.prototype.editCreatureName = function (petToEdit) {
             petToEdit.editName(true);
         };
-        CreaturesViewModel.prototype.selectSummonNaturesAlly = function (spellLevel) {
+        CreaturesViewModel.prototype.selectSummon = function (spellLevel) {
             this.summonNatureLevel(spellLevel);
         };
         CreaturesViewModel.prototype.selectSummonCreatureLevel = function (creatureLevel) {
             this.summonCreatureLevel(creatureLevel);
         };
-        CreaturesViewModel.prototype.summonNaturesAlly = function () {
+        CreaturesViewModel.prototype.Summon = function () {
             var newCreatures;
-            newCreatures = this.creatureSummoner.summonNaturesAlly(this.druid().level(), this.summonNatureLevel(), this.summonCreatureLevel(), this.addedCreatureName());
+            newCreatures = this.creatureSummoner.Summon(this.druid().level(), this.summonNatureLevel(), this.summonCreatureLevel(), this.addedCreatureName());
             for (var _i = 0, newCreatures_1 = newCreatures; _i < newCreatures_1.length; _i++) {
                 var creature = newCreatures_1[_i];
                 this.pets.push(creature);

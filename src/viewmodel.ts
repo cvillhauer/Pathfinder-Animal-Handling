@@ -3,7 +3,7 @@ import * as ko from "knockout";
 import { Size, CreatureType } from "./model/enums";
 import { Druid } from "./model/druid";
 import { Creature } from "./model/creature";
-import { SummonNaturesAlly } from "./summon";
+import { Summon } from "./summon";
 
 class CreaturesViewModel {
     druid: KnockoutObservable<Druid>;
@@ -11,7 +11,7 @@ class CreaturesViewModel {
     currentRound: KnockoutObservable<number>;
     editName: KnockoutObservable<boolean>;
 
-    creatureSummoner: SummonNaturesAlly;
+    creatureSummoner: Summon;
 
     summonNatureLevel: KnockoutObservable<number>;
     summonCreatureLevel: KnockoutObservable<number>;
@@ -24,7 +24,7 @@ class CreaturesViewModel {
 
         this.editName = ko.observable(false);
 
-        this.creatureSummoner = new SummonNaturesAlly();
+        this.creatureSummoner = new Summon();
 
         this.summonNatureLevel = ko.observable(0);
         this.summonCreatureLevel = ko.observable(0);
@@ -72,7 +72,7 @@ class CreaturesViewModel {
         petToEdit.editName(true);
     }
 
-    selectSummonNaturesAlly(spellLevel: number) {
+    selectSummon(spellLevel: number) {
         this.summonNatureLevel(spellLevel);
     }
 
@@ -80,9 +80,9 @@ class CreaturesViewModel {
         this.summonCreatureLevel(creatureLevel);
     }
 
-    summonNaturesAlly() {
+    Summon() {
         let newCreatures: Creature[];
-        newCreatures = this.creatureSummoner.summonNaturesAlly(this.druid().level(), this.summonNatureLevel(), this.summonCreatureLevel(), this.addedCreatureName());
+        newCreatures = this.creatureSummoner.Summon(this.druid().level(), this.summonNatureLevel(), this.summonCreatureLevel(), this.addedCreatureName());
         for (let creature of newCreatures) {
             this.pets.push(creature);
         }

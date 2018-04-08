@@ -44,7 +44,7 @@ export enum ElementalType {
 }
 
 //TODO: Adding a space in the string description breaks KO databinding for AddCreature
-export enum SummonNaturesAlly1 {
+export enum Summon1 {
     DireRat = "DireRat",
     Dog = "Dog",
     Dolphin = "Dolphin",
@@ -58,7 +58,7 @@ export enum SummonNaturesAlly1 {
     Viper = "Viper"
 }
 
-export enum SummonNaturesAlly2 {
+export enum Summon2 {
     ElementalSmallAir = "ElementalSmallAir",
     ElementalSmallEarth = "ElementalSmallEarth",
     ElementalSmallFire = "ElementalSmallFire",
@@ -74,7 +74,7 @@ export enum SummonNaturesAlly2 {
     Wolf = "Wolf"
 }
 
-export enum SummonNaturesAlly3 {
+export enum Summon3 {
     Ape = "Ape",
     Auroch = "Auroch",
     Boar = "Boar",
@@ -91,7 +91,7 @@ export enum SummonNaturesAlly3 {
     Wolverine = "Wolverine"
 }
 
-export enum SummonNaturesAlly4 {
+export enum Summon4 {
     ElementalMediumAir = "ElementalMediumAir",
     ElementalMediumEarth = "ElementalMediumEarth",
     ElementalMediumFire = "ElementalMediumFire",
@@ -116,7 +116,7 @@ export enum SummonNaturesAlly4 {
     Tiger = "Tiger"
 }
 
-export enum SummonNaturesAlly5 {
+export enum Summon5 {
     ElementalLargeAir = "ElementalLargeAir",
     ElementalLargeEarth = "ElementalLargeEarth",
     ElementalLargeFire = "ElementalLargeFire",
@@ -132,7 +132,7 @@ export enum SummonNaturesAlly5 {
     WoollyRhinoceros = "WoollyRhinoceros"
 }
 
-export enum SummonNaturesAlly6 {
+export enum Summon6 {
     ElementalHugeAir = "ElementalHugeAir",
     ElementalHugeEarth = "ElementalHugeEarth",
     ElementalHugeFire = "ElementalHugeFire",
@@ -149,7 +149,7 @@ export enum SummonNaturesAlly6 {
     //Triceratops = "Triceratops"
 }
 
-export enum SummonNaturesAlly7 {
+export enum Summon7 {
     ElementalGreaterAir = "ElementalGreaterAir",
     ElementalGreaterEarth = "ElementalGreaterEarth",
     ElementalGreaterFire = "ElementalGreaterFire",
@@ -165,7 +165,7 @@ export enum SummonNaturesAlly7 {
     //Tyrannosaurus = "Tyrannosaurus"
 }
 
-export enum SummonNaturesAlly8 {
+export enum Summon8 {
     ElementalElderAir = "ElementalElderAir",
     ElementalElderEarth = "ElementalElderEarth",
     ElementalElderFire = "ElementalElderFire",
@@ -174,7 +174,7 @@ export enum SummonNaturesAlly8 {
     PurpleWorm = "PurpleWorm"
 }
 
-export enum SummonNaturesAlly9 {
+export enum Summon9 {
     Pixie = "Pixie",
     StormGiant = "StormGiant"
 }

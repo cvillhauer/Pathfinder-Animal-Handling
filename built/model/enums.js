@@ -47,140 +47,140 @@ define(["require", "exports"], function (require, exports) {
         ElementalType["Elder"] = "Elder";
     })(ElementalType = exports.ElementalType || (exports.ElementalType = {}));
     //TODO: Adding a space in the string description breaks KO databinding for AddCreature
-    var SummonNaturesAlly1;
-    (function (SummonNaturesAlly1) {
-        SummonNaturesAlly1["DireRat"] = "DireRat";
-        SummonNaturesAlly1["Dog"] = "Dog";
-        SummonNaturesAlly1["Dolphin"] = "Dolphin";
-        SummonNaturesAlly1["Eagle"] = "Eagle";
-        SummonNaturesAlly1["GiantCentipede"] = "GiantCentipede";
-        SummonNaturesAlly1["FireBeetle"] = "FireBeetle";
-        SummonNaturesAlly1["Mite"] = "Mite";
-        SummonNaturesAlly1["PoisonousFrog"] = "PoisonousFrog";
-        SummonNaturesAlly1["Pony"] = "Pony";
-        SummonNaturesAlly1["Stirge"] = "Stirge";
-        SummonNaturesAlly1["Viper"] = "Viper";
-    })(SummonNaturesAlly1 = exports.SummonNaturesAlly1 || (exports.SummonNaturesAlly1 = {}));
-    var SummonNaturesAlly2;
-    (function (SummonNaturesAlly2) {
-        SummonNaturesAlly2["ElementalSmallAir"] = "ElementalSmallAir";
-        SummonNaturesAlly2["ElementalSmallEarth"] = "ElementalSmallEarth";
-        SummonNaturesAlly2["ElementalSmallFire"] = "ElementalSmallFire";
-        SummonNaturesAlly2["ElementalSmallWater"] = "ElementalSmallWater";
-        SummonNaturesAlly2["GiantAntWorker"] = "GiantAntWorker";
-        SummonNaturesAlly2["GiantFrog"] = "GiantFrog";
-        SummonNaturesAlly2["GiantSpider"] = "GiantSpider";
-        SummonNaturesAlly2["GoblinDog"] = "GoblinDog";
-        SummonNaturesAlly2["Horse"] = "Horse";
-        SummonNaturesAlly2["Hyena"] = "Hyena";
-        SummonNaturesAlly2["Octopus"] = "Octopus";
-        SummonNaturesAlly2["Squid"] = "Squid";
-        SummonNaturesAlly2["Wolf"] = "Wolf";
-    })(SummonNaturesAlly2 = exports.SummonNaturesAlly2 || (exports.SummonNaturesAlly2 = {}));
-    var SummonNaturesAlly3;
-    (function (SummonNaturesAlly3) {
-        SummonNaturesAlly3["Ape"] = "Ape";
-        SummonNaturesAlly3["Auroch"] = "Auroch";
-        SummonNaturesAlly3["Boar"] = "Boar";
-        SummonNaturesAlly3["Cheetah"] = "Cheetah";
-        SummonNaturesAlly3["ConstrictorSnake"] = "ConstrictorSnake";
-        SummonNaturesAlly3["Crocodile"] = "Crocodile";
-        SummonNaturesAlly3["DireBat"] = "DireBat";
-        SummonNaturesAlly3["ElectricEel"] = "ElectricEel";
-        SummonNaturesAlly3["GiantAnt"] = "GiantAnt";
-        SummonNaturesAlly3["GiantCrab"] = "GiantCrab";
-        SummonNaturesAlly3["Leopard"] = "Leopard";
-        SummonNaturesAlly3["MonitorLizard"] = "MonitorLizard";
-        SummonNaturesAlly3["Shark"] = "Shark";
-        SummonNaturesAlly3["Wolverine"] = "Wolverine";
-    })(SummonNaturesAlly3 = exports.SummonNaturesAlly3 || (exports.SummonNaturesAlly3 = {}));
-    var SummonNaturesAlly4;
-    (function (SummonNaturesAlly4) {
-        SummonNaturesAlly4["ElementalMediumAir"] = "ElementalMediumAir";
-        SummonNaturesAlly4["ElementalMediumEarth"] = "ElementalMediumEarth";
-        SummonNaturesAlly4["ElementalMediumFire"] = "ElementalMediumFire";
-        SummonNaturesAlly4["ElementalMediumWater"] = "ElementalMediumWater";
-        SummonNaturesAlly4["Bison"] = "Bison";
+    var Summon1;
+    (function (Summon1) {
+        Summon1["DireRat"] = "DireRat";
+        Summon1["Dog"] = "Dog";
+        Summon1["Dolphin"] = "Dolphin";
+        Summon1["Eagle"] = "Eagle";
+        Summon1["GiantCentipede"] = "GiantCentipede";
+        Summon1["FireBeetle"] = "FireBeetle";
+        Summon1["Mite"] = "Mite";
+        Summon1["PoisonousFrog"] = "PoisonousFrog";
+        Summon1["Pony"] = "Pony";
+        Summon1["Stirge"] = "Stirge";
+        Summon1["Viper"] = "Viper";
+    })(Summon1 = exports.Summon1 || (exports.Summon1 = {}));
+    var Summon2;
+    (function (Summon2) {
+        Summon2["ElementalSmallAir"] = "ElementalSmallAir";
+        Summon2["ElementalSmallEarth"] = "ElementalSmallEarth";
+        Summon2["ElementalSmallFire"] = "ElementalSmallFire";
+        Summon2["ElementalSmallWater"] = "ElementalSmallWater";
+        Summon2["GiantAntWorker"] = "GiantAntWorker";
+        Summon2["GiantFrog"] = "GiantFrog";
+        Summon2["GiantSpider"] = "GiantSpider";
+        Summon2["GoblinDog"] = "GoblinDog";
+        Summon2["Horse"] = "Horse";
+        Summon2["Hyena"] = "Hyena";
+        Summon2["Octopus"] = "Octopus";
+        Summon2["Squid"] = "Squid";
+        Summon2["Wolf"] = "Wolf";
+    })(Summon2 = exports.Summon2 || (exports.Summon2 = {}));
+    var Summon3;
+    (function (Summon3) {
+        Summon3["Ape"] = "Ape";
+        Summon3["Auroch"] = "Auroch";
+        Summon3["Boar"] = "Boar";
+        Summon3["Cheetah"] = "Cheetah";
+        Summon3["ConstrictorSnake"] = "ConstrictorSnake";
+        Summon3["Crocodile"] = "Crocodile";
+        Summon3["DireBat"] = "DireBat";
+        Summon3["ElectricEel"] = "ElectricEel";
+        Summon3["GiantAnt"] = "GiantAnt";
+        Summon3["GiantCrab"] = "GiantCrab";
+        Summon3["Leopard"] = "Leopard";
+        Summon3["MonitorLizard"] = "MonitorLizard";
+        Summon3["Shark"] = "Shark";
+        Summon3["Wolverine"] = "Wolverine";
+    })(Summon3 = exports.Summon3 || (exports.Summon3 = {}));
+    var Summon4;
+    (function (Summon4) {
+        Summon4["ElementalMediumAir"] = "ElementalMediumAir";
+        Summon4["ElementalMediumEarth"] = "ElementalMediumEarth";
+        Summon4["ElementalMediumFire"] = "ElementalMediumFire";
+        Summon4["ElementalMediumWater"] = "ElementalMediumWater";
+        Summon4["Bison"] = "Bison";
         //Deinonychus = "Deinonychus",
-        SummonNaturesAlly4["DireApe"] = "DireApe";
-        SummonNaturesAlly4["DireBoar"] = "DireBoar";
-        SummonNaturesAlly4["DireWolf"] = "DireWolf";
-        SummonNaturesAlly4["GiantAntDrone"] = "GiantAntDrone";
-        SummonNaturesAlly4["GiantScorpion"] = "GiantScorpion";
-        SummonNaturesAlly4["GiantStagBeetle"] = "GiantStagBeetle";
-        SummonNaturesAlly4["GiantWasp"] = "GiantWasp";
-        SummonNaturesAlly4["Griffon"] = "Griffon";
-        SummonNaturesAlly4["GrizzlyBear"] = "GrizzlyBear";
-        SummonNaturesAlly4["Lion"] = "Lion";
-        SummonNaturesAlly4["Mephit"] = "Mephit";
-        SummonNaturesAlly4["Owlbear"] = "Owlbear";
+        Summon4["DireApe"] = "DireApe";
+        Summon4["DireBoar"] = "DireBoar";
+        Summon4["DireWolf"] = "DireWolf";
+        Summon4["GiantAntDrone"] = "GiantAntDrone";
+        Summon4["GiantScorpion"] = "GiantScorpion";
+        Summon4["GiantStagBeetle"] = "GiantStagBeetle";
+        Summon4["GiantWasp"] = "GiantWasp";
+        Summon4["Griffon"] = "Griffon";
+        Summon4["GrizzlyBear"] = "GrizzlyBear";
+        Summon4["Lion"] = "Lion";
+        Summon4["Mephit"] = "Mephit";
+        Summon4["Owlbear"] = "Owlbear";
         //Pteranodon = "Pteranodon",
-        SummonNaturesAlly4["Rhinoceros"] = "Rhinoceros";
-        SummonNaturesAlly4["Satyr"] = "Satyr";
-        SummonNaturesAlly4["Tiger"] = "Tiger";
-    })(SummonNaturesAlly4 = exports.SummonNaturesAlly4 || (exports.SummonNaturesAlly4 = {}));
-    var SummonNaturesAlly5;
-    (function (SummonNaturesAlly5) {
-        SummonNaturesAlly5["ElementalLargeAir"] = "ElementalLargeAir";
-        SummonNaturesAlly5["ElementalLargeEarth"] = "ElementalLargeEarth";
-        SummonNaturesAlly5["ElementalLargeFire"] = "ElementalLargeFire";
-        SummonNaturesAlly5["ElementalLargeWater"] = "ElementalLargeWater";
+        Summon4["Rhinoceros"] = "Rhinoceros";
+        Summon4["Satyr"] = "Satyr";
+        Summon4["Tiger"] = "Tiger";
+    })(Summon4 = exports.Summon4 || (exports.Summon4 = {}));
+    var Summon5;
+    (function (Summon5) {
+        Summon5["ElementalLargeAir"] = "ElementalLargeAir";
+        Summon5["ElementalLargeEarth"] = "ElementalLargeEarth";
+        Summon5["ElementalLargeFire"] = "ElementalLargeFire";
+        Summon5["ElementalLargeWater"] = "ElementalLargeWater";
         //Ankylosaurus = "Ankylosaurus",
-        SummonNaturesAlly5["Cyclops"] = "Cyclops";
-        SummonNaturesAlly5["DireLion"] = "DireLion";
-        SummonNaturesAlly5["Ettin"] = "Ettin";
-        SummonNaturesAlly5["GiantMorayEel"] = "GiantMorayEel";
-        SummonNaturesAlly5["Girallon"] = "Girallon";
-        SummonNaturesAlly5["Manticore"] = "Manticore";
-        SummonNaturesAlly5["Orca"] = "Orca";
-        SummonNaturesAlly5["WoollyRhinoceros"] = "WoollyRhinoceros";
-    })(SummonNaturesAlly5 = exports.SummonNaturesAlly5 || (exports.SummonNaturesAlly5 = {}));
-    var SummonNaturesAlly6;
-    (function (SummonNaturesAlly6) {
-        SummonNaturesAlly6["ElementalHugeAir"] = "ElementalHugeAir";
-        SummonNaturesAlly6["ElementalHugeEarth"] = "ElementalHugeEarth";
-        SummonNaturesAlly6["ElementalHugeFire"] = "ElementalHugeFire";
-        SummonNaturesAlly6["ElementalHugeWater"] = "ElementalHugeWater";
-        SummonNaturesAlly6["Bulette"] = "Bulette";
-        SummonNaturesAlly6["DireBear"] = "DireBear";
-        SummonNaturesAlly6["DireTiger"] = "DireTiger";
+        Summon5["Cyclops"] = "Cyclops";
+        Summon5["DireLion"] = "DireLion";
+        Summon5["Ettin"] = "Ettin";
+        Summon5["GiantMorayEel"] = "GiantMorayEel";
+        Summon5["Girallon"] = "Girallon";
+        Summon5["Manticore"] = "Manticore";
+        Summon5["Orca"] = "Orca";
+        Summon5["WoollyRhinoceros"] = "WoollyRhinoceros";
+    })(Summon5 = exports.Summon5 || (exports.Summon5 = {}));
+    var Summon6;
+    (function (Summon6) {
+        Summon6["ElementalHugeAir"] = "ElementalHugeAir";
+        Summon6["ElementalHugeEarth"] = "ElementalHugeEarth";
+        Summon6["ElementalHugeFire"] = "ElementalHugeFire";
+        Summon6["ElementalHugeWater"] = "ElementalHugeWater";
+        Summon6["Bulette"] = "Bulette";
+        Summon6["DireBear"] = "DireBear";
+        Summon6["DireTiger"] = "DireTiger";
         //Elasmosaurus = "Elasmosaurus",
-        SummonNaturesAlly6["Elephant"] = "Elephant";
-        SummonNaturesAlly6["GiantOctopus"] = "GiantOctopus";
-        SummonNaturesAlly6["HillGiant"] = "HillGiant";
+        Summon6["Elephant"] = "Elephant";
+        Summon6["GiantOctopus"] = "GiantOctopus";
+        Summon6["HillGiant"] = "HillGiant";
         //Stegosaurus = "Stegosaurus",
-        SummonNaturesAlly6["StoneGiant"] = "StoneGiant";
+        Summon6["StoneGiant"] = "StoneGiant";
         //Triceratops = "Triceratops"
-    })(SummonNaturesAlly6 = exports.SummonNaturesAlly6 || (exports.SummonNaturesAlly6 = {}));
-    var SummonNaturesAlly7;
-    (function (SummonNaturesAlly7) {
-        SummonNaturesAlly7["ElementalGreaterAir"] = "ElementalGreaterAir";
-        SummonNaturesAlly7["ElementalGreaterEarth"] = "ElementalGreaterEarth";
-        SummonNaturesAlly7["ElementalGreaterFire"] = "ElementalGreaterFire";
-        SummonNaturesAlly7["ElementalGreaterWater"] = "ElementalGreaterWater";
+    })(Summon6 = exports.Summon6 || (exports.Summon6 = {}));
+    var Summon7;
+    (function (Summon7) {
+        Summon7["ElementalGreaterAir"] = "ElementalGreaterAir";
+        Summon7["ElementalGreaterEarth"] = "ElementalGreaterEarth";
+        Summon7["ElementalGreaterFire"] = "ElementalGreaterFire";
+        Summon7["ElementalGreaterWater"] = "ElementalGreaterWater";
         //Brachiosaurus = "Brachiosaurus",
-        SummonNaturesAlly7["DireCrocodile"] = "DireCrocodile";
-        SummonNaturesAlly7["DireShark"] = "DireShark";
-        SummonNaturesAlly7["FireGiant"] = "FireGiant";
-        SummonNaturesAlly7["FrostGiant"] = "FrostGiant";
-        SummonNaturesAlly7["GiantSquid"] = "GiantSquid";
-        SummonNaturesAlly7["Mastodon"] = "Mastodon";
-        SummonNaturesAlly7["Roc"] = "Roc";
+        Summon7["DireCrocodile"] = "DireCrocodile";
+        Summon7["DireShark"] = "DireShark";
+        Summon7["FireGiant"] = "FireGiant";
+        Summon7["FrostGiant"] = "FrostGiant";
+        Summon7["GiantSquid"] = "GiantSquid";
+        Summon7["Mastodon"] = "Mastodon";
+        Summon7["Roc"] = "Roc";
         //Tyrannosaurus = "Tyrannosaurus"
-    })(SummonNaturesAlly7 = exports.SummonNaturesAlly7 || (exports.SummonNaturesAlly7 = {}));
-    var SummonNaturesAlly8;
-    (function (SummonNaturesAlly8) {
-        SummonNaturesAlly8["ElementalElderAir"] = "ElementalElderAir";
-        SummonNaturesAlly8["ElementalElderEarth"] = "ElementalElderEarth";
-        SummonNaturesAlly8["ElementalElderFire"] = "ElementalElderFire";
-        SummonNaturesAlly8["ElementalElderWater"] = "ElementalElderWater";
-        SummonNaturesAlly8["CloudGiant"] = "CloudGiant";
-        SummonNaturesAlly8["PurpleWorm"] = "PurpleWorm";
-    })(SummonNaturesAlly8 = exports.SummonNaturesAlly8 || (exports.SummonNaturesAlly8 = {}));
-    var SummonNaturesAlly9;
-    (function (SummonNaturesAlly9) {
-        SummonNaturesAlly9["Pixie"] = "Pixie";
-        SummonNaturesAlly9["StormGiant"] = "StormGiant";
-    })(SummonNaturesAlly9 = exports.SummonNaturesAlly9 || (exports.SummonNaturesAlly9 = {}));
+    })(Summon7 = exports.Summon7 || (exports.Summon7 = {}));
+    var Summon8;
+    (function (Summon8) {
+        Summon8["ElementalElderAir"] = "ElementalElderAir";
+        Summon8["ElementalElderEarth"] = "ElementalElderEarth";
+        Summon8["ElementalElderFire"] = "ElementalElderFire";
+        Summon8["ElementalElderWater"] = "ElementalElderWater";
+        Summon8["CloudGiant"] = "CloudGiant";
+        Summon8["PurpleWorm"] = "PurpleWorm";
+    })(Summon8 = exports.Summon8 || (exports.Summon8 = {}));
+    var Summon9;
+    (function (Summon9) {
+        Summon9["Pixie"] = "Pixie";
+        Summon9["StormGiant"] = "StormGiant";
+    })(Summon9 = exports.Summon9 || (exports.Summon9 = {}));
 });
 //# sourceMappingURL=enums.js.map
