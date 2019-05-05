@@ -7,7 +7,7 @@ export class Shark extends Creature{
     constructor(name: string, rounds: number) {
         super(name, rounds);
         this.description = "Shark";
-        this.image = "http://fc09.deviantart.net/fs70/f/2013/308/4/3/pzo1127_shark_by_critical_dean-d6t12cw.jpg";
+        this.image = "https://www.tribality.com/wp-content/uploads/2015/03/safariltd-tiger-shark-211702-0.jpg";
         this.link = "http://paizo.com/pathfinderRPG/prd/bestiary/shark.html#shark";
         this.hitpoints = ko.observable(22);
         this.size = Size.Large;

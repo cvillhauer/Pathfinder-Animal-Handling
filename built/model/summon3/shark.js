@@ -16,7 +16,7 @@ define(["require", "exports", "knockout", "../enums", "../creature"], function (
         function Shark(name, rounds) {
             var _this = _super.call(this, name, rounds) || this;
             _this.description = "Shark";
-            _this.image = "http://fc09.deviantart.net/fs70/f/2013/308/4/3/pzo1127_shark_by_critical_dean-d6t12cw.jpg";
+            _this.image = "https://www.tribality.com/wp-content/uploads/2015/03/safariltd-tiger-shark-211702-0.jpg";
             _this.link = "http://paizo.com/pathfinderRPG/prd/bestiary/shark.html#shark";
             _this.hitpoints = ko.observable(22);
             _this.size = enums_1.Size.Large;

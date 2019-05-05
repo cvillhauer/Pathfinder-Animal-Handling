@@ -7,7 +7,7 @@ export class Leopard extends Creature{
     constructor(name: string, rounds: number) {
         super(name, rounds);
         this.description = "Leopard";
-        this.image = "https://orig00.deviantart.net/9c9e/f/2009/335/6/1/6137e380b66d45cdf74ef7d44dbd4386.jpg";
+        this.image = "https://i.pinimg.com/originals/b0/53/77/b053770ed5ece5ad273d8a5aba7f507e.png";
         this.link = "http://paizo.com/pathfinderRPG/prd/bestiary/cat.html#cat-leopard";
         this.hitpoints = ko.observable(19);
         this.size = Size.Medium;

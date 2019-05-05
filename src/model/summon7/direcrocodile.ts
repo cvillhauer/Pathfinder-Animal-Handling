@@ -7,7 +7,7 @@ export class DireCrocodile extends Creature{
     constructor(name: string, rounds: number) {
         super(name, rounds);
         this.description = "Dire Crocodile";
-        this.image = "https://orig00.deviantart.net/b2e2/f/2009/201/2/3/sea_crocodile_by_cururo.jpg";
+        this.image = "https://i.pinimg.com/originals/5a/7f/76/5a7f76a182a823195071d6378309cc56.png";
         this.link = "http://paizo.com/pathfinderRPG/prd/bestiary/crocodile.html#crocodile-dire";
         this.hitpoints = ko.observable(138);
         this.size = Size.Gargantuan;

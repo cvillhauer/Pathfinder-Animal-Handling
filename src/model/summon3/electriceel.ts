@@ -7,7 +7,7 @@ export class ElectricEel extends Creature{
     constructor(name: string, rounds: number) {
         super(name, rounds);
         this.description = "Electric Eel";
-        this.image = "http://www.xsjjys.com/data/out/40/WHDQ-511868679.png";
+        this.image = "https://res.cloudinary.com/uktv/image/upload/b_rgb:000000,w_880,h_495/v1394626469/q0iknfjhpzzzhajaxgie.jpg";
         this.link = "http://paizo.com/pathfinderRPG/prd/bestiary/eel.html#eel-electric";
         this.hitpoints = ko.observable(17);
         this.size = Size.Small;

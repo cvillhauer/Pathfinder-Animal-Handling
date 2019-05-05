@@ -16,7 +16,7 @@ define(["require", "exports", "knockout", "../enums", "../creature"], function (
         function Roc(name, rounds) {
             var _this = _super.call(this, name, rounds) || this;
             _this.description = "Roc";
-            _this.image = "https://s3.amazonaws.com/files.d20.io/images/26465981/FNTWoDwoywoI8T3ekgZK5Q/max.png?1482160532";
+            _this.image = "https://i.pinimg.com/originals/20/ac/ad/20acad56620669208a6e6c8ec2ecc42f.jpg";
             _this.link = "http://paizo.com/pathfinderRPG/prd/bestiary/roc.html#roc";
             _this.hitpoints = ko.observable(120);
             _this.size = enums_1.Size.Gargantuan;

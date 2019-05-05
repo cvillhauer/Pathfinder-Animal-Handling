@@ -7,7 +7,7 @@ export class Dog extends Creature{
     constructor(name: string, rounds: number) {
         super(name, rounds);
         this.description = "Dog";
-        this.image = "http://www.beastsofwar.com/wp-content/uploads/2014/10/Guard-Dog.png";
+        this.image = "https://images.beastsofwar.com/2014/10/Guard-Dog.png";
         this.link = "http://paizo.com/pathfinderRPG/prd/bestiary/dog.html#dog";
         this.hitpoints = ko.observable(6);
         this.size = Size.Small;

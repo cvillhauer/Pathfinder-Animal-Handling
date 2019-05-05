@@ -16,7 +16,7 @@ define(["require", "exports", "knockout", "../enums", "../creature"], function (
         function ElectricEel(name, rounds) {
             var _this = _super.call(this, name, rounds) || this;
             _this.description = "Electric Eel";
-            _this.image = "http://www.xsjjys.com/data/out/40/WHDQ-511868679.png";
+            _this.image = "https://res.cloudinary.com/uktv/image/upload/b_rgb:000000,w_880,h_495/v1394626469/q0iknfjhpzzzhajaxgie.jpg";
             _this.link = "http://paizo.com/pathfinderRPG/prd/bestiary/eel.html#eel-electric";
             _this.hitpoints = ko.observable(17);
             _this.size = enums_1.Size.Small;

@@ -7,7 +7,7 @@ export class GiantStagBeetle extends Creature{
     constructor(name: string, rounds: number) {
         super(name, rounds);
         this.description = "Giant Stag Beetle";
-        this.image = "http://karzoug.info/srd/monsters/B/images/BeetleAzlantiChariot.png";
+        this.image = "https://thetrove.net/Assets/Roll%2020/Devin%20Night/Devin%20Token%20Pack%2043%20-%20Many%20Legged%20Fiends%20(KS)/TP43_ManyLegedFiends_KS/vermin_giant_stag_beetle.png";
         this.link = "http://paizo.com/pathfinderRPG/prd/bestiary/beetle.html#beetle-giant-stag";
         this.hitpoints = ko.observable(45);
         this.size = Size.Large;

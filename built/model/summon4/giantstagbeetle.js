@@ -16,7 +16,7 @@ define(["require", "exports", "knockout", "../enums", "../creature"], function (
         function GiantStagBeetle(name, rounds) {
             var _this = _super.call(this, name, rounds) || this;
             _this.description = "Giant Stag Beetle";
-            _this.image = "http://karzoug.info/srd/monsters/B/images/BeetleAzlantiChariot.png";
+            _this.image = "https://thetrove.net/Assets/Roll%2020/Devin%20Night/Devin%20Token%20Pack%2043%20-%20Many%20Legged%20Fiends%20(KS)/TP43_ManyLegedFiends_KS/vermin_giant_stag_beetle.png";
             _this.link = "http://paizo.com/pathfinderRPG/prd/bestiary/beetle.html#beetle-giant-stag";
             _this.hitpoints = ko.observable(45);
             _this.size = enums_1.Size.Large;

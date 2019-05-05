@@ -16,7 +16,7 @@ define(["require", "exports", "knockout", "../enums", "../creature"], function (
         function Dog(name, rounds) {
             var _this = _super.call(this, name, rounds) || this;
             _this.description = "Dog";
-            _this.image = "http://www.beastsofwar.com/wp-content/uploads/2014/10/Guard-Dog.png";
+            _this.image = "https://images.beastsofwar.com/2014/10/Guard-Dog.png";
             _this.link = "http://paizo.com/pathfinderRPG/prd/bestiary/dog.html#dog";
             _this.hitpoints = ko.observable(6);
             _this.size = enums_1.Size.Small;

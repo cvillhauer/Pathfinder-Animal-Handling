@@ -16,7 +16,7 @@ define(["require", "exports", "knockout", "../enums", "../creature"], function (
         function DireCrocodile(name, rounds) {
             var _this = _super.call(this, name, rounds) || this;
             _this.description = "Dire Crocodile";
-            _this.image = "https://orig00.deviantart.net/b2e2/f/2009/201/2/3/sea_crocodile_by_cururo.jpg";
+            _this.image = "https://i.pinimg.com/originals/5a/7f/76/5a7f76a182a823195071d6378309cc56.png";
             _this.link = "http://paizo.com/pathfinderRPG/prd/bestiary/crocodile.html#crocodile-dire";
             _this.hitpoints = ko.observable(138);
             _this.size = enums_1.Size.Gargantuan;

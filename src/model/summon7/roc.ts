@@ -7,7 +7,7 @@ export class Roc extends Creature{
     constructor(name: string, rounds: number) {
         super(name, rounds);
         this.description = "Roc";
-        this.image = "https://s3.amazonaws.com/files.d20.io/images/26465981/FNTWoDwoywoI8T3ekgZK5Q/max.png?1482160532";
+        this.image = "https://i.pinimg.com/originals/20/ac/ad/20acad56620669208a6e6c8ec2ecc42f.jpg";
         this.link = "http://paizo.com/pathfinderRPG/prd/bestiary/roc.html#roc";
         this.hitpoints = ko.observable(120);
         this.size = Size.Gargantuan;
